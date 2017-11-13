@@ -1,0 +1,169 @@
+@font-face {
+  font-family: quicksand;
+  src: url("/fonts/Quicksand-Regular.otf"); }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+.container-cover {
+  margin: 0;
+  padding: 0; }
+
+#navigator {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  z-index: 1; }
+
+#navigator ul {
+  margin: 0;
+  list-style: none;
+  float: right; }
+
+#navigator ul li {
+  display: flex;
+  transition: .5s;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  width: 150px;
+  height: 80px;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: "Segoe UI Light";
+  letter-spacing: 2px; }
+  #navigator ul li:hover {
+    color: #42d1f4; }
+
+#navigator #logo {
+  position: relative;
+  float: left;
+  width: 300px;
+  left: 100px;
+  height: 80px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center; }
+
+#logo img {
+  width: 100%; }
+
+h1 {
+  display: block; }
+
+.content, .content-angled {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  margin-top: -11.2%; }
+  .content-angled {
+    clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%);
+    -webkit-clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%); }
+  .content-text-container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    position: absolute !important;
+    flex-direction: column;
+    margin-top: 0px;
+    width: 100%;
+    height: 100%; }
+
+.content-text-container .desc {
+  width: 1200px; }
+
+#landing {
+  position: relative;
+  background: #2d8ac4;
+  margin-top: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 77%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 77%, 0 100%); }
+
+#about {
+  background: #ffffff;
+  clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%);
+  -webkit-clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%); }
+
+#courses {
+  background: #2d8ac4;
+  clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%);
+  -webkit-clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%); }
+
+#footer {
+  position: relative;
+  background: #202020;
+  clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%);
+  -webkit-clip-path: polygon(0 23%, 100% 0, 100% 100%, 0 100%); }
+
+#iphone {
+  position: relative;
+  display: block;
+  left: 20%;
+  top: 20%; }
+
+#home .content, #home .content-angled {
+  position: relative;
+  display: block;
+  top: -23%; }
+
+#countdown {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center; }
+
+.button {
+  padding: 8px 35px;
+  cursor: pointer; }
+  .button-opac {
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+    .button-opac:hover {
+      background: white;
+      color: black; }
+
+.svg.radial-progress {
+  position: relative;
+  display: inline-block; }
+
+circle {
+  stroke-width: 2em;
+  fill: transparent;
+  transform: rotate(0.1deg); }
+
+.radial-progress-background {
+  stroke: orange; }
+
+.radial-progress-cover {
+  stroke: #DEDEDE;
+  stroke-width: 2.01em; }
+
+.radial-progress-center {
+  fill: #CCC; }
+
+.radial-fill {
+  position: absolute; }
+
+#landing h1 {
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  font-family: quicksand; }
+
+#landing h3 {
+  font-size: 25px;
+  font-family: quicksand;
+  text-align: center; }

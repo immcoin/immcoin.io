@@ -1,0 +1,18 @@
+@mixin smooth-transitions($transist)
+    -webkit-transition: $transist
+    -moz-transition:    $transist
+    -ms-transition:     $transist
+    -o-transition:      $transist
+    transition:         $transist
+
+@mixin flex-center-content
+    display: flex
+    align-content: center
+    align-items: center
+    justify-content: center
+    justify-items: center
+
+@mixin relative
+    position:       relative
+    display:        block
+    
