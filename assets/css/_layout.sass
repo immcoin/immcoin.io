@@ -24,12 +24,15 @@ html, body
     transition: .5s
     align-items: center
     justify-content: center
+    text-align: center
     float: left
-    width: 150px
+    padding: 0px 20px
     height: 80px
     color: #ffffff
-    font-size: 12px
-    font-family: "Segoe UI Light"
+    // color: $primary
+    font-size: 14px
+    font-family: quicksand
+    font-weight: bold
     letter-spacing: 2px
     &:hover
         color: #42d1f4
@@ -52,7 +55,7 @@ h1
     +relative
     width: 100%
     height: 100vh
-    margin-top: -11.2%
+    // margin-top: -11.2%
     &-angled
         @extend .content
         clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%)
@@ -70,7 +73,9 @@ h1
 
 #landing
     position: relative
-    background: #2d8ac4
+    // background: #2d8ac4
+    // background: #a3a3a3
+    background: $bg-drk-gry
     margin-top: 0
     clip-path: polygon(0 0, 100% 0, 100% 77%, 0 100%)
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 77%, 0 100%)
@@ -92,14 +97,14 @@ h1
     -webkit-clip-path: polygon(0 23%, 100% 0, 100% 100%, 0 100%)
 
 
-#iphone
-    +relative
-    left: 20%
-    top: 20%
+// #iphone
+//     +relative
+//     left: 20%
+//     top: 20%
 
-#home .content
-    +relative
-    top: -23%
+// #home .content
+//     +relative
+//     top: -23%
 
 #countdown 
     +flex-center-content
@@ -118,8 +123,6 @@ h1
             background: white 
             color: black
 
-// radial timer svg template
-
 .svg.radial-progress 
     position: relative
     display: inline-block 
@@ -134,22 +137,25 @@ circle
     
 
 .radial-progress-background 
-    stroke: orange
+    stroke: #DEDEDE
     
 .radial-progress-cover 
-    stroke: #DEDEDE
+    // stroke: #DEDEDE
+    stroke: $primary
     stroke-width: 2.01em
 
 svg text
-    
+    font-size: 2em
+    font-family: quicksand
+    font-color: #4f4f4f
 
 .radial-progress-center 
     fill: #CCC
 
 .radial-fill 
     position: absolute
-    // top: 50%
-    // left: 50%
-    // transform: translate(-50%, -50%)
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
 
 

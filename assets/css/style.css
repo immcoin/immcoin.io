@@ -26,12 +26,14 @@ html, body {
   transition: .5s;
   align-items: center;
   justify-content: center;
+  text-align: center;
   float: left;
-  width: 150px;
+  padding: 0px 20px;
   height: 80px;
   color: #ffffff;
-  font-size: 12px;
-  font-family: "Segoe UI Light";
+  font-size: 14px;
+  font-family: quicksand;
+  font-weight: bold;
   letter-spacing: 2px; }
   #navigator ul li:hover {
     color: #42d1f4; }
@@ -58,8 +60,7 @@ h1 {
   position: relative;
   display: block;
   width: 100%;
-  height: 100vh;
-  margin-top: -11.2%; }
+  height: 100vh; }
   .content-angled {
     clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%);
     -webkit-clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%); }
@@ -80,7 +81,7 @@ h1 {
 
 #landing {
   position: relative;
-  background: #2d8ac4;
+  background: #7f7f7f;
   margin-top: 0;
   clip-path: polygon(0 0, 100% 0, 100% 77%, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 77%, 0 100%); }
@@ -100,17 +101,6 @@ h1 {
   background: #202020;
   clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%);
   -webkit-clip-path: polygon(0 23%, 100% 0, 100% 100%, 0 100%); }
-
-#iphone {
-  position: relative;
-  display: block;
-  left: 20%;
-  top: 20%; }
-
-#home .content, #home .content-angled {
-  position: relative;
-  display: block;
-  top: -23%; }
 
 #countdown {
   display: flex;
@@ -145,17 +135,25 @@ circle {
   transform: rotate(0.1deg); }
 
 .radial-progress-background {
-  stroke: orange; }
+  stroke: #DEDEDE; }
 
 .radial-progress-cover {
-  stroke: #DEDEDE;
+  stroke: #2d8ac4;
   stroke-width: 2.01em; }
+
+svg text {
+  font-size: 2em;
+  font-family: quicksand;
+  font-color: #4f4f4f; }
 
 .radial-progress-center {
   fill: #CCC; }
 
 .radial-fill {
-  position: absolute; }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 #landing h1 {
   font-size: 35px;

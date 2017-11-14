@@ -1,0 +1,210 @@
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+mesg: ttyname failed: Inappropriate ioctl for device
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+mesg: ttyname failed: Inappropriate ioctl for device
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+mesg: ttyname failed: Inappropriate ioctl for device
+[91m[main 8:29:18 AM][0m [uncaught exception in main]: Error: Cannot read property 'isFullScreen' of null
+
+TypeError: Cannot read property 'isFullScreen' of null
+    at C.serializeWindowState (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:290112)
+    at e.toWindowState (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:301867)
+    at e.onBeforeWindowClose (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:301241)
+    at /home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:300167
+    at e.invoke (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:85913)
+    at e.fire (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:87635)
+    at /home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:219653
+    at n.Class.derive._creator.done (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:73411)
+    at Object.v [as _notify] (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:67077)
+    at Object.enter (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:70282)
+[91m[main 8:29:23 AM][0m Error: Cannot read property 'isFullScreen' of null
+
+TypeError: Cannot read property 'isFullScreen' of null
+    at C.serializeWindowState (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:290112)
+    at e.toWindowState (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:301867)
+    at e.onBeforeWindowClose (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:301241)
+    at /home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:300167
+    at e.invoke (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:85913)
+    at e.fire (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:87635)
+    at /home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:219653
+    at n.Class.derive._creator.done (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:73411)
+    at Object.v [as _notify] (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:67077)
+    at Object.enter (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:70282)
+    at Timeout._onTimeout (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:83379)
+    at ontimeout (timers.js:386:14)
+    at tryOnTimeout (timers.js:250:5)
+    at Timer.listOnTimeout (timers.js:214:5)
+[91m[main 8:29:23 AM][0m [uncaught exception in main]: Error: Cannot read property 'isFullScreen' of null
+
+TypeError: Cannot read property 'isFullScreen' of null
+    at C.serializeWindowState (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:290112)
+    at e.toWindowState (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:301867)
+    at e.onBeforeWindowClose (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:301241)
+    at /home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:300167
+    at e.invoke (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:85913)
+    at e.fire (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:87635)
+    at /home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:219653
+    at n.Class.derive._creator.done (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:73411)
+    at Object.v [as _notify] (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:67077)
+    at Object.enter (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:70282)
+[91m[main 8:29:23 AM][0m Error: Cannot read property 'isFullScreen' of null
+
+TypeError: Cannot read property 'isFullScreen' of null
+    at C.serializeWindowState (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:290112)
+    at e.toWindowState (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:301867)
+    at e.onBeforeWindowClose (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:301241)
+    at /home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:300167
+    at e.invoke (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:85913)
+    at e.fire (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:87635)
+    at /home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:219653
+    at n.Class.derive._creator.done (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:73411)
+    at Object.v [as _notify] (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:67077)
+    at Object.enter (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:70282)
+    at Timeout._onTimeout (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:83379)
+    at ontimeout (timers.js:386:14)
+    at tryOnTimeout (timers.js:250:5)
+    at Timer.listOnTimeout (timers.js:214:5)
+    at listOnTimeoutNT (timers.js:276:26)
+    at _combinedTickCallback (internal/process/next_tick.js:77:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+[91m[main 8:29:23 AM][0m [uncaught exception in main]: Error: Cannot read property 'isFullScreen' of null
+
+TypeError: Cannot read property 'isFullScreen' of null
+    at C.serializeWindowState (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:290112)
+    at e.toWindowState (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:301867)
+    at e.onBeforeWindowClose (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:301241)
+    at /home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:300167
+    at e.invoke (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:85913)
+    at e.fire (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:87635)
+    at /home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:219653
+    at n.Class.derive._creator.done (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:73411)
+    at Object.v [as _notify] (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:67077)
+    at Object.enter (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:70282)
+[91m[main 8:29:23 AM][0m Error: Cannot read property 'isFullScreen' of null
+
+TypeError: Cannot read property 'isFullScreen' of null
+    at C.serializeWindowState (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:290112)
+    at e.toWindowState (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:301867)
+    at e.onBeforeWindowClose (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:301241)
+    at /home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:300167
+    at e.invoke (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:85913)
+    at e.fire (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:87635)
+    at /home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:219653
+    at n.Class.derive._creator.done (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:73411)
+    at Object.v [as _notify] (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:67077)
+    at Object.enter (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:70282)
+    at Timeout._onTimeout (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:83379)
+    at ontimeout (timers.js:386:14)
+    at tryOnTimeout (timers.js:250:5)
+    at Timer.listOnTimeout (timers.js:214:5)
+    at listOnTimeoutNT (timers.js:276:26)
+    at _combinedTickCallback (internal/process/next_tick.js:77:11)
+    at Immediate._tickCallback (internal/process/next_tick.js:104:9)
+    at runCallback (timers.js:672:20)
+    at tryOnImmediate (timers.js:645:5)
+    at processImmediate [as _immediateCallback] (timers.js:617:5)
+[91m[main 8:29:23 AM][0m [uncaught exception in main]: Error: Cannot read property 'isFullScreen' of null
+
+TypeError: Cannot read property 'isFullScreen' of null
+    at C.serializeWindowState (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:290112)
+    at e.toWindowState (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:301867)
+    at e.onBeforeWindowClose (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:301241)
+    at /home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:300167
+    at e.invoke (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:85913)
+    at e.fire (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:87635)
+    at /home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:219653
+    at n.Class.derive._creator.done (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:73411)
+    at Object.v [as _notify] (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:67077)
+    at Object.enter (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:70282)
+[91m[main 8:29:23 AM][0m Error: Cannot read property 'isFullScreen' of null
+
+TypeError: Cannot read property 'isFullScreen' of null
+    at C.serializeWindowState (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:290112)
+    at e.toWindowState (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:301867)
+    at e.onBeforeWindowClose (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:301241)
+    at /home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:300167
+    at e.invoke (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:85913)
+    at e.fire (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:87635)
+    at /home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:219653
+    at n.Class.derive._creator.done (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:73411)
+    at Object.v [as _notify] (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:67077)
+    at Object.enter (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:70282)
+    at Timeout._onTimeout (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:83379)
+    at ontimeout (timers.js:386:14)
+    at tryOnTimeout (timers.js:250:5)
+    at Timer.listOnTimeout (timers.js:214:5)
+    at listOnTimeoutNT (timers.js:276:26)
+    at _combinedTickCallback (internal/process/next_tick.js:77:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+[91m[main 8:29:23 AM][0m [uncaught exception in main]: Error: Cannot read property 'isFullScreen' of null
+
+TypeError: Cannot read property 'isFullScreen' of null
+    at C.serializeWindowState (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:290112)
+    at e.toWindowState (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:301867)
+    at e.onBeforeWindowClose (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:301241)
+    at /home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:300167
+    at e.invoke (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:85913)
+    at e.fire (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:87635)
+    at /home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:219653
+    at n.Class.derive._creator.done (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:73411)
+    at Object.v [as _notify] (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:67077)
+    at Object.enter (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:70282)
+[91m[main 8:29:23 AM][0m Error: Cannot read property 'isFullScreen' of null
+
+TypeError: Cannot read property 'isFullScreen' of null
+    at C.serializeWindowState (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:290112)
+    at e.toWindowState (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:301867)
+    at e.onBeforeWindowClose (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:301241)
+    at /home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:300167
+    at e.invoke (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:85913)
+    at e.fire (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:87635)
+    at /home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:219653
+    at n.Class.derive._creator.done (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:73411)
+    at Object.v [as _notify] (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:67077)
+    at Object.enter (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:70282)
+    at Timeout._onTimeout (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:83379)
+    at ontimeout (timers.js:386:14)
+    at tryOnTimeout (timers.js:250:5)
+    at Timer.listOnTimeout (timers.js:214:5)
+    at listOnTimeoutNT (timers.js:276:26)
+    at _combinedTickCallback (internal/process/next_tick.js:77:11)
+    at Immediate._tickCallback (internal/process/next_tick.js:104:9)
+    at runCallback (timers.js:672:20)
+    at tryOnImmediate (timers.js:645:5)
+    at processImmediate (timers.js:617:5)
+[91m[main 8:29:23 AM][0m [uncaught exception in main]: Error: Cannot read property 'isFullScreen' of null
+
+TypeError: Cannot read property 'isFullScreen' of null
+    at C.serializeWindowState (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:290112)
+    at e.toWindowState (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:301867)
+    at e.onBeforeWindowClose (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:301241)
+    at /home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:300167
+    at e.invoke (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:85913)
+    at e.fire (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:87635)
+    at /home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:219653
+    at n.Class.derive._creator.done (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:73411)
+    at Object.v [as _notify] (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:67077)
+    at Object.enter (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:70282)
+[91m[main 8:29:23 AM][0m Error: Cannot read property 'isFullScreen' of null
+
+TypeError: Cannot read property 'isFullScreen' of null
+    at C.serializeWindowState (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:290112)
+    at e.toWindowState (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:301867)
+    at e.onBeforeWindowClose (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:301241)
+    at /home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:300167
+    at e.invoke (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:85913)
+    at e.fire (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:87635)
+    at /home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:219653
+    at n.Class.derive._creator.done (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:73411)
+    at Object.v [as _notify] (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:67077)
+    at Object.enter (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:70282)
+    at Timeout._onTimeout (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:83379)
+    at ontimeout (timers.js:386:14)
+    at tryOnTimeout (timers.js:250:5)
+    at Timer.listOnTimeout (timers.js:214:5)
+    at listOnTimeoutNT (timers.js:276:26)
+    at _combinedTickCallback (internal/process/next_tick.js:77:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)

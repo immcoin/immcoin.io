@@ -6,9 +6,10 @@ block content
             .content-text-container
                 .desc
                     
-                    h1 We are Asia's leading Blockchain enable live Event Organiser, who provides quality education online and offline, through partnering with top experts around the Globe.
+                    h1 We are Asia's leading  enable live Event Organiser, who provides quality education online and offline, through partnering with top experts around the Globe.
                     #countdown
-                        #days.svg.radial-progress
+                    
+                        #day.svg.radial-progress
                             svg(height='10em', width='10em')
                                 circle.radial-progress-background(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
                                 circle.radial-progress-cover(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0")
@@ -33,7 +34,6 @@ block content
                                 circle.radial-progress-cover(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0")
                                 circle.radial-progress-center(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
                                 text(x="50%", y="50%", text-anchor="middle", stroke="#4f4f4f", stroke-width="2px", dy=".3em") SECONDS
-                    button.button.button-opac(type='button') LEARN MORE
                     
         #about.content
         #courses.content
@@ -55,8 +55,12 @@ block content
                 circumference = 2 * radius * Math.PI;
                 
             $(document).ready(function() {
-                var sec = $('#sec');
-                var hour = $('#hour');
+                var sec = new stroker($('#sec'), 60);
+                var min = new stroker($('#min'), 60);
+                var hour = new stroker($('#hour'), 60);
+                var day = new stroker($('#day'), 365);
+             
+                
                 var els = $('circle');
 
                 Array.prototype.forEach.call(els, function (el) {
@@ -65,52 +69,24 @@ block content
                 });
                 document.querySelector('.radial-progress-center').setAttribute('r', (radius - 0.01 + 'em'));
                 
-                new stroker(sec, 60);
+                $('#countdown').countdown("2018/03/31", function(event) {
+                    sec.update(event.strftime('%S'));
+                    min.update(event.strftime('%M'));
+                    hour.update(event.strftime('%H'));
+                    day.update(event.strftime('%D'));
+                });
+
             });
 
             var stroker = function(el, count) {
                 var currentCount = 1, 
                     maxCount = count;
-                
-                var intervalId = setInterval(function () { 
-                    if (currentCount > maxCount) {
-                        clearInterval(intervalId);
-                        return;
-                    }
+
+                this.update = function(data) {
+                    currentCount = data;
                     var offset = -(circumference / maxCount) * currentCount + 'em';
                     el.find('.radial-progress-cover').attr('stroke-dashoffset', offset);
-                    console.log(el.find('.radial-progress-cover'));
-                    currentCount++;
-                }, 1000);
+                    el.find('text').html(data);
+                }
                 
             }
-
-     
-            //- window.onload = function () {
-            //- var radius = 3,
-            //-     circumference = 2 * radius * Math.PI; 
-            
-            //- var els = document.querySelectorAll('circle');
-            //- Array.prototype.forEach.call(els, function (el) {
-            //-     el.setAttribute('stroke-dasharray', circumference + 'em');
-            //-     el.setAttribute('r', radius + 'em');
-            //- });
-            
-            //- document.querySelector('.radial-progress-center').setAttribute('r', (radius - 0.01 + 'em'));
-            
-            //- var currentCount = 1, 
-            //-     maxCount = 20;
-            
-            //- var intervalId = setInterval(function () { 
-            //-     if (currentCount > maxCount) {
-            //-     clearInterval(intervalId);
-            //-     return;
-            //-     }
-            //-     var offset = -(circumference / maxCount) * currentCount + 'em';
-            //-     console.log(currentCount, offset);
-
-            //-     document.querySelector('.radial-progress-cover').setAttribute('stroke-dashoffset', offset);
-                    
-            //-     currentCount++;
-            //- }, 100);
-            //- }; 
