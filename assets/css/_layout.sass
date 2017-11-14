@@ -2,17 +2,28 @@ html, body
     margin : 0
     padding : 0
 
+body
+    background-image: url('/images/content-bg.jpg')
+    background-attachment: fixed
+    background-size: cover
+
 .container-cover
     margin: 0
     padding: 0
 
 
 #navigator 
-    position: absolute
+    position: fixed
     width: 100%
     height: 80px
     z-index: 1
-    // background: rgba(0,0,0,0.5)
+    +smooth-transitions(.5s)
+
+.navigator-invert
+    background: white
+
+.navigator-invert ul li
+    color: #202020
 
 #navigator ul 
     margin: 0
@@ -20,6 +31,7 @@ html, body
     float: right
 
 #navigator ul li
+    +smooth-transitions(.5s)
     display: flex
     transition: .5s
     align-items: center
@@ -28,8 +40,7 @@ html, body
     float: left
     padding: 0px 20px
     height: 80px
-    color: #ffffff
-    // color: $primary
+    color: white
     font-size: 14px
     font-family: quicksand
     font-weight: bold
@@ -43,23 +54,25 @@ html, body
     width: 300px
     left: 100px
     height: 80px
+    padding: 2%
     +flex-center-content
 
 #logo img
     width: 100%
 
+.angled-container
+    margin: 11% auto
 // b o d y
-h1 
-    display: block
+
 .content
     +relative
     width: 100%
-    height: 100vh
-    // margin-top: -11.2%
+    min-height: 100vh
     &-angled
         @extend .content
         clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%)
         -webkit-clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%)
+
     &-text-container
         +flex-center-content
         position: absolute !important
@@ -69,23 +82,27 @@ h1
         height: 100%
 
 .content-text-container .desc
-    width: 1200px
+    width: 70%
+
+.col-container
+    +flex-center-content
 
 #landing
-    position: relative
-    // background: #2d8ac4
-    // background: #a3a3a3
-    background: $bg-drk-gry
     margin-top: 0
+    position: relative
+    background: $background
     clip-path: polygon(0 0, 100% 0, 100% 77%, 0 100%)
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 77%, 0 100%)
 
-#about
-    background: #ffffff
+#profit
+    +flex-center-content
+    flex-direction: column
+    position: relative
+    // background: #ffffff
     clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%)
     -webkit-clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%)
-       
-#courses
+    
+#timeline
     background: #2d8ac4
     clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%)
     -webkit-clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%)
@@ -96,18 +113,14 @@ h1
     clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%)
     -webkit-clip-path: polygon(0 23%, 100% 0, 100% 100%, 0 100%)
 
-
-// #iphone
-//     +relative
-//     left: 20%
-//     top: 20%
-
-// #home .content
-//     +relative
-//     top: -23%
-
 #countdown 
     +flex-center-content
+
+.content-container
+    position: relative
+    background: red
+    width: 100%
+    
 
 // B U T T O N   D E S I G N
 
@@ -141,7 +154,7 @@ circle
     
 .radial-progress-cover 
     // stroke: #DEDEDE
-    stroke: $primary
+    stroke: $secondary
     stroke-width: 2.01em
 
 svg text
@@ -158,4 +171,14 @@ svg text
     left: 50%
     transform: translate(-50%, -50%)
 
+
+// util
+
+.separator
+    display: block
+    position: relative
+    margin: 2% auto
+    width: 120px
+    height: 2px
+    background: #202020
 

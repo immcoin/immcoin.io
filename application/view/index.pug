@@ -1,11 +1,10 @@
 extends ./partials/layout 
 block content
     #home.container-cover
+        include ./partials/header
         #landing.content
-            include ./partials/header
             .content-text-container
                 .desc
-                    
                     h1 We are Asia's leading  enable live Event Organiser, who provides quality education online and offline, through partnering with top experts around the Globe.
                     #countdown
                     
@@ -14,79 +13,81 @@ block content
                                 circle.radial-progress-background(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
                                 circle.radial-progress-cover(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0")
                                 circle.radial-progress-center(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
-                                text( x="50%", y="50%", text-anchor="middle", stroke="#4f4f4f", stroke-width="2px", dy=".3em") DAYS
+                                text( x="50%", y="50%", text-anchor="middle", stroke="#4f4f4f", stroke-width="2px", dy=".3em") 
+                                    tspan.time(dy='1.2em', x='50%', y="25%")
+                                    tspan.unit(dy='1.2em', x='50%', y="50%")
                         #hour.svg.radial-progress
                             svg(height='10em', width='10em')
                                 circle.radial-progress-background(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
                                 circle.radial-progress-cover(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0")
                                 circle.radial-progress-center(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
-                                text( x="50%", y="50%", text-anchor="middle", stroke="#4f4f4f", stroke-width="2px", dy=".3em") HOURS
+                                text( x="50%", y="50%", text-anchor="middle", stroke="#4f4f4f", stroke-width="2px", dy=".3em") 
+                                    tspan.time(dy='1.2em', x='50%', y="25%")
+                                    tspan.unit(dy='1.2em', x='50%', y="50%")
                         #min.svg.radial-progress
                             svg(height='10em', width='10em')
                                 circle.radial-progress-background(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
                                 circle.radial-progress-cover(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0")
                                 circle.radial-progress-center(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
-                                text( x="50%", y="50%", text-anchor="middle", stroke="#4f4f4f", stroke-width="2px", dy=".3em") MINUTES
+                                text( x="50%", y="50%", text-anchor="middle", stroke="#4f4f4f", stroke-width="2px", dy=".3em") 
+                                    tspan.time(dy='1.2em', x='50%', y="25%")
+                                    tspan.unit(dy='1.2em', x='50%', y="50%")
                             
                         #sec.svg.radial-progress
                             svg(height='10em', width='10em')
                                 circle.radial-progress-background(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
                                 circle.radial-progress-cover(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0")
                                 circle.radial-progress-center(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
-                                text(x="50%", y="50%", text-anchor="middle", stroke="#4f4f4f", stroke-width="2px", dy=".3em") SECONDS
-                    
-        #about.content
-        #courses.content
+                                text(x="50%", y="50%", text-anchor="middle", stroke="#4f4f4f", stroke-width="2px", dy=".3em")
+                                    tspan.time(dy='1.2em', x='50%', y="25%")
+                                    tspan.unit(dy='1.2em', x='50%', y="50%")
+                                
+        #profit.content
+            .angled-container
+                h1 PROFIT FROM IMC IN 4 DIFFERENT WAYS
+                .separator
+                .row
+                    .col-sm-3
+                        .col-container
+                            .card(style='width: 20em')
+                                img.card-img-top(src="",)
+                                .card-block
+                                    h4.card-title TITLE HERE
+                                    p.card-text Lorem ipsum kemefdsafsdafdsafsdafdsafdsa fdsaf dsaf sad fsa keme kfdasfsdafsafsafsadfsad sdf sadf sadf sadfsda fdsa eme 48 years Mike urky chipipay balaj sangkatuts kasi at buya ng na ng juts na ang juts bakit kemerloo dites ganda lang na ang tetetet.
+                    .col-sm-3
+                        .col-container
+                            .card(style='width: 20em')
+                                img.card-img-top(src="",)
+                                .card-block
+                                    h4.card-title TITLE HERE
+                                    p.card-text Lorem ipsum keme keme keme 48 years Mike urky chipipay balaj sangkatuts kasi at buya ng na ng juts na ang juts bakit kemerloo dites ganda lang na ang tetetet.
+                    .col-sm-3
+                        .col-container
+                            .card(style='width: 20em')
+                                img.card-img-top(src="",)
+                                .card-block
+                                    h4.card-title TITLE HERE
+                                    p.card-text Lorem ipsum keme keme keme 48 years Mike urky chipipay balaj sangkatuts kasi at buya ng na ng juts na ang juts bakit kemerloo dites ganda lang na ang tetetet.
+                    .col-sm-3
+                        .col-container
+                            .card(style='width: 20em')
+                                img.card-img-top(src="",)
+                                .card-block
+                                    h4.card-title TITLE HERE
+                                    p.card-text Lorem ipsum keme keme keme 48 years Mike urky chipipay balaj sangkatuts kasi at buya ng na ng juts na ang juts bakit kemerloo dites ganda lang na ang tetetet.
         
-        .content.red
+        #timeline.content
+            
+        
+        #team.content
+
+        #about.content
         
         #footer.content
-        script(src='/jquery/dist/jquery.min.js')
-        script(src='/tether/dist/js/tether.js')
-        script(src='/bootstrap/dist/js/bootstrap.min.js')
+
+        include ./partials/footer 
         script(src='/js/particles.min.js')
         script(src='/js/jquery.countdown.min.js')
-        script.
-            particlesJS.load('landing', '/particles.json', function() {
-                console.log('nodes generated...');
-            });
+        script(src='/js/jquery.bgswitcher.js')
+        script(src='/js/index.js')
             
-            var radius = 3,
-                circumference = 2 * radius * Math.PI;
-                
-            $(document).ready(function() {
-                var sec = new stroker($('#sec'), 60);
-                var min = new stroker($('#min'), 60);
-                var hour = new stroker($('#hour'), 60);
-                var day = new stroker($('#day'), 365);
-             
-                
-                var els = $('circle');
-
-                Array.prototype.forEach.call(els, function (el) {
-                    el.setAttribute('stroke-dasharray', circumference + 'em');
-                    el.setAttribute('r', radius + 'em');
-                });
-                document.querySelector('.radial-progress-center').setAttribute('r', (radius - 0.01 + 'em'));
-                
-                $('#countdown').countdown("2018/03/31", function(event) {
-                    sec.update(event.strftime('%S'));
-                    min.update(event.strftime('%M'));
-                    hour.update(event.strftime('%H'));
-                    day.update(event.strftime('%D'));
-                });
-
-            });
-
-            var stroker = function(el, count) {
-                var currentCount = 1, 
-                    maxCount = count;
-
-                this.update = function(data) {
-                    currentCount = data;
-                    var offset = -(circumference / maxCount) * currentCount + 'em';
-                    el.find('.radial-progress-cover').attr('stroke-dashoffset', offset);
-                    el.find('text').html(data);
-                }
-                
-            }
