@@ -1,89 +1,75 @@
 extends ./partials/layout 
 block content
-    #home.container-cover
+    #home
         include ./partials/header
-        #landing.content
-            .content-text-container
-                .desc
-                    h1 We are Asia's leading  enable live Event Organiser, who provides quality education online and offline, through partnering with top experts around the Globe.
-                    #countdown
-                    
-                        #day.svg.radial-progress
-                            svg(height='10em', width='10em')
-                                circle.radial-progress-background(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
-                                circle.radial-progress-cover(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0")
-                                circle.radial-progress-center(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
-                                text( x="50%", y="50%", text-anchor="middle", stroke="#4f4f4f", stroke-width="2px", dy=".3em") 
-                                    tspan.time(dy='1.2em', x='50%', y="25%")
-                                    tspan.unit(dy='1.2em', x='50%', y="50%")
-                        #hour.svg.radial-progress
-                            svg(height='10em', width='10em')
-                                circle.radial-progress-background(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
-                                circle.radial-progress-cover(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0")
-                                circle.radial-progress-center(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
-                                text( x="50%", y="50%", text-anchor="middle", stroke="#4f4f4f", stroke-width="2px", dy=".3em") 
-                                    tspan.time(dy='1.2em', x='50%', y="25%")
-                                    tspan.unit(dy='1.2em', x='50%', y="50%")
-                        #min.svg.radial-progress
-                            svg(height='10em', width='10em')
-                                circle.radial-progress-background(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
-                                circle.radial-progress-cover(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0")
-                                circle.radial-progress-center(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
-                                text( x="50%", y="50%", text-anchor="middle", stroke="#4f4f4f", stroke-width="2px", dy=".3em") 
-                                    tspan.time(dy='1.2em', x='50%', y="25%")
-                                    tspan.unit(dy='1.2em', x='50%', y="50%")
-                            
-                        #sec.svg.radial-progress
-                            svg(height='10em', width='10em')
-                                circle.radial-progress-background(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
-                                circle.radial-progress-cover(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0")
-                                circle.radial-progress-center(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
-                                text(x="50%", y="50%", text-anchor="middle", stroke="#4f4f4f", stroke-width="2px", dy=".3em")
-                                    tspan.time(dy='1.2em', x='50%', y="25%")
-                                    tspan.unit(dy='1.2em', x='50%', y="50%")
+        #landing.bottom-clip.content
+                .content-text-container
+                    .desc
+                        h1 We are Asia's leading  enable live Event Organiser, who provides quality education online and offline, through partnering with top experts around the Globe.
+                        #countdown.row
+                            .col-md-3
+                                #day.svg.radial-progress
+                                    svg(height='10em', width='10em')
+                                        circle.radial-progress-background(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
+                                        circle.radial-progress-cover(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0")
+                                        circle.radial-progress-center(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
+                                        text( x="50%", y="50%", text-anchor="middle", stroke="#4f4f4f", stroke-width="2px", dy=".3em") 
+                                            tspan.time(dy='1.2em', x='50%', y="25%")
+                                            tspan.unit(dy='1.2em', x='50%', y="50%")
+                            .col-md-3
+                                #hour.svg.radial-progress
+                                    svg(height='10em', width='10em')
+                                        circle.radial-progress-background(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
+                                        circle.radial-progress-cover(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0")
+                                        circle.radial-progress-center(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
+                                        text( x="50%", y="50%", text-anchor="middle", stroke="#4f4f4f", stroke-width="2px", dy=".3em") 
+                                            tspan.time(dy='1.2em', x='50%', y="25%")
+                                            tspan.unit(dy='1.2em', x='50%', y="50%")
+                            .col-md-3
+                                #min.svg.radial-progress
+                                    svg(height='10em', width='10em')
+                                        circle.radial-progress-background(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
+                                        circle.radial-progress-cover(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0")
+                                        circle.radial-progress-center(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
+                                        text( x="50%", y="50%", text-anchor="middle", stroke="#4f4f4f", stroke-width="2px", dy=".3em") 
+                                            tspan.time(dy='1.2em', x='50%', y="25%")
+                                            tspan.unit(dy='1.2em', x='50%', y="50%")
+                            .col-md-3
+                                #sec.svg.radial-progress
+                                    svg(height='10em', width='10em')
+                                        circle.radial-progress-background(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
+                                        circle.radial-progress-cover(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0")
+                                        circle.radial-progress-center(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
+                                        text(x="50%", y="50%", text-anchor="middle", stroke="#4f4f4f", stroke-width="2px", dy=".3em")
+                                            tspan.time(dy='1.2em', x='50%', y="25%")
+                                            tspan.unit(dy='1.2em', x='50%', y="50%")
                                 
-        #profit.content
+        #profit.mid-clip.content
             .angled-container
                 h1 PROFIT FROM IMC IN 4 DIFFERENT WAYS
                 .separator
                 .row
-                    .col-sm-3
-                        .col-container
-                            .card(style='width: 20em')
-                                img.card-img-top(src="",)
-                                .card-block
-                                    h4.card-title TITLE HERE
-                                    p.card-text Lorem ipsum kemefdsafsdafdsafsdafdsafdsa fdsaf dsaf sad fsa keme kfdasfsdafsafsafsadfsad sdf sadf sadf sadfsda fdsa eme 48 years Mike urky chipipay balaj sangkatuts kasi at buya ng na ng juts na ang juts bakit kemerloo dites ganda lang na ang tetetet.
-                    .col-sm-3
-                        .col-container
-                            .card(style='width: 20em')
-                                img.card-img-top(src="",)
-                                .card-block
-                                    h4.card-title TITLE HERE
-                                    p.card-text Lorem ipsum keme keme keme 48 years Mike urky chipipay balaj sangkatuts kasi at buya ng na ng juts na ang juts bakit kemerloo dites ganda lang na ang tetetet.
-                    .col-sm-3
-                        .col-container
-                            .card(style='width: 20em')
-                                img.card-img-top(src="",)
-                                .card-block
-                                    h4.card-title TITLE HERE
-                                    p.card-text Lorem ipsum keme keme keme 48 years Mike urky chipipay balaj sangkatuts kasi at buya ng na ng juts na ang juts bakit kemerloo dites ganda lang na ang tetetet.
-                    .col-sm-3
-                        .col-container
-                            .card(style='width: 20em')
-                                img.card-img-top(src="",)
-                                .card-block
-                                    h4.card-title TITLE HERE
-                                    p.card-text Lorem ipsum keme keme keme 48 years Mike urky chipipay balaj sangkatuts kasi at buya ng na ng juts na ang juts bakit kemerloo dites ganda lang na ang tetetet.
-        
-        #timeline.content
+                    each val in data
+                        .col-sm-3
+                            .col-container
+                                .card(style='width: 20em')
+                                    .card-block
+                                        h4.card-title= val.title
+                                        p.card-text= val.content
+        #whyIMM.mid-clip.content
+            .angled-container
+                h1 WHY IMM COIN
+                .separator
+                
+        #timeline.mid-clip.content
+
             
         
-        #team.content
+        #team.mid-clip.content
 
-        #about.content
+        #about.mid-clip.content
         
-        #footer.content
+        #footer.top-clip.content
 
         include ./partials/footer 
         script(src='/js/particles.min.js')

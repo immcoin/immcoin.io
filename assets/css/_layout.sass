@@ -1,26 +1,26 @@
 html, body
     margin : 0
     padding : 0
-
 body
     background-image: url('/images/content-bg.jpg')
     background-attachment: fixed
     background-size: cover
 
-.container-cover
-    margin: 0
-    padding: 0
-
+#home 
+    overflow-x: hidden
 
 #navigator 
     position: fixed
     width: 100%
     height: 80px
-    z-index: 1
+    z-index: 99
     +smooth-transitions(.5s)
 
+.navigator ul li 
+    color: white 
+
 .navigator-invert
-    background: white
+    background: rgba(255, 255, 255, 0.8)
 
 .navigator-invert ul li
     color: #202020
@@ -29,6 +29,7 @@ body
     margin: 0
     list-style: none
     float: right
+    
 
 #navigator ul li
     +smooth-transitions(.5s)
@@ -40,13 +41,15 @@ body
     float: left
     padding: 0px 20px
     height: 80px
-    color: white
     font-size: 14px
     font-family: quicksand
     font-weight: bold
     letter-spacing: 2px
     &:hover
         color: #42d1f4
+
+#navigator ul li.whitepaper
+    background: rgba(200,200,200,1)
 
 #navigator #logo
     position: relative
@@ -61,64 +64,78 @@ body
     width: 100%
 
 .angled-container
+    display: block
     margin: 11% auto
+    top: 20%
 // b o d y
 
 .content
-    +relative
-    width: 100%
+    +flex-center-content
+    width: 100% 
     min-height: 100vh
     &-angled
         @extend .content
         clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%)
         -webkit-clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%)
-
     &-text-container
         +flex-center-content
-        position: absolute !important
+        position: relative
+        z-index:  1
         flex-direction: column
         margin-top: 0px
         width: 100%
         height: 100%
 
+#landing canvas
+    position: absolute
+    z-index: 0
+    float: left
+    
 .content-text-container .desc
+    position: relative
     width: 70%
 
 .col-container
     +flex-center-content
 
+.top-clip
+    clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%)
+    -webkit-clip-path: polygon(0 23%, 100% 0, 100% 100%, 0 100%)
+
+.mid-clip
+    clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%)
+    -webkit-clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%)
+
+.bottom-clip
+    clip-path: polygon(0 0, 100% 0, 100% 77%, 0 100%)
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 77%, 0 100%)
+
 #landing
     margin-top: 0
     position: relative
     background: $background
-    clip-path: polygon(0 0, 100% 0, 100% 77%, 0 100%)
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 77%, 0 100%)
 
 #profit
-    +flex-center-content
     flex-direction: column
     position: relative
-    // background: #ffffff
-    clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%)
-    -webkit-clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%)
+
+#whyIMM 
+    background: #2d8ac4
     
 #timeline
-    background: #2d8ac4
-    clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%)
-    -webkit-clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%)
     
 #footer
     position: relative
     background: #202020
-    clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%)
-    -webkit-clip-path: polygon(0 23%, 100% 0, 100% 100%, 0 100%)
 
 #countdown 
     +flex-center-content
+    
+.row .col-md-3
+    text-align: center
 
 .content-container
     position: relative
-    background: red
     width: 100%
     
 
@@ -141,7 +158,8 @@ body
     display: inline-block 
 
 svg 
-    // transform: rotate(270deg)   
+    // transform: rotate(270deg) 
+    margin: 0px 10px 
 
 circle 
     stroke-width: 2em
@@ -181,4 +199,3 @@ svg text
     width: 120px
     height: 2px
     background: #202020
-

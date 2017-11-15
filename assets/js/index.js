@@ -46,10 +46,12 @@ $(document).ready(function() {
     $window.on('scroll', function() {
         if($window.scrollTop() > 80){
             $('#logo-src').attr("src", logoImg[1]);
+            $('#navigator').removeClass('navigator');
             $('#navigator').addClass('navigator-invert');
         }
         else if($window.scrollTop() < 80){
             $('#logo-src').attr("src", logoImg[0]).fadeTo(1000);
+            $('#navigator').addClass('navigator');
             $('#navigator').removeClass('navigator-invert');
         }
         secIden($('#profit'), 'profit', 0);
