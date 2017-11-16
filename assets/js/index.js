@@ -6,9 +6,10 @@ var radius = 3,
     circumference = 2 * radius * Math.PI;
     
 $(document).ready(function() {
+    $("html, body").animate({ scrollTop: 0 }, 2000, "expoinout");
     var $window = $(window);
     var curr = 'landing';
-
+    var nav = $('#navigator');
     var sec = new stroker($('#sec'), 60);
     var min = new stroker($('#min'), 60);
     var hour = new stroker($('#hour'), 60);
@@ -33,10 +34,9 @@ $(document).ready(function() {
     var bgImages = ["/images/content-bg.jpg", "/images/nebula-bg.jpg"];
     var logoImg = ['/images/immcoinlogo-white.png','/images/immcoinlogo.png'];
 
-    preloadImages(logoImg);
-    preloadImages(bgImages);
+    // preloadImages(logoImg);
+    // preloadImages(bgImages);
 
-   
     var $el = $("body").bgswitcher({
         images: ["/images/content-bg.jpg", "/images/nebula-bg.jpg"],
         start: false,
@@ -44,15 +44,15 @@ $(document).ready(function() {
     });
 
     $window.on('scroll', function() {
-        if($window.scrollTop() > 80){
+        if($window.scrollTop() > 80 && nav.hasClass('navigator')){
             $('#logo-src').attr("src", logoImg[1]);
-            $('#navigator').removeClass('navigator');
-            $('#navigator').addClass('navigator-invert');
+            nav.removeClass('navigator');
+            nav.addClass('navigator-invert');
         }
-        else if($window.scrollTop() < 80){
+        else if($window.scrollTop() < 80 && nav.hasClass('navigator-invert')){
             $('#logo-src').attr("src", logoImg[0]).fadeTo(1000);
-            $('#navigator').addClass('navigator');
-            $('#navigator').removeClass('navigator-invert');
+            nav.addClass('navigator');
+            nav.removeClass('navigator-invert');
         }
         secIden($('#profit'), 'profit', 0);
         secIden($('#timeline'), 'timeline', 1);        
@@ -64,7 +64,6 @@ $(document).ready(function() {
             curr = sec;
         }
     }
-
 });
 
 var stroker = function(el, count) {
@@ -79,19 +78,24 @@ var stroker = function(el, count) {
     }
 }
 
-function preloadImages(array) {
-    if (!preloadImages.list) preloadImages.list = [];
-    var list = preloadImages.list;
-    for (var i = 0; i < array.length; i++) {
-        var img = new Image();
-        img.onload = function() {
-            var index = list.indexOf(this);
-            if (index !== -1) list.splice(index, 1);
-        }
-        list.push(img);
-        img.src = array[i];
-    }
-}
+// function preloadImages(array) {
+//     if (!preloadImages.list) preloadImages.list = [];
+//     var list = preloadImages.list;
+//     for (var i = 0; i < array.length; i++) {
+//         var img = new Image();
+//         img.onload = function() {
+//             var index = list.indexOf(this);
+//             if (index !== -1) list.splice(index, 1);
+//         }
+//         list.push(img);
+//         img.src = array[i];
+//     }
+// }
 
-            
-
+$("#navigator a").click(function () {
+    $('#navigator a').removeClass('active');
+    $(this).addClass('active');
+    var target = $(this).attr('data-id');
+    $("html, body").animate({ scrollTop: $(target).offset().top }, 2000, "expoinout");
+    return false;
+});
