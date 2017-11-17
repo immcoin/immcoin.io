@@ -123,6 +123,9 @@ body
     background: #2d8ac4
     
 #timeline
+
+#team
+    background: #2d8ac4
     
 #footer
     position: relative
@@ -139,7 +142,7 @@ body
     width: 100%
     
 
-// B U T T O N   D E S I G N
+// // B U T T O N   D E S I G N
 
 .button
     padding: 8px 35px
@@ -153,43 +156,6 @@ body
             background: white 
             color: black
 
-.svg.radial-progress 
-    position: relative
-    display: inline-block 
-
-svg 
-    // transform: rotate(270deg) 
-    margin: 0px 10px 
-
-circle 
-    stroke-width: 2em
-    fill: transparent
-    transform: rotate(0.1deg)
-    
-
-.radial-progress-background 
-    stroke: #DEDEDE
-    
-.radial-progress-cover 
-    // stroke: #DEDEDE
-    stroke: $secondary
-    stroke-width: 2.01em
-
-svg text
-    font-size: 2em
-    font-family: quicksand
-    font-color: #4f4f4f
-
-.radial-progress-center 
-    fill: #CCC
-
-.radial-fill 
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-
-
 // util
 
 .separator
@@ -199,3 +165,94 @@ svg text
     width: 120px
     height: 2px
     background: #202020
+
+// team
+.team-card-container
+    width: 24%
+    text-align: center
+    margin: 1%
+
+.team-img-container
+    width: 100%
+    padding: 5%
+
+.team-name
+    color: white
+    font-family: quicksand
+
+.team-position
+    color: rgba(200, 200, 200, 1)
+    font-family: quicksand
+    font-size: 11px
+
+.team-description
+    color: rgba(220, 220, 220, 1)
+    font-family: "Segoe UI Regular"
+    font-size: 12px
+    padding: 5% 2%
+    text-align: center
+
+.team-img-container:hover img 
+    transform: scale(1.1)
+
+.img-container
+    display: block
+    position: relative  
+    border-radius: 50%
+    overflow: hidden
+    border: 2px solid white
+
+
+.team-img-container img
+    position: relative
+    width: 100%
+    +smooth-transitions(.5s)
+
+.red
+    background: red
+
+
+// new clock
+
+svg
+    display: block
+    margin: auto
+    height: 170px
+    width: 170px
+    
+#countdown svg circle
+    fill: transparent 
+    stroke-linecap: round
+    transform: rotate(-90deg)
+    transform-origin: 50% 50%
+    // transition: 1.5s
+
+#countdown svg .cover
+    stroke: $secondary
+    stroke-width: 5px
+
+#countdown svg .outline 
+    stroke: #DEDEDE
+    stroke-width: 1px
+
+#countdown svg text 
+    fill: white
+    font-weight: bold
+    text-anchor: middle
+    font-family: "Verdana"
+    font-size: 12px
+
+text tspan.time
+    font-size: 20px
+text tspan.unit
+    display: block
+    font-size: 15px
+
+.fl
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+
+.fl .fl-itm
+    width: 23%
+    flex-grow: 1

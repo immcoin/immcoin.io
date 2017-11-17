@@ -148,6 +148,9 @@ body {
 #whyIMM {
   background: #2d8ac4; }
 
+#team {
+  background: #2d8ac4; }
+
 #footer {
   position: relative;
   background: #202020; }
@@ -182,39 +185,6 @@ body {
       background: white;
       color: black; }
 
-.svg.radial-progress {
-  position: relative;
-  display: inline-block; }
-
-svg {
-  margin: 0px 10px; }
-
-circle {
-  stroke-width: 2em;
-  fill: transparent;
-  transform: rotate(0.1deg); }
-
-.radial-progress-background {
-  stroke: #DEDEDE; }
-
-.radial-progress-cover {
-  stroke: #0bb5ff;
-  stroke-width: 2.01em; }
-
-svg text {
-  font-size: 2em;
-  font-family: quicksand;
-  font-color: #4f4f4f; }
-
-.radial-progress-center {
-  fill: #CCC; }
-
-.radial-fill {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
 .separator {
   display: block;
   position: relative;
@@ -222,6 +192,96 @@ svg text {
   width: 120px;
   height: 2px;
   background: #202020; }
+
+.team-card-container {
+  width: 24%;
+  text-align: center;
+  margin: 1%; }
+
+.team-img-container {
+  width: 100%;
+  padding: 5%; }
+
+.team-name {
+  color: white;
+  font-family: quicksand; }
+
+.team-position {
+  color: #c8c8c8;
+  font-family: quicksand;
+  font-size: 11px; }
+
+.team-description {
+  color: gainsboro;
+  font-family: "Segoe UI Regular";
+  font-size: 12px;
+  padding: 5% 2%;
+  text-align: center; }
+
+.team-img-container:hover img {
+  transform: scale(1.1); }
+
+.img-container {
+  display: block;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid white; }
+
+.team-img-container img {
+  position: relative;
+  width: 100%;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+.red {
+  background: red; }
+
+svg {
+  display: block;
+  margin: auto;
+  height: 170px;
+  width: 170px; }
+
+#countdown svg circle {
+  fill: transparent;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%; }
+
+#countdown svg .cover {
+  stroke: #0bb5ff;
+  stroke-width: 5px; }
+
+#countdown svg .outline {
+  stroke: #DEDEDE;
+  stroke-width: 1px; }
+
+#countdown svg text {
+  fill: white;
+  font-weight: bold;
+  text-anchor: middle;
+  font-family: "Verdana";
+  font-size: 12px; }
+
+text tspan.time {
+  font-size: 20px; }
+
+text tspan.unit {
+  display: block;
+  font-size: 15px; }
+
+.fl {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.fl .fl-itm {
+  width: 23%;
+  flex-grow: 1; }
 
 #landing h1 {
   font-size: 35px;
@@ -237,12 +297,7 @@ svg text {
 tspan.unit {
   font-size: .5em; }
 
-#profit h1 {
-  text-align: center;
-  font-family: quicksand;
-  font-weight: bold; }
-
-#timeline h1 {
+.angled-container h1.title {
   text-align: center;
   font-family: quicksand;
   font-weight: bold; }
@@ -259,6 +314,10 @@ tspan.unit {
     clip-path: none;
     -webkit-clip-path: none; } }
 
+@media only screen and (max-device-width: 1000px), screen and (max-width: 1000px) {
+  .fl .fl-itm {
+    width: 48%; } }
+
 @media only screen and (max-device-width: 800px), screen and (max-width: 800px) {
   #landing h1 {
     font-size: 25px; }
@@ -270,7 +329,14 @@ tspan.unit {
     -webkit-clip: none; }
   .mid-clip {
     clip: none;
-    -webkit-clip: none; } }
+    -webkit-clip: none; }
+  .content-text-container {
+    margin-top: 30%;
+    margin-bottom: 20%; } }
+
+@media only screen and (max-device-width: 600px), screen and (max-width: 600px) {
+  .fl .fl-itm {
+    width: 100%; } }
 
 @media only screen and (max-width: 300px) {
   #landing h1 {

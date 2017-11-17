@@ -6,29 +6,22 @@ var radius = 3,
     circumference = 2 * radius * Math.PI;
     
 $(document).ready(function() {
-    $("html, body").animate({ scrollTop: 0 }, 2000, "expoinout");
+    // $("html, body").animate({ scrollTop: 0 }, 2000, "expoinout");
     var $window = $(window);
     var curr = 'landing';
     var nav = $('#navigator');
-    var sec = new stroker($('#sec'), 60);
-    var min = new stroker($('#min'), 60);
-    var hour = new stroker($('#hour'), 60);
-    var day = new stroker($('#day'), 365);
 
+    var sec = new timeOffset($('#sec'), 60, 'SECONDS');
+    var min = new timeOffset($('#min'), 60, 'MINUTES');
+    var hour = new timeOffset($('#hour'), 60, 'HOURS');
+    var day = new timeOffset($('#day'), 60, 'DAYS');
     var els = $('circle');
 
-    Array.prototype.forEach.call(els, function (el) {
-        el.setAttribute('stroke-dasharray', circumference + 'em');
-        el.setAttribute('r', radius + 'em');
-    });
-
-    document.querySelector('.radial-progress-center').setAttribute('r', (radius - 0.01 + 'em'));
-    
     $('#countdown').countdown("2018/03/31", function(event) {
-        sec.update(event.strftime('%S'), "SECONDS");
-        min.update(event.strftime('%M'), "MINUTES");
-        hour.update(event.strftime('%H'), "HOURS");
-        day.update(event.strftime('%D'), "DAYS");
+        sec.progress(event.strftime('%S'));
+        min.progress(event.strftime('%M'));
+        hour.progress(event.strftime('%H'));
+        day.progress(event.strftime('%D'));
     });
 
     var bgImages = ["/images/content-bg.jpg", "/images/nebula-bg.jpg"];
@@ -78,20 +71,6 @@ var stroker = function(el, count) {
     }
 }
 
-// function preloadImages(array) {
-//     if (!preloadImages.list) preloadImages.list = [];
-//     var list = preloadImages.list;
-//     for (var i = 0; i < array.length; i++) {
-//         var img = new Image();
-//         img.onload = function() {
-//             var index = list.indexOf(this);
-//             if (index !== -1) list.splice(index, 1);
-//         }
-//         list.push(img);
-//         img.src = array[i];
-//     }
-// }
-
 $("#navigator a").click(function () {
     $('#navigator a').removeClass('active');
     $(this).addClass('active');
@@ -99,3 +78,19 @@ $("#navigator a").click(function () {
     $("html, body").animate({ scrollTop: $(target).offset().top }, 2000, "expoinout");
     return false;
 });
+
+var timeOffset = function(el, count, unit) {
+    var radius = 60,
+        progressValue = el.find('.cover'),
+        CIRCUMFERENCE = 2 * Math.PI * radius,
+        diff = 100/count;
+    this.progress = function(time) {
+        var val = (count - time) * diff;
+        var prog = val/100;
+        var offset = CIRCUMFERENCE * (1 - prog);
+        el.find('text tspan.time').html(time);
+        el.find('text tspan.unit').html(unit);
+        progressValue[0].style.strokeDashoffset = offset;
+    }
+    progressValue[0].style.strokeDasharray = CIRCUMFERENCE;
+}

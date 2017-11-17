@@ -1,0 +1,56 @@
+[
+    
+    {
+        "name" : "ROBERT W",
+        "position" : "CEO",
+        "description" : "Mr. Robert is the CEO of IMM Coin, responsible for i-MM’s strategic planning, investments and business operations in the Global Market. He is successfully managing a trading portfolio of $20 million in dollar Forex Market in the last 7 years and in Crypto currency trade since 2014. He is investing in early stage technology companies and real estate in various places.", 
+        "links" : {
+            "facebook" : "",
+            "gmail" : "",
+            "twitter" : "",
+            "linked in" : ""
+        },
+        "image" : "/images/members/robert.jpg"
+    },
+    {
+        "name" : "Aizza Carido",
+        "position" : "CHIEF BUSINESS DEVELOPMENT OFFICER",
+        "description" : ""
+    },
+    {
+        "name" : "LOUISE SALAS",
+        "position" : "LEAD DEVELOPER",
+        "description" : " Louise is an experienced blockchain and web developer. He created his first program in c++ at the age of 17. He is a recognized programmer in his alma mater and has received numerous amounts of recognition for his exemplary programming skills. He also kicks ass in Mobile Legends 24/7.",
+        "links" : {
+            "facebook" : "",
+            "gmail" : "",
+            "twitter" : "",
+            "linked in" : ""
+        },
+        "image" : "/images/members/louise.jpg"
+    },
+    {
+        "name" : "JONEIL AYING",
+        "position" : "HEAD I.T. SPECIALIST",
+        "description" : " Joneil is a strong independent woman who is capable of running a business just like how she runs her kids in a sunday morning. Joneil is one of the creators of vue js and has contributed his insights in the development of Ubuntu's new Iteration zesty zapus 17.04. ", 
+        "links" : {
+            "facebook" : "",
+            "gmail" : "",
+            "twitter" : "",
+            "linked in" : ""
+        },
+        "image" : "/images/members/joneil.jpg"
+    },
+    {
+        "name" : "RAY",
+        "position" : " WEB ARTISAN ",
+        "description" : " RAY is a gaming expert with more than 8 years of experience in PC and Console Games. Over the last year Ray has been focusing in binge playing MOBA games and marathoning classic movies. He occationally performs the Haka before playing ranked matches.  HE SHITS YOU NOT.",
+        "links" : {
+            "facebook" : "",
+            "gmail" : "",
+            "twitter" : "",
+            "linked in" : ""
+        },
+        "image" : "/images/members/adrian.jpg"
+    }
+]

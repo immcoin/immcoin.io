@@ -6,47 +6,39 @@ block content
                 .content-text-container
                     .desc.container
                         h1 We are Asia's leading  enable live Event Organiser, who provides quality education online and offline, through partnering with top experts around the Globe.
-                        #countdown.row
-                            .col-lg-3
-                                #day.svg.radial-progress
-                                    svg(height='10em', width='10em')
-                                        circle.radial-progress-background(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
-                                        circle.radial-progress-cover(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0")
-                                        circle.radial-progress-center(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
-                                        text( x="50%", y="50%", text-anchor="middle", stroke="#4f4f4f", stroke-width="2px", dy=".3em") 
-                                            tspan.time(dy='1.2em', x='50%', y="25%")
-                                            tspan.unit(dy='1.2em', x='50%', y="50%")
-                            .col-lg-3
-                                #hour.svg.radial-progress
-                                    svg(height='10em', width='10em')
-                                        circle.radial-progress-background(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
-                                        circle.radial-progress-cover(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0")
-                                        circle.radial-progress-center(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
-                                        text( x="50%", y="50%", text-anchor="middle", stroke="#4f4f4f", stroke-width="2px", dy=".3em") 
-                                            tspan.time(dy='1.2em', x='50%', y="25%")
-                                            tspan.unit(dy='1.2em', x='50%', y="50%")
-                            .col-lg-3
-                                #min.svg.radial-progress
-                                    svg(height='10em', width='10em')
-                                        circle.radial-progress-background(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
-                                        circle.radial-progress-cover(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0")
-                                        circle.radial-progress-center(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
-                                        text( x="50%", y="50%", text-anchor="middle", stroke="#4f4f4f", stroke-width="2px", dy=".3em") 
-                                            tspan.time(dy='1.2em', x='50%', y="25%")
-                                            tspan.unit(dy='1.2em', x='50%', y="50%")
-                            .col-lg-3
-                                #sec.svg.radial-progress
-                                    svg(height='10em', width='10em')
-                                        circle.radial-progress-background(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
-                                        circle.radial-progress-cover(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0")
-                                        circle.radial-progress-center(r="", cx="5em", cy="5em", fill="transparent", stroke-dasharray="0em", stroke-dashoffset="0em")
-                                        text(x="50%", y="50%", text-anchor="middle", stroke="#4f4f4f", stroke-width="2px", dy=".3em")
-                                            tspan.time(dy='1.2em', x='50%', y="25%")
-                                            tspan.unit(dy='1.2em', x='50%', y="50%")
-                                
+                        #countdown.fl
+                            .fl-itm
+                                svg#day
+                                    circle.outline(cx="50%", cy="50%", r="80")
+                                    circle.cover(cx="50%", cy="50%", r="80")
+                                    text(x="50%", y="50%") 
+                                        tspan.time(dy='1.2em', x='50%', y="30%")
+                                        tspan.unit(dy='1.2em', x='50%', y="50%")
+                            .fl-itm
+                                svg#hour
+                                    circle.outline(cx="50%", cy="50%", r="80")
+                                    circle.cover(cx="50%", cy="50%", r="80")
+                                    text(x="50%", y="50%") 
+                                        tspan.time(dy='1.2em', x='50%', y="30%")
+                                        tspan.unit(dy='1.2em', x='50%', y="50%")
+                            .fl-itm
+                                svg#min
+                                    circle.outline(cx="50%", cy="50%", r="80")
+                                    circle.cover(cx="50%", cy="50%", r="80")
+                                    text(x="50%", y="50%") 
+                                        tspan.time(dy='1.2em', x='50%', y="30%")
+                                        tspan.unit(dy='1.2em', x='50%', y="50%")
+                            .fl-itm
+                                svg#sec
+                                    circle.outline(cx="50%", cy="50%", r="80")
+                                    circle.cover(cx="50%", cy="50%", r="80")
+                                    text(x="50%", y="50%") 
+                                        tspan.time(dy='1.2em', x='50%', y="30%")
+                                        tspan.unit(dy='1.2em', x='50%', y="50%")
+
         #profit.mid-clip.content
             .angled-container
-                h1 PROFIT FROM IMC IN 4 DIFFERENT WAYS
+                h1.title PROFIT FROM IMC IN 4 DIFFERENT WAYS
                 .separator
                 .row
                     each val in data
@@ -58,9 +50,10 @@ block content
                                         p.card-text= val.content
         #whyIMM.mid-clip.content
             .angled-container
-                h1 WHY IMM COIN
+                h1.title WHY IMM COIN
                 .separator
-
+                .fl
+                    
                 
         #timeline.mid-clip.content
 
@@ -68,7 +61,20 @@ block content
         
         #team.mid-clip.content
             .angled-container
-                h1 
+                h1.title IMM TEAM
+                .separator
+                .container
+                    .fl
+                        each val in members
+                            .team-card-container.fl-itm
+                                .team-img-container
+                                    .img-container
+                                        img(src='' + val.image +'')
+                                .team-name= val.name
+                                .team-position= val.position
+                                .team-description= val.description
+                                .team-links
+                        
 
         #about.mid-clip.content
         
@@ -79,4 +85,5 @@ block content
         script(src='/js/jquery.countdown.min.js')
         script(src='/js/jquery.bgswitcher.js')
         script(src='/js/index.js')
+    
             
