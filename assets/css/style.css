@@ -213,7 +213,7 @@ body {
 
 .team-description {
   color: gainsboro;
-  font-family: "Segoe UI Regular";
+  font-family: "quicksand";
   font-size: 12px;
   padding: 5% 2%;
   text-align: center; }
@@ -264,7 +264,7 @@ svg {
   fill: white;
   font-weight: bold;
   text-anchor: middle;
-  font-family: "Verdana";
+  font-family: "quicksand";
   font-size: 12px; }
 
 text tspan.time {
