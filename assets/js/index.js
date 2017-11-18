@@ -48,7 +48,11 @@ $(document).ready(function() {
             nav.removeClass('navigator-invert');
         }
         secIden($('#profit'), 'profit', 0);
-        secIden($('#timeline'), 'timeline', 1);        
+        secIden($('#whyIMM'), 'whyIMM', 1);     
+        secIden($('#timeline'), 'timeline', 0);
+        secIden($('#team'), 'team', 1);
+        secIden($('#about'), 'about', 0);
+        secIden($('#faq'), 'faq', 1);
     });
 
     function secIden (el, sec, index) {
@@ -80,14 +84,14 @@ $("#navigator a").click(function () {
 });
 
 var timeOffset = function(el, count, unit) {
-    var radius = 60,
+    var radius = 80,
         progressValue = el.find('.cover'),
         CIRCUMFERENCE = 2 * Math.PI * radius,
         diff = 100/count;
     this.progress = function(time) {
         var val = (count - time) * diff;
         var prog = val/100;
-        var offset = CIRCUMFERENCE * (1 - prog);
+        var offset = CIRCUMFERENCE - (CIRCUMFERENCE * (1 - prog));
         el.find('text tspan.time').html(time);
         el.find('text tspan.unit').html(unit);
         progressValue[0].style.strokeDashoffset = offset;
