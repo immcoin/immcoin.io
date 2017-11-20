@@ -24,44 +24,73 @@ $(document).ready(function() {
         day.progress(event.strftime('%D'));
     });
 
-    var bgImages = ["/images/content-bg.jpg", "/images/nebula-bg.jpg"];
+    var bgImages = ["/images/content-bg.jpg", "/images/content-bg-2.jpg"];
     var logoImg = ['/images/immcoinlogo-white.png','/images/immcoinlogo.png'];
 
     // preloadImages(logoImg);
     // preloadImages(bgImages);
 
     var $el = $("body").bgswitcher({
-        images: ["/images/content-bg.jpg", "/images/nebula-bg.jpg"],
+        images: ["/images/content-bg.jpg", "/images/content-bg-2.jpg", "/images/content-bg-3.jpg"],
         start: false,
         duration: 200
     });
 
     $window.on('scroll', function() {
-        if($window.scrollTop() > 80 && nav.hasClass('navigator')){
+        if($window.scrollTop() >= 80 && nav.hasClass('navigator')){
             $('#logo-src').attr("src", logoImg[1]);
             nav.removeClass('navigator');
             nav.addClass('navigator-invert');
         }
-        else if($window.scrollTop() < 80 && nav.hasClass('navigator-invert')){
+        else if($window.scrollTop() <= 80 && nav.hasClass('navigator-invert')){
             $('#logo-src').attr("src", logoImg[0]).fadeTo(1000);
             nav.addClass('navigator');
             nav.removeClass('navigator-invert');
         }
         secIden($('#profit'), 'profit', 0);
         secIden($('#whyIMM'), 'whyIMM', 1);     
-        secIden($('#timeline'), 'timeline', 0);
-        secIden($('#team'), 'team', 1);
-        secIden($('#about'), 'about', 0);
-        secIden($('#faq'), 'faq', 1);
+        secIden($('#timeline'), 'timeline', 1);
+        secIden($('#team'), 'team', 2);
+        secIden($('#about'), 'about', 2);
+        secIden($('#faq'), 'faq', 0);
+        secIden($('#contact'), 'contact', 0);
     });
 
     function secIden (el, sec, index) {
-        if($window.scrollTop() > el.offset().top && $window.scrollTop() < ( el.offset().top + el.height()) && curr != sec  ) {
+        if($window.scrollTop() >= el.offset().top && $window.scrollTop() <= ( el.offset().top + el.height()) && curr != sec  ) {
             $el.bgswitcher("select", index); 
             curr = sec;
         }
     }
+    
+    var tl = new TimelineMax();
+    tl.from($('#trade #from'), 1, {opacity: 0,x: -400, ease:Power4.easeOut})
+        .from('#trade #to', 1, {opacity: 0, x: 400, ease:Power4.easeOut}, )
+        .staggerFrom('#trade .coin', 1 , {x:300, scale:0.5, opacity: 0, ease:Power4.easeOut}, 0.1)
+        .to('#trade .coin', 2 ,{transformOrigin:"50% 50%", ease:Linear.easeNone, rotation: 360, repeat: -1})
+   
+    var controlTween = new TimelineMax();
+    controlTween.staggerFrom('#fullControl #controller , #arc', 1, {opacity: 0, y: -400, ease:Power4.easeOut},0.5  )
+    .staggerFromTo('#fullControl .svcirc', 1, {opacity: 0, y: 200, ease:Power4.easeOut}, {opacity: 1, y : -20} ,0.1)
+    .to('#controller #outline1', 2, { transformOrigin:"50% 50%",rotation: 360, ease:Linear.easeNone ,repeat: -1 })
+    .to("#controller #outline2", 2, { transformOrigin:"50% 50%",rotation: -360, ease:Linear.easeNone, repeat: -1 }, '-=2')
+    .staggerTo("#fullControl .svcirc", 1 , {y: 25, repeat: -1, ease:Linear.easeNone, yoyo: true}, 0.2, '-=2');
+    
+    var securityTween = new TimelineMax();
+    securityTween.staggerFrom('#securityBlock #coinInline, #securityBlock #coinoutlineInside, #lock', 2, {opacity : 0, y: 200, ease:Power4.easeOut}, 0.5)
+        .to('#lock', 1, {y : -20})
+        .fromTo('#lock', 1, {y: -20} , {y: 20, ease:Linear.easeNone, repeat: -1, yoyo: true });
+
+        
+    var clockTween = new TimelineMax();
+    clockTween.staggerFrom('#clock #clockOutline, #clock #clockInside', 1, {opacity : 0, y : 200}, 0.5)
+        .staggerFrom('#clock text', 1, { y: 200, opacity : 0, ease:Power4.easeOut}, 0.1)
+        .to('#clock #minute', 2, {rotation: 360, repeat: -1, transformOrigin: "100% 100%", ease:Linear.easeNone})
+        .to('#clock #hour', 60, {rotation: 360, repeat: -1, transformOrigin: "100% 100%", ease:Linear.easeNone});
+
+
 });
+
 
 var stroker = function(el, count) {
     var currentCount = 1, 

@@ -1,0 +1,23 @@
+[
+    {
+        "svglink" : "../../assets/images/whyIMM/trade.svg",
+        "title" : "BUY & SELL STOCKS WITHOUT A BROKER",
+        "desc" : "Save on commissions and bank fees when buying and selling digital assets."
+    },
+    {
+        "svglink" : "",
+        "title" : "Full control of your assets",
+        "desc" : "You can manage your assets on your own."
+    },
+    {
+        "svglink" : "",
+        "title" : "Seizure-Resistance ",
+        "desc" : "Only you can access your assets and therefore no third party is involved."
+    },
+    {
+        "svglink" : "",
+        "title" : "Realtime transactions ", 
+        "desc" : "Your \"buy\" and \"sell\" orders get executed in realtime on the blockchain. Its a decentralised network that is always 24/7 accessible."
+    }
+
+]

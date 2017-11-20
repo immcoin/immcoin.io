@@ -48,6 +48,9 @@ body
     &:hover
         color: #42d1f4
 
+#navigator ul a.active li
+    color: #42d1f4 !important
+
 #navigator ul li.whitepaper
     background: rgba(200,200,200,1)
 
@@ -65,14 +68,19 @@ body
 
 .angled-container
     display: block
-    margin: 11% auto
+    margin: 15% auto
     top: 20%
+    &-cover
+        @extend .angled-container
+        width: 100% 
+
 // b o d y
 
 .content
     +flex-center-content
     width: 100% 
     min-height: 100vh
+    height: auto
     &-angled
         @extend .content
         clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%)
@@ -90,7 +98,20 @@ body
     position: absolute
     z-index: 0
     float: left
-    
+
+.btn 
+    padding: 1% 2.5%
+    margin: 3% auto
+    color: white
+    border-radius: 10px
+    font-family: quicksand
+    letter-spacing: 2px
+    cursor: pointer
+    border: 1px solid white
+    background: transparent
+    &:hover 
+        background: white
+        color: black
 .content-text-container .desc
     position: relative
     width: 70%
@@ -168,6 +189,9 @@ body
     width: 120px
     height: 2px
     background: #202020
+    &-inverted
+        @extend .separator
+        background: rgb(255,255,255)
 
 // team
 .team-card-container
@@ -178,6 +202,7 @@ body
 .team-img-container
     width: 100%
     padding: 5%
+    
 
 .team-name
     color: white
@@ -202,6 +227,9 @@ body
     display: block
     position: relative  
     border-radius: 50%
+    margin: auto
+    width: 200px
+    height: 200px
     overflow: hidden
     border: 2px solid white
 
@@ -266,15 +294,67 @@ text tspan.unit
 #trade path
     stroke: white
     fill: transparent
-    stroke-dasharray: 10000px
-    stroke-dashoffset: 10000px
-    animation: well 10s
-    
 
-#trade
-    width: 400px
-    height: auto
 
-@keyframes well
-    to 
-        stroke-dashoffset: 0
+#wic .fl-item
+    width: 22%
+    margin: 1%
+    text-align: center
+
+#wic .fl-item .svg-container
+    width: 70%
+    margin: auto
+
+#wic .fl-item .title
+    color: white 
+    font-family: quicksand
+    font-size: 20px
+    padding: 5%
+
+#wic .fl-item .desc
+    color: white 
+    font-family: quicksand
+    font-size: 15px
+
+#wic svg
+    stroke: white
+    fill: white
+    overflow: visible
+
+#fullControl path
+    stroke: white
+
+#arc 
+    stroke: white
+
+#fullControl .svcirc
+    stroke: white
+
+#accordion 
+    width: 70%
+    margin: auto
+
+#accordion .card 
+    background: transparent 
+    border: none
+
+#accordion .card .card-header
+    background: transparent
+
+#accordion a
+    color: white 
+    font-family: quicksand
+
+#security path
+    stroke: white
+
+#clock path
+    stroke: white
+
+#circle,#minute,#hour
+    stroke: white 
+    path: white 
+
+#clock line,circle
+    stroke: white
+    fill: white

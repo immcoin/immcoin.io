@@ -60,6 +60,9 @@ body {
   #navigator ul li:hover {
     color: #42d1f4; }
 
+#navigator ul a.active li {
+  color: #42d1f4 !important; }
+
 #navigator ul li.whitepaper {
   background: #c8c8c8; }
 
@@ -79,10 +82,12 @@ body {
 #logo img {
   width: 100%; }
 
-.angled-container {
+.angled-container, .angled-container-cover {
   display: block;
-  margin: 11% auto;
+  margin: 15% auto;
   top: 20%; }
+  .angled-container-cover {
+    width: 100%; }
 
 .content, .content-angled {
   display: flex;
@@ -91,7 +96,8 @@ body {
   justify-content: center;
   justify-items: center;
   width: 100%;
-  min-height: 100vh; }
+  min-height: 100vh;
+  height: auto; }
   .content-angled {
     clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%);
     -webkit-clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%); }
@@ -112,6 +118,20 @@ body {
   position: absolute;
   z-index: 0;
   float: left; }
+
+.btn {
+  padding: 1% 2.5%;
+  margin: 3% auto;
+  color: white;
+  border-radius: 10px;
+  font-family: quicksand;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border: 1px solid white;
+  background: transparent; }
+  .btn:hover {
+    background: white;
+    color: black; }
 
 .content-text-container .desc {
   position: relative;
@@ -188,13 +208,15 @@ body {
       background: white;
       color: black; }
 
-.separator {
+.separator, .separator-inverted {
   display: block;
   position: relative;
   margin: 2% auto;
   width: 120px;
   height: 2px;
   background: #202020; }
+  .separator-inverted {
+    background: white; }
 
 .team-card-container {
   width: 24%;
@@ -228,6 +250,9 @@ body {
   display: block;
   position: relative;
   border-radius: 50%;
+  margin: auto;
+  width: 200px;
+  height: 200px;
   overflow: hidden;
   border: 2px solid white; }
 
@@ -288,18 +313,70 @@ text tspan.unit {
 
 #trade path {
   stroke: white;
-  fill: transparent;
-  stroke-dasharray: 10000px;
-  stroke-dashoffset: 10000px;
-  animation: well 10s; }
+  fill: transparent; }
 
-#trade {
-  width: 400px;
-  height: auto; }
+#wic .fl-item {
+  width: 22%;
+  margin: 1%;
+  text-align: center; }
 
-@keyframes well {
-  to {
-    stroke-dashoffset: 0; } }
+#wic .fl-item .svg-container {
+  width: 70%;
+  margin: auto; }
+
+#wic .fl-item .title {
+  color: white;
+  font-family: quicksand;
+  font-size: 20px;
+  padding: 5%; }
+
+#wic .fl-item .desc {
+  color: white;
+  font-family: quicksand;
+  font-size: 15px; }
+
+#wic svg {
+  stroke: white;
+  fill: white;
+  overflow: visible; }
+
+#fullControl path {
+  stroke: white; }
+
+#arc {
+  stroke: white; }
+
+#fullControl .svcirc {
+  stroke: white; }
+
+#accordion {
+  width: 70%;
+  margin: auto; }
+
+#accordion .card {
+  background: transparent;
+  border: none; }
+
+#accordion .card .card-header {
+  background: transparent; }
+
+#accordion a {
+  color: white;
+  font-family: quicksand; }
+
+#security path {
+  stroke: white; }
+
+#clock path {
+  stroke: white; }
+
+#circle, #minute, #hour {
+  stroke: white;
+  path: white; }
+
+#clock line, circle {
+  stroke: white;
+  fill: white; }
 
 #landing h1 {
   font-size: 35px;
@@ -315,10 +392,16 @@ text tspan.unit {
 tspan.unit {
   font-size: .5em; }
 
-.angled-container h1.title {
+.angled-container h1.title, .angled-container-cover h1.title {
   text-align: center;
   font-family: quicksand;
   font-weight: bold; }
+
+.angled-container h1.title-inverted, .angled-container-cover h1.title-inverted {
+  text-align: center;
+  font-family: quicksand;
+  font-weight: bold;
+  color: white; }
 
 @media only screen and (max-device-width: 1500px), screen and (max-width: 1500px) {
   #navigator #logo {
@@ -334,6 +417,8 @@ tspan.unit {
 
 @media only screen and (max-device-width: 1000px), screen and (max-width: 1000px) {
   .fl .fl-itm {
+    width: 48%; }
+  #wic .fl-item {
     width: 48%; } }
 
 @media only screen and (max-device-width: 800px), screen and (max-width: 800px) {
@@ -354,6 +439,8 @@ tspan.unit {
 
 @media only screen and (max-device-width: 600px), screen and (max-width: 600px) {
   .fl .fl-itm {
+    width: 100%; }
+  #wic .fl-item {
     width: 100%; } }
 
 @media only screen and (max-width: 300px) {
