@@ -13,6 +13,15 @@
         "image" : "/images/members/robert.jpg"
     },
     {
+        "name" : "Aizza Carido",
+        "position" : "CHIEF BUSINESS DEVELOPMENT OFFICER",
+        "description" : "Responsible for the overall management of all strategic and operational Marketing and Customer Relationship activities. Provide market feedback to the company leadership regarding competitive offerings, prospect needs and generate product development ideas,.",
+        "links" : {
+
+        },
+        "image" : "/images/members/aizza.jpg"
+    },
+    {
         "name" : "LOUISE SALAS",
         "position" : "LEAD DEVELOPER",
         "description" : " Louise is an experienced blockchain and web developer. He created his first program in c++ at the age of 17. He is a recognized programmer in his alma mater and has received numerous amounts of recognition for his exemplary programming skills. He also kicks ass in Mobile Legends 24/7.",

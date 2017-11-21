@@ -84,7 +84,7 @@ body {
 
 .angled-container, .angled-container-cover {
   display: block;
-  margin: 15% auto;
+  margin: 20% auto;
   top: 20%; }
   .angled-container-cover {
     width: 100%; }
@@ -308,8 +308,7 @@ text tspan.unit {
   width: 100%; }
 
 .fl .fl-itm {
-  width: 23%;
-  flex-grow: 1; }
+  width: 23%; }
 
 #trade path {
   stroke: white;
