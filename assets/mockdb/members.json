@@ -13,7 +13,18 @@
         "image" : "/images/members/robert.jpg"
     },
     {
-        "name" : "Aizza Carido",
+        "name" : "U. WAGLE",
+        "position" : "CTO",
+        "description" : "Wagle is an ICT consultant and Blockchain expert working in the technology industry for more than 20 years. He has worked in various organizations including government agencies  as well as United Nations projects. Wagle has already established many Tech companies and startups running globally from US, Australia, UK and Netherlands.",
+        "links" : {
+            "facebook" : "https://www.facebook.com/theutsav",
+            "linkedin" : "https://www.linkedin.com/in/theutsav/",
+            "twitter" : "https://twitter.com/thewagles"
+        },
+        "image" : "/images/members/uwagle.jpg"
+    },
+    {
+        "name" : "AIZZA CARIDO",
         "position" : "CHIEF BUSINESS DEVELOPMENT OFFICER",
         "description" : "Responsible for the overall management of all strategic and operational Marketing and Customer Relationship activities. Provide market feedback to the company leadership regarding competitive offerings, prospect needs and generate product development ideas,.",
         "links" : {
@@ -26,10 +37,10 @@
         "position" : "LEAD DEVELOPER",
         "description" : " Louise is an experienced blockchain and web developer. He created his first program in c++ at the age of 17. He is a recognized programmer in his alma mater and has received numerous amounts of recognition for his exemplary programming skills. He also kicks ass in Mobile Legends 24/7.",
         "links" : {
-            "facebook" : "",
+            "facebook" : "https://www.facebook.com/nullifiedGeek",
             "gmail" : "",
             "twitter" : "",
-            "linked in" : ""
+            "linkedin" : "https://www.linkedin.com/in/louise-salas-578182135/"
         },
         "image" : "/images/members/louise.jpg"
     },

@@ -1,0 +1,47 @@
+extends ./partials/layout 
+block content
+    .test-container
+        #timeline
+            .timebar
+                .progress
+                ul 
+                    li.node 
+                        .info
+                    li.node 
+                        .info
+                    li.node 
+                        .info
+                    li.node 
+                        .info
+                    li.node 
+                        .info
+                    li.node 
+                        .info
+                    li.node 
+                        .info
+    include ./partials/footer 
+    script(src='/js/minified/TimelineMax.min.js')
+    script(src='/js/minified/TweenMax.min.js')
+    script(src='/js/particles.min.js')
+    script(src='/js/jquery.countdown.min.js')
+    script(src='/js/jquery.bgswitcher.js')
+    script.
+        var prg = '70%'
+        var nodes = $('.node');
+        var progress = $('.progress');
+        TweenMax.to('.progress', 2, {width: prg, ease:Linear.easeNone,onUpdate:checknodes });
+
+        function checknodes() {
+            $('.node').each(function(index) {
+                var currprog = progress.offset().left+progress.width();
+                if(currprog >= $(this).offset().left && currprog <= $(this).offset().left + $(this).width()) {
+                    TweenMax.to($(this), 1, {scale: 2, ease:Power4.easeOut});
+                }
+            })
+        }
+            
+                //- if(progress.offset().left+progress.width() >= nodes[obj].offset().left) {
+                //-     console.log('hit!!!');
+                //- }
+            //- onUpdate:checknodes
+        checknodes();

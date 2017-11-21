@@ -12,7 +12,8 @@ body
 #navigator 
     position: fixed
     width: 100%
-    height: 80px
+    height: 50px
+    // background: red
     z-index: 99
     +smooth-transitions(.5s)
 
@@ -20,17 +21,17 @@ body
     color: white 
 
 .navigator-invert
-    background: rgba(255, 255, 255, 0.8)
+    background: rgba(255, 255, 255, 1)
 
 .navigator-invert ul li
     color: #202020
 
 #navigator ul 
     margin: 0
+    height: 100%
     list-style: none
     float: right
     
-
 #navigator ul li
     +smooth-transitions(.5s)
     display: flex
@@ -40,7 +41,7 @@ body
     text-align: center
     float: left
     padding: 0px 20px
-    height: 80px
+    height: 100%
     font-size: 14px
     font-family: quicksand
     font-weight: bold
@@ -57,19 +58,17 @@ body
 #navigator #logo
     position: relative
     float: left
-    width: 300px
     left: 100px
-    height: 80px
-    padding: 2%
+    width: 200px
+    height: 100%
+    display: flex
     +flex-center-content
 
 #logo img
-    width: 100%
+    width: 80%
 
 .angled-container
     display: block
-    margin: 20% auto
-    top: 20%
     &-cover
         @extend .angled-container
         width: 100% 
@@ -80,11 +79,12 @@ body
     +flex-center-content
     width: 100% 
     min-height: 100vh
+    padding: 10%
     height: auto
     &-angled
         @extend .content
-        clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%)
-        -webkit-clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%)
+        clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%)
+        -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%)
     &-text-container
         +flex-center-content
         position: relative
@@ -112,6 +112,7 @@ body
     &:hover 
         background: white
         color: black
+
 .content-text-container .desc
     position: relative
     width: 70%
@@ -120,16 +121,16 @@ body
     +flex-center-content
 
 .top-clip
-    clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%)
-    -webkit-clip-path: polygon(0 23%, 100% 0, 100% 100%, 0 100%)
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%)
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%)
 
 .mid-clip
-    clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%)
-    -webkit-clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%)
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%)
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%)
 
 .bottom-clip
-    clip-path: polygon(0 0, 100% 0, 100% 77%, 0 100%)
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 77%, 0 100%)
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%)
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%)
 
 #landing
     margin-top: 0
@@ -141,15 +142,15 @@ body
     position: relative
 
 #whyIMM 
-    background: #2d8ac4
+    background: $primary
     
 #timeline
 
 #team
-    background: #2d8ac4
+    background: $primary
     
 #faq 
-    background: #2d8ac4
+    background: $primary
 
 #footer
     position: relative
@@ -194,6 +195,11 @@ body
         background: rgb(255,255,255)
 
 // team
+
+#team .fl
+    justify-content: center
+    align-items: flex-start
+    
 .team-card-container
     width: 24%
     text-align: center
@@ -203,15 +209,16 @@ body
     width: 100%
     padding: 5%
     
-
 .team-name
     color: white
+    font-size: 15px
     font-family: quicksand
-
+    padding: 2%
+    
 .team-position
     color: rgba(200, 200, 200, 1)
     font-family: quicksand
-    font-size: 11px
+    font-size: 10px
 
 .team-description
     color: rgba(220, 220, 220, 1)
@@ -219,9 +226,6 @@ body
     font-size: 12px
     padding: 5% 2%
     text-align: center
-
-.team-img-container:hover img 
-    transform: scale(1.1)
 
 .img-container
     display: block
@@ -238,6 +242,9 @@ body
     position: relative
     width: 100%
     +smooth-transitions(.5s)
+
+.team-links a 
+    margin: 2% 2% 
 
 .red
     background: red
@@ -256,7 +263,6 @@ svg
     stroke-linecap: round
     transform: rotate(-90deg)
     transform-origin: 50% 50%
-    // transition: 1.5s
 
 #countdown svg .cover
     stroke: $secondary
@@ -270,7 +276,6 @@ svg
     fill: white
     font-weight: bold
     text-anchor: middle
-    // font-family: "Verdana"
     font-family: "quicksand"
     font-size: 12px
 
@@ -357,3 +362,62 @@ text tspan.unit
 #clock line,circle
     stroke: white
     fill: white
+
+
+
+// TEST
+
+.test-container
+    position: relative
+    background: #202020
+    width: 100%
+    height: 100vh
+    color: white 
+    text-align: center
+
+#timeline
+    position: relative
+    margin: auto 
+    top: 50%
+
+.timebar
+    position: relative
+    margin: auto
+    width: 80%
+    height: 5px
+    background: #2f2f2f
+    border-radius: 5px
+
+.timebar .progress
+    position: absolute
+    height: 100%
+    background: #05e9ff
+.timebar ul 
+    display: flex
+    justify-content: space-around
+    list-style: none
+
+.timebar ul li 
+    display: flex
+    justify-content: center
+    align-items: center
+    background: #2d8ac4
+    width: 30px
+    height: 30px
+    border-radius: 50%
+    transform: translateY(-40%)
+    border: 5px solid #202020
+
+.timebar ul li:nth-child(odd) .info
+    position: absolute
+    width: 200px
+    height: 200px
+    background: white
+    top: -200px
+
+.timebar ul li:nth-child(even) .info
+    position: absolute
+    width: 200px
+    height: 200px
+    background: white
+    top: 20px

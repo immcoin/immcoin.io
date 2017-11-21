@@ -84,7 +84,7 @@ block content
                 h1.title-inverted IMM TEAM
                 .separator-inverted
                 .container
-                    .fl
+                    .fl#members-container
                         each val in members
                             .team-card-container.fl-itm
                                 .team-img-container
@@ -94,6 +94,12 @@ block content
                                 .team-position= val.position
                                 .team-description= val.description
                                 .team-links
+                                    if val.links.facebook
+                                        a(href=val.links.facebook, target='_blank')
+                                            i.fa.fa-facebook
+                                    if val.links.linkedin
+                                        a(href=val.links.linkedin, target='_blank')
+                                            i.fa.fa-linkedin
                 h1.title-inverted ADVISERS
                 .separator-inverted
                 .container
@@ -111,8 +117,8 @@ block content
 
         #faq.mid-clip.content
             .angled-container-cover
-                h1.title FREQUENTLY ASKED QUESTIONS
-                .separator
+                h1.title-inverted FREQUENTLY ASKED QUESTIONS
+                .separator-inverted
                 #accordion.tablist
                     .card
                         #headingOne.card-header(role='tab')
