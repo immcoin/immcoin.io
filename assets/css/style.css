@@ -71,7 +71,7 @@ body {
   position: relative;
   float: left;
   left: 100px;
-  width: 200px;
+  width: auto;
   height: 100%;
   display: flex;
   display: flex;
@@ -81,7 +81,7 @@ body {
   justify-items: center; }
 
 #logo img {
-  width: 80%; }
+  width: 150px; }
 
 .angled-container, .angled-container-cover {
   display: block; }
@@ -466,12 +466,10 @@ tspan.unit {
 
 @media only screen and (max-device-width: 1500px), screen and (max-width: 1500px) {
   #navigator #logo {
-    width: 100%;
-    left: 0; }
-  #logo img {
-    width: 150px; }
-  #navigator ul {
-    display: none; }
+    left: 20px; }
+  #navigator ul li {
+    font-size: 9px;
+    padding: 0px 10px; }
   .content, .content-angled {
     clip-path: none;
     -webkit-clip-path: none; } }
