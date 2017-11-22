@@ -88,9 +88,37 @@ $(document).ready(function() {
         .to('#clock #minute', 2, {rotation: 360, repeat: -1, transformOrigin: "100% 100%", ease:Linear.easeNone})
         .to('#clock #hour', 60, {rotation: 360, repeat: -1, transformOrigin: "100% 100%", ease:Linear.easeNone});
 
+    $('#burger , #navigator a').click(function() {
+        $('#navigator ul').slideToggle("fast");
+    });
 
+    // url : "http://192.168.2.200/imm-trader/total/totalcoin.php",
+    $.ajax({
+        url : "https://immtradersclub.com/api/totalcoin.php",
+        
+        success : function(data) {
+            updateSales(data);
+        },
+        error: function(err) {
+            console.log(err);
+        }
+    });
+    
 });
 
+function updateSales(data) {
+    var progress = $('#progressBar .progress');
+    var sales = data.value;
+    var target = 5000000;
+    var percentage = (sales/target) * 100;
+    
+    $('#progressBar .bar .text').html( toCurrency(parseFloat(sales)) + " / " + toCurrency(target));
+    TweenMax.to(progress, 2, { width: percentage + "%"})
+}
+
+function toCurrency(val) {
+    return val.toFixed(4).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + ' IMC';
+}
 
 var stroker = function(el, count) {
     var currentCount = 1, 

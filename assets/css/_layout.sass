@@ -13,7 +13,6 @@ body
     position: fixed
     width: 100%
     height: 50px
-    // background: red
     z-index: 99
     +smooth-transitions(.5s)
 
@@ -185,6 +184,7 @@ body
 
 .blue
     background: blue
+
 // R E A C H   U S   S E C T I O N
 
 #contact .social-img-container 
@@ -205,6 +205,41 @@ body
     +smooth-transitions(.5s)
     &:hover
         filter: grayscale(0%)
+
+// P R O G R E S S  B A R  L A N D I N G
+.progress-bar-container
+    position: relative
+    width: 100%
+    padding-bottom: 30px
+    
+#progressBar 
+    width: 100%
+    +flex-center-content
+
+#progressBar .bar
+    position: relative
+    width: 50%
+    height: 40px
+    background: #2e2e2e
+    border-radius: 15px
+    padding: 5px
+    overflow: hidden
+
+.bar .progress
+    background: $secondary
+    height: 100%
+    width: 70%
+    border-radius: 15px
+
+.bar .text
+    position: absolute
+    +flex-center-content
+    width: 100%
+    height: 100%
+    top: 0
+    font-family: quicksand
+    color: white
+    text-align: center
 
 // B U T T O N   D E S I G N
 
