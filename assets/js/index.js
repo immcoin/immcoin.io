@@ -21,7 +21,7 @@ $(document).ready(function() {
     var day = new timeOffset($('#day'), 60, 'DAYS');
     var els = $('circle');
 
-    $('#countdown').countdown("2018/03/31", function(event) {
+    $('#countdown').countdown("2017/12/1", function(event) {
         sec.progress(event.strftime('%S'));
         min.progress(event.strftime('%M'));
         hour.progress(event.strftime('%H'));

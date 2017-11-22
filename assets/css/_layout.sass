@@ -202,6 +202,8 @@ body
 .blue
     background: blue
 
+
+
 // R E A C H   U S   S E C T I O N
 
 #contact .social-img-container 
@@ -386,9 +388,6 @@ text tspan.unit
 .fl .fl-itm
     width: 23%
 
-#trade path
-    stroke: white
-    fill: transparent
 
 
 
@@ -417,15 +416,6 @@ text tspan.unit
     fill: white
     overflow: visible
 
-#fullControl path
-    stroke: white
-
-#arc 
-    stroke: white
-
-#fullControl .svcirc
-    stroke: white
-
 #accordion 
     width: 70%
     margin: auto
@@ -441,11 +431,38 @@ text tspan.unit
     color: #202020 
     font-family: quicksand
 
+#trade path
+    fill: transparent
+
+#trade .coin path
+    stroke: $secondary
+
+#trade .arrow path
+    stroke: white
+
+#fullControl path
+    stroke: white
+
+#fullControl #outline2 path
+    stroke: $secondary
+
+#arc 
+    stroke: white
+
+#fullControl .svcirc 
+    fill: $secondary
+
 #security path
     stroke: white
 
+#security #coinoutlineOutside path
+    stroke: $secondary
+
+#security #lock 
+    // stroke: $secondary
+
 #clock path
-    stroke: white
+    stroke: $secondary
 
 #circle,#minute,#hour
     stroke: white 

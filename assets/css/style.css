@@ -408,10 +408,6 @@ text tspan.unit {
 .fl .fl-itm {
   width: 23%; }
 
-#trade path {
-  stroke: white;
-  fill: transparent; }
-
 #wic .fl-item {
   width: 22%;
   margin: 1%;
@@ -437,15 +433,6 @@ text tspan.unit {
   fill: white;
   overflow: visible; }
 
-#fullControl path {
-  stroke: white; }
-
-#arc {
-  stroke: white; }
-
-#fullControl .svcirc {
-  stroke: white; }
-
 #accordion {
   width: 70%;
   margin: auto; }
@@ -461,11 +448,35 @@ text tspan.unit {
   color: #202020;
   font-family: quicksand; }
 
+#trade path {
+  fill: transparent; }
+
+#trade .coin path {
+  stroke: #0bb5ff; }
+
+#trade .arrow path {
+  stroke: white; }
+
+#fullControl path {
+  stroke: white; }
+
+#fullControl #outline2 path {
+  stroke: #0bb5ff; }
+
+#arc {
+  stroke: white; }
+
+#fullControl .svcirc {
+  fill: #0bb5ff; }
+
 #security path {
   stroke: white; }
 
+#security #coinoutlineOutside path {
+  stroke: #0bb5ff; }
+
 #clock path {
-  stroke: white; }
+  stroke: #0bb5ff; }
 
 #circle, #minute, #hour {
   stroke: white;
@@ -591,15 +602,27 @@ text tspan.unit {
     transform: translateY(-20px); } }
 
 #landing h1 {
+  text-align: center;
   font-size: 35px;
+  font-family: quicksand;
+  color: white; }
+
+#landing h1 span {
+  color: #0bb5ff; }
+
+#landing h2 {
+  font-size: 30px;
   color: white;
   text-align: center;
-  font-family: quicksand; }
+  font-family: quicksand;
+  padding: 2% 0%; }
 
 #landing h3 {
-  font-size: 25px;
+  font-size: 15px;
   font-family: quicksand;
-  text-align: center; }
+  text-align: center;
+  color: #c8c8c8;
+  padding: 5% 0% 0% 0%; }
 
 tspan.unit {
   font-size: .5em; }
