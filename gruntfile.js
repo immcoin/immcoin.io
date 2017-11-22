@@ -43,5 +43,5 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('default', ['imagemin', 'sass','develop', 'watch']);
+    grunt.registerTask('default', ['sass','develop', 'watch']);
 }

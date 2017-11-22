@@ -38,12 +38,12 @@ $(document).ready(function() {
 
     $window.on('scroll', function() {
         if($window.scrollTop() >= 80 && nav.hasClass('navigator')){
-            // $('#logo-src').attr("src", logoImg[1]);
+            $('#logo-src').attr("src", logoImg[1]);
             nav.removeClass('navigator');
             nav.addClass('navigator-invert');
         }
         else if($window.scrollTop() <= 80 && nav.hasClass('navigator-invert')){
-            // $('#logo-src').attr("src", logoImg[1]).fadeTo(1000); // change val to 0
+            $('#logo-src').attr("src", logoImg[0]).fadeTo(1000); // change val to 0
             nav.addClass('navigator');
             nav.removeClass('navigator-invert');
         }

@@ -100,10 +100,10 @@ body
     float: left
 
 .btn 
-    padding: 1% 2.5%
+    padding: 10px 20px
     margin: 3% auto
     color: white
-    border-radius: 10px
+    border-radius: 20px
     font-family: quicksand
     letter-spacing: 2px
     cursor: pointer
@@ -144,12 +144,10 @@ body
 #whyIMM 
     background: $primary
     
-#timeline
+#contact 
+    background: $primary
 
 #team
-    background: $primary
-    
-#faq 
     background: $primary
 
 #footer
@@ -165,9 +163,50 @@ body
 .content-container
     position: relative
     width: 100%
-    
 
-// // B U T T O N   D E S I G N
+
+// flex
+
+.fl-container
+    width: 100%
+    display: flex
+    position: relative
+    flex-wrap: wrap
+    // background: red
+    & .fl
+    & .fl-col-6
+        width: 50%
+    & .fl-col-12
+        width: 100%
+    & .fl-col-3
+        display: inline-block
+        width: 25%
+        flex-grow: 1
+
+.blue
+    background: blue
+// R E A C H   U S   S E C T I O N
+
+#contact .social-img-container 
+    position: relative
+    display: flex
+    align-items: center
+    justify-items: center
+    align-content: center
+    justify-content: center
+    height: 130px
+    // background: red
+
+#contact .social-img-container img
+    position: relative
+    width: 50%
+    filter: grayscale(100%)
+    cursor: pointer
+    +smooth-transitions(.5s)
+    &:hover
+        filter: grayscale(0%)
+
+// B U T T O N   D E S I G N
 
 .button
     padding: 8px 35px
@@ -346,7 +385,7 @@ text tspan.unit
     background: transparent
 
 #accordion a
-    color: white 
+    color: #202020 
     font-family: quicksand
 
 #security path

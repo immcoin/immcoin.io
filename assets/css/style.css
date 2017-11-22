@@ -120,10 +120,10 @@ body {
   float: left; }
 
 .btn {
-  padding: 1% 2.5%;
+  padding: 10px 20px;
   margin: 3% auto;
   color: white;
-  border-radius: 10px;
+  border-radius: 20px;
   font-family: quicksand;
   letter-spacing: 2px;
   cursor: pointer;
@@ -168,10 +168,10 @@ body {
 #whyIMM {
   background: #3a3a3a; }
 
-#team {
+#contact {
   background: #3a3a3a; }
 
-#faq {
+#team {
   background: #3a3a3a; }
 
 #footer {
@@ -191,6 +191,45 @@ body {
 .content-container {
   position: relative;
   width: 100%; }
+
+.fl-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap; }
+  .fl-container .fl-col-6 {
+    width: 50%; }
+  .fl-container .fl-col-12 {
+    width: 100%; }
+  .fl-container .fl-col-3 {
+    display: inline-block;
+    width: 25%;
+    flex-grow: 1; }
+
+.blue {
+  background: blue; }
+
+#contact .social-img-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 130px; }
+
+#contact .social-img-container img {
+  position: relative;
+  width: 50%;
+  filter: grayscale(100%);
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+  #contact .social-img-container img:hover {
+    filter: grayscale(0%); }
 
 .button {
   padding: 8px 35px;
@@ -366,7 +405,7 @@ text tspan.unit {
   background: transparent; }
 
 #accordion a {
-  color: white;
+  color: #202020;
   font-family: quicksand; }
 
 #security path {
@@ -563,4 +602,4 @@ tspan.unit {
 
 @media only screen and (max-width: 300px) {
   #landing h1 {
-    font-size: 12pxz; } }
+    font-size: 12px; } }
