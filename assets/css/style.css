@@ -6,13 +6,22 @@ html, body {
   margin: 0;
   padding: 0; }
 
-body {
-  background-image: url("/images/content-bg.jpg");
-  background-attachment: fixed;
-  background-size: cover; }
-
 #home {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  height: 100%;
+  position: relative; }
+
+#homes {
+  height: 100%;
+  width: 100%; }
+
+#homes > canvas {
+  position: absolute;
+  height: 100% !important;
+  z-index: 1;
+  float: left;
+  top: 0;
+  margin: 0; }
 
 #navigator {
   position: fixed;
@@ -95,7 +104,9 @@ body {
   justify-content: center;
   justify-items: center;
   width: 100%;
+  position: relative !important;
   min-height: 100vh;
+  z-index: 2 !important;
   padding: 10%;
   height: auto; }
   .content-angled {
@@ -621,9 +632,6 @@ tspan.unit {
     width: 48%; }
   #wic .fl-item {
     width: 48%; }
-  #navigator ul li {
-    font-size: 8px;
-    padding: 0px 10px; }
   #contact .angled-container-cover > .fl-container > .fl-col-6 {
     width: 100%; } }
 
@@ -637,7 +645,8 @@ tspan.unit {
     display: none;
     background: #202020;
     height: auto;
-    padding: 0; }
+    padding: 0;
+    width: 100% !important; }
   #navigator ul li {
     position: relative;
     display: block;

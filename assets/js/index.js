@@ -1,12 +1,16 @@
 particlesJS.load('landing', '/particles.json', function() {
     console.log('nodes generated...');
 });
+particlesJS.load('homes', '/bodyparticle.json', function() {
+
+});
 
 var radius = 3,
     circumference = 2 * radius * Math.PI;
     
 $(document).ready(function() {
     // $("html, body").animate({ scrollTop: 0 }, 2000, "expoinout");
+    // $('#home > canvas').height = 100;
     var $window = $(window);
     var curr = 'landing';
     var nav = $('#navigator');
@@ -30,11 +34,11 @@ $(document).ready(function() {
     // preloadImages(logoImg);
     // preloadImages(bgImages);
 
-    var $el = $("body").bgswitcher({
-        images: ["/images/content-bg.jpg", "/images/content-bg-2.jpg", "/images/content-bg-3.jpg"],
-        start: false,
-        duration: 200
-    });
+    // var $el = $("body").bgswitcher({
+    //     images: ["/images/content-bg.jpg", "/images/content-bg-2.jpg", "/images/content-bg-3.jpg"],
+    //     start: false,
+    //     duration: 200
+    // });
 
     $window.on('scroll', function() {
         if($window.scrollTop() >= 80 && nav.hasClass('navigator')){
@@ -58,7 +62,7 @@ $(document).ready(function() {
 
     function secIden (el, sec, index) {
         if($window.scrollTop() >= el.offset().top && $window.scrollTop() <= ( el.offset().top + el.height()) && curr != sec  ) {
-            $el.bgswitcher("select", index); 
+            // el.bgswitcher("select", index); 
             curr = sec;
         }
     }
@@ -89,27 +93,28 @@ $(document).ready(function() {
         .to('#clock #hour', 60, {rotation: 360, repeat: -1, transformOrigin: "100% 100%", ease:Linear.easeNone});
 
     $('#burger , #navigator a').click(function() {
-        $('#navigator ul').slideToggle("fast");
+        if($(window).width() < 900)
+            $('#navigator ul').slideToggle("fast");
     });
 
     // url : "http://192.168.2.200/imm-trader/total/totalcoin.php",
-    $.ajax({
-        url : "https://immtradersclub.com/api/totalcoin.php",
+    // $.ajax({
+    //     url : "https://immtradersclub.com/api/totalcoin.php",
         
-        success : function(data) {
-            updateSales(data);
-        },
-        error: function(err) {
-            console.log(err);
-        }
-    });
+    //     success : function(data) {
+    //         updateSales(data);
+    //     },
+    //     error: function(err) {
+    //         console.log(err);
+    //     }
+    // });
     
 });
 
 function updateSales(data) {
     var progress = $('#progressBar .progress');
     var sales = data.value;
-    var target = 5000000;
+    var target = 1000000;
     var percentage = (sales/target) * 100;
     
     $('#progressBar .bar .text').html( toCurrency(parseFloat(sales)) + " / " + toCurrency(target));
@@ -117,7 +122,7 @@ function updateSales(data) {
 }
 
 function toCurrency(val) {
-    return val.toFixed(4).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + ' IMC';
+    return val.toFixed(2).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + ' IMC';
 }
 
 var stroker = function(el, count) {

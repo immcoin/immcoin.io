@@ -252,3 +252,6 @@ Error: net::ERR_INTERNET_DISCONNECTED
 bash: cannot set terminal process group (-1): Inappropriate ioctl for device
 bash: no job control in this shell
 mesg: ttyname failed: Inappropriate ioctl for device
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+mesg: ttyname failed: Inappropriate ioctl for device
