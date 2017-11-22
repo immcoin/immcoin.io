@@ -208,3 +208,47 @@ TypeError: Cannot read property 'isFullScreen' of null
     at listOnTimeoutNT (timers.js:276:26)
     at _combinedTickCallback (internal/process/next_tick.js:77:11)
     at process._tickCallback (internal/process/next_tick.js:104:9)
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+mesg: ttyname failed: Inappropriate ioctl for device
+WARNING: Promise with no error callback:6
+{ exception: Error: net::ERR_INTERNET_DISCONNECTED,
+  error: null,
+  promise: 
+   { _creator: null,
+     _nextState: null,
+     _state: 
+      { name: 'error',
+        enter: [Function: enter],
+        cancel: [Function: s],
+        done: null,
+        then: null,
+        _completed: [Function: s],
+        _error: [Function: s],
+        _notify: [Function: g],
+        _progress: [Function: s],
+        _setCompleteValue: [Function: s],
+        _setErrorValue: [Function: s] },
+     _listeners: null,
+     _value: Error: net::ERR_INTERNET_DISCONNECTED,
+     _isException: true,
+     _errorId: 6,
+     done: [Function: done],
+     then: [Function: then] },
+  handler: undefined,
+  id: 6,
+  parent: undefined }
+Error: net::ERR_INTERNET_DISCONNECTED
+[91m[main 9:02:37 PM][0m [uncaught exception in main]: Error: net::ERR_INTERNET_DISCONNECTED
+
+Error: net::ERR_INTERNET_DISCONNECTED
+[91m[main 9:02:37 PM][0m Error: net::ERR_INTERNET_DISCONNECTED
+
+Error: net::ERR_INTERNET_DISCONNECTED
+    at Timeout._onTimeout (/home/artisan/Programs/VSCode-linux-64/resources/app/out/vs/code/electron-main/main.js:4:83379)
+    at ontimeout (timers.js:386:14)
+    at tryOnTimeout (timers.js:250:5)
+    at Timer.listOnTimeout (timers.js:214:5)
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+mesg: ttyname failed: Inappropriate ioctl for device

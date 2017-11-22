@@ -387,14 +387,17 @@ text tspan.unit {
   position: relative;
   background: #202020;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   color: white;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  justify-items: center;
+  align-items: center; }
 
 #timeline {
   position: relative;
   margin: auto;
-  top: 50%; }
+  width: 100%; }
 
 .timebar {
   position: relative;
@@ -415,29 +418,85 @@ text tspan.unit {
   list-style: none; }
 
 .timebar ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  transform: translateY(-40%); }
+
+.timebar ul li .node {
   background: #2d8ac4;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  transform: translateY(-40%);
-  border: 5px solid #202020; }
+  border: 5px solid #202020;
+  transition: .2s; }
+
+.timebar .info {
+  padding: 20px;
+  position: absolute;
+  border-radius: 20px;
+  transition: .5s;
+  font-family: quicksand;
+  width: 200px; }
+
+.timebar .info .title {
+  padding: 1% 3%;
+  font-size: 12px; }
+
+.timebar .info .desc {
+  font-size: 10px;
+  color: gainsboro; }
 
 .timebar ul li:nth-child(odd) .info {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background: white;
-  top: -200px; }
+  top: -15px;
+  transform: translateY(-100%);
+  left: -30%; }
 
 .timebar ul li:nth-child(even) .info {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background: white;
-  top: 20px; }
+  top: 40px;
+  left: 0%; }
+
+.timebar ul li:nth-child(odd) .node:hover ~ .info {
+  transform: translateY(-110%); }
+
+.timebar ul li:nth-child(even) .node:hover ~ .info {
+  transform: translateY(10%); }
+
+.timebar ul li .node:hover {
+  background: white; }
+
+@media only screen and (max-device-width: 1000px), screen and (max-width: 1000px) {
+  .timebar ul li:nth-child(odd) .info {
+    top: -110px;
+    left: 0%; }
+  .timebar ul li:nth-child(even) .info {
+    top: 50px;
+    left: 50%; } }
+
+@media only screen and (max-device-width: 800px), screen and (max-width: 800px) {
+  .timebar {
+    width: 5px;
+    height: 800px; }
+  .test-container #timeline {
+    padding: 10% 0; }
+  .timebar ul {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    height: 100%; }
+  .timebar ul li {
+    position: relative;
+    right: 0%;
+    width: 30px;
+    transform: translateX(-50%); }
+  .timebar ul li:nth-child(odd) .info {
+    left: -110px;
+    top: -90px; }
+  .timebar ul li:nth-child(even) .info {
+    left: 45px;
+    top: -90px; }
+  .timebar ul li:nth-child(odd):hover .info {
+    transform: translateY(-20px); }
+  .timebar ul li:nth-child(even):hover .info {
+    transform: translateY(-20px); } }
 
 #landing h1 {
   font-size: 35px;
