@@ -9,6 +9,10 @@
 		stroke-miterlimit:10;
 		animation: anim 5s infinite linear;
 		transform-origin: 50% 50%;
+		-webkit-transform-origin: 50% 50%;
+		-moz-transform-origin: 50% 50%;
+		-o-transform-origin: 50% 50%;
+		-ms-transform-origin: 50% 50%;
 	}
 	#twoloader {
 		animation-delay: .5s;
