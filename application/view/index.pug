@@ -1,5 +1,8 @@
 extends ./partials/layout 
 block content
+    #overlay
+        .loader
+            include ../../assets/images/whyIMM/loader.svg
     #home
         #homes
         include ./partials/header
@@ -13,9 +16,10 @@ block content
                     .desc.container
 
                         h1
-                            span IMM COIN 
+                            span IMC 
                             | IS THE FUTURE IN CRYPTOCURRENCY TRADING
-                            // DSFA
+                        
+                            //--A privately issued cryptocurrency that lives on the iMM platform and BitShares network.
                         h2 DAYS UNTIL ICO
                         
                         #countdown.fl
@@ -55,9 +59,9 @@ block content
             .angled-container
                 h1.title PROFIT FROM IMC IN 4 DIFFERENT WAYS
                 .separator
-                .row
+                .fl.fl-padded
                     each val in data
-                        .col-sm-3
+                        .fl-col-3
                             .col-container
                                 .card(style='width: 20em')
                                     .card-block
@@ -65,7 +69,33 @@ block content
                                         p.card-text= val.content
         #whyIMM.mid-clip.content
             .angled-container
-                h1.title-inverted WHY IMM COIN
+                h1.title-inverted WHAT IS IMC?
+                .separator-inverted
+                .container
+                    .fl-container
+                        .fl.fl-col-6
+                            #coin-container
+                                .immcoin
+                                    .front
+                                        include ../../assets/images/whyIMM/immSymbol.svg
+                                    .back
+                        .fl.fl-col-6#imm-info
+                                .immcard
+                                    .imm-title TOKEN NAME
+                                    .imm-info IMC
+                                .immcard
+                                    .imm-title WHAT DOES THIS TOKEN REPRESENT?
+                                    .imm-info The Tokens represent a form of ownership of the IMM Coin. One Token will be equivalent of $1
+                                .immcard
+                                    .imm-title PAYOUT STRUCTURE
+                                    .imm-info Investors with IMC holders will receive minimum 8% of the net profit earned on the IMM cryptocurrency transfers within the IMM Platform and exchange.
+                                .immcard
+                                    .imm-title TOTAL SUPPLY
+                                    .imm-info 300,000,000 IMC
+                                .immcard
+                                    .imm-title INITIAL COIN STRUCTURE VALUE
+                                    .imm-info $1 per coin
+                h1.title-inverted WHY IMC
                 .separator-inverted
                 .container
                     .fl#wic

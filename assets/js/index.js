@@ -7,8 +7,14 @@ particlesJS.load('homes', '/bodyparticle.json', function() {
 
 var radius = 3,
     circumference = 2 * radius * Math.PI;
-    
+
+// TweenMax.staggerTo('#overlay svg path', 5, {ease:Linear.easeNone, transformOrigin:"50% 50%", rotation:'360', repeat: -1}, 0.5);
 $(document).ready(function() {
+
+    $('#overlay').fadeOut("slow", function() {
+        console.log($(this));
+    });
+
     // $("html, body").animate({ scrollTop: 0 }, 2000, "expoinout");
     // $('#home > canvas').height = 100;
     var $window = $(window);
