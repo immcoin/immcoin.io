@@ -1,5 +1,5 @@
-extends ./partials/layout 
-block content
+
+block timeline
     .test-container
         #timeline
             .timebar
@@ -8,62 +8,35 @@ block content
                     li
                         .node  
                         .info
-                            .title Lorem Ipsum
-                            .desc Lorem ipsum dolor sit amet consecuter
+                            .title JANUARY 2017
+                            .desc IMM project Conception
                     li
                         .node 
                         .info
-                            .title Lorem Ipsum
-                            .desc Lorem ipsum dolor sit amet consecuter
+                            .title MAY 2017
+                            .desc Launch of IMM trading platform (www.immtradersclub.com)
                     li
                         .node 
                         .info
-                            .title Lorem Ipsum
-                            .desc Lorem ipsum dolor sit amet consecuter
+                            .title JULY 2017
+                            .desc IMM Coin whitepaper
                     li
                         .node 
                         .info
-                            .title Lorem Ipsum
-                            .desc Lorem ipsum dolor sit amet consecuter
+                            .title SEPTEMBER 2017
+                            .desc Launch of IMM Coin Website (www.immcoin.io)
                     li
                         .node 
                         .info
-                            .title Lorem Ipsum
-                            .desc Lorem ipsum dolor sit amet consecuter
+                            .title OCTOBER 21 2017
+                            .desc Launch of IMM COIN & Pre-Selling
                     li
                         .node 
                         .info
-                            .title Lorem Ipsum
-                            .desc Lorem ipsum dolor sit amet consecuter
+                            .title DECEMBER 2017 - MARCH 2018
+                            .desc ICO Period
                     li
                         .node 
                         .info
-                            .title Lorem Ipsum
-                            .desc Lorem ipsum dolor sit amet consecuter
-
-    include ./partials/footer 
-    script(src='/js/minified/TimelineMax.min.js')
-    script(src='/js/minified/TweenMax.min.js')
-    script(src='/js/particles.min.js')
-    script(src='/js/jquery.countdown.min.js')
-    script(src='/js/jquery.bgswitcher.js')
-    script.
-        var prg = '70%'
-        var nodes = $('.node');
-        var progress = $('.progress');
-        TweenMax.to('.progress', 2, {width: prg, ease:Linear.easeNone,onUpdate:checknodes });
-
-        function checknodes() {
-            $('.node').each(function(index) {
-                var currprog = progress.offset().left+progress.width();
-                if(currprog >= $(this).offset().left && currprog <= $(this).offset().left + $(this).width()) {
-                    TweenMax.to($(this), 1, {scale: 2, ease:Power4.easeOut});
-                }
-            })
-        }
-            
-                //- if(progress.offset().left+progress.width() >= nodes[obj].offset().left) {
-                //-     console.log('hit!!!');
-                //- }
-            //- onUpdate:checknodes
-        checknodes();
+                            .title APRIL 07 2018
+                            .desc Start of Live Exchange

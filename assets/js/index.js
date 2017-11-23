@@ -1,25 +1,18 @@
-particlesJS.load('landing', '/particles.json', function() {
-    console.log('nodes generated...');
-});
-particlesJS.load('homes', '/bodyparticle.json', function() {
-
-});
+particlesJS.load('landing', '/particles.json');
+particlesJS.load('homes', '/bodyparticle.json');
 
 var radius = 3,
     circumference = 2 * radius * Math.PI;
 
-// TweenMax.staggerTo('#overlay svg path', 5, {ease:Linear.easeNone, transformOrigin:"50% 50%", rotation:'360', repeat: -1}, 0.5);
 $(document).ready(function() {
 
-    $('#overlay').fadeOut("slow", function() {
-        console.log($(this));
-    });
-
+    $('#overlay').fadeOut("slow");
     // $("html, body").animate({ scrollTop: 0 }, 2000, "expoinout");
     // $('#home > canvas').height = 100;
     var $window = $(window);
     var curr = 'landing';
     var nav = $('#navigator');
+    var logoImg = ['/images/immcoinlogo-white.png','/images/immcoinlogo.png'];
 
     var sec = new timeOffset($('#sec'), 60, 'SECONDS');
     var min = new timeOffset($('#min'), 60, 'MINUTES');
@@ -34,17 +27,6 @@ $(document).ready(function() {
         day.progress(event.strftime('%D'));
     });
 
-    var bgImages = ["/images/content-bg.jpg", "/images/content-bg-2.jpg"];
-    var logoImg = ['/images/immcoinlogo-white.png','/images/immcoinlogo.png'];
-
-    // preloadImages(logoImg);
-    // preloadImages(bgImages);
-
-    // var $el = $("body").bgswitcher({
-    //     images: ["/images/content-bg.jpg", "/images/content-bg-2.jpg", "/images/content-bg-3.jpg"],
-    //     start: false,
-    //     duration: 200
-    // });
 
     $window.on('scroll', function() {
         if($window.scrollTop() >= 80 && nav.hasClass('navigator')){
@@ -75,7 +57,7 @@ $(document).ready(function() {
     
     var tl = new TimelineMax();
     tl.from($('#trade #from'), 1, {opacity: 0,x: -400, ease:Power4.easeOut})
-        .from('#trade #to', 1, {opacity: 0, x: 400, ease:Power4.easeOut}, )
+        .from('#trade #to', 1, {opacity: 0, x: 400, ease:Power4.easeOut})
         .staggerFrom('#trade .coin', 1 , {x:300, scale:0.5, opacity: 0, ease:Power4.easeOut}, 0.1)
         .to('#trade .coin', 2 ,{transformOrigin:"50% 50%", ease:Linear.easeNone, rotation: 360, repeat: -1})
    
@@ -114,8 +96,39 @@ $(document).ready(function() {
     //         console.log(err);
     //     }
     // });
+        
+    // 
+    var ctx = document.getElementById('mychart').getContext('2d');
+    data = {
+        datasets: [{
+            data: [2, 3, 5, 10, 10, 70],
+            backgroundColor: [
+                'rgb(52,182,193)',
+                'rgb(54,214,194)',
+                'rgb(94,205,208)',
+                'rgb(53,204,216)',
+                'rgb(56,238,233)',
+                'rgb(56,238,233)',
+            ]
+        }],
     
+        
+        labels: [
+            'FOR THE STAFF',
+            'FOR INTERNAL DEVELOPMENT',
+            'FOR CONTINGENCIES',
+            'FOR THE CORE TEAM',
+            'FOR THE MARKETING AND SPONSOR PROGRAM',
+            'WILL BE INVESTED TO FOREX AND CRYPTO TRADES'
+        ]
+    };
+    var myDoughnutChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: data,
+        options: {}
+    });
 });
+
 
 function updateSales(data) {
     var progress = $('#progressBar .progress');
@@ -129,18 +142,6 @@ function updateSales(data) {
 
 function toCurrency(val) {
     return val.toFixed(2).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + ' IMC';
-}
-
-var stroker = function(el, count) {
-    var currentCount = 1, 
-        maxCount = count;
-    this.update = function(data, unit) {
-        currentCount = data;
-        var offset = -(circumference / maxCount) * currentCount + 'em';
-        el.find('.radial-progress-cover').attr('stroke-dashoffset', offset);
-        el.find('tspan.time').html(data);
-        el.find('tspan.unit').html(unit);
-    }
 }
 
 $("#navigator a").click(function () {

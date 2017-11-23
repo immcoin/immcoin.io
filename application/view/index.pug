@@ -121,12 +121,16 @@ block content
                             .desc Your "buy" and "sell" orders get executed in realtime on the blockchain. Its a decentralised network that is always 24/7 accessible.
                 
         #timeline.mid-clip.content
+            .angled-container-cover
+                h1.title TIMELINE
+                .separator
+                include ./partials/timeline
             
         #team.mid-clip.content
             .angled-container
                 h1.title-inverted IMM TEAM
                 .separator-inverted
-                .container
+                .container-cover
                     .fl#members-container
                         each val in members
                             .team-card-container.fl-itm
@@ -157,6 +161,12 @@ block content
                                 .team-description= val.description
                                 .team-links
         #about.mid-clip.content
+            .angled-container
+                h1.title CHARTS
+                .separator
+                .container
+                    
+                    canvas#mychart
 
         #contact.mid-clip.content
             .angled-container-cover
@@ -230,11 +240,11 @@ block content
         #footer.top-clip.content
 
         include ./partials/footer 
-        script(src='/js/minified/TimelineMax.min.js')
-        script(src='/js/minified/TweenMax.min.js')
-        script(src='/js/particles.min.js')
-        script(src='/js/jquery.countdown.min.js')
-        script(src='/js/jquery.bgswitcher.js')
-        script(src='/js/index.js')
+        script(type="text/javascript", src='/js/minified/TimelineMax.min.js')
+        script(type="text/javascript", src='/js/minified/TweenMax.min.js')
+        script(type="text/javascript", src='/js/particles.min.js')
+        script(type="text/javascript", src='/js/jquery.countdown.min.js')
+        script(type="text/javascript", src='/js/jquery.bgswitcher.js')
+        script(type="text/javascript", src='/js/index.js')
             
             
