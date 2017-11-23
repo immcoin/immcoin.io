@@ -238,11 +238,13 @@ html, body {
   align-items: center;
   justify-content: center;
   justify-items: center;
+  position: relative;
   flex-direction: column;
   box-sizing: border-box;
-  padding: 3%; }
+  padding: 5%; }
 
 #imm-info .immcard {
+  position: relative;
   width: 100%;
   font-family: quicksand;
   margin: 2% auto; }
@@ -412,7 +414,11 @@ svg {
   fill: transparent;
   stroke-linecap: round;
   transform: rotate(-90deg);
-  transform-origin: 50% 50%; }
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%; }
 
 #countdown svg .cover {
   stroke: #0bb5ff;

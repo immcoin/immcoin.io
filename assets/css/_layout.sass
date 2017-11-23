@@ -215,15 +215,17 @@ body
 // W H A T  I S  I M M  C O I N
 #imm-info
     +flex-center-content
+    position: relative
     flex-direction: column
     box-sizing: border-box
-    padding: 3%
+    padding: 5%
 
 #imm-info .immcard
-    // background: red 
+    position: relative
     width: 100%
     font-family: quicksand
     margin: 2% auto
+    
 
 #imm-info .immcard .imm-title
     color: white
@@ -390,6 +392,10 @@ svg
     stroke-linecap: round
     transform: rotate(-90deg)
     transform-origin: 50% 50%
+    -webkit-transform-origin: 50% 50%
+    -ms-transform-origin: 50% 50%
+    -moz-transform-origin: 50% 50%
+    -o-transform-origin: 50% 50%
 
 #countdown svg .cover
     stroke: $secondary
