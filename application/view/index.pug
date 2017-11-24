@@ -7,19 +7,23 @@ block content
         #homes
         include ./partials/header
         #landing.bottom-clip.content
+        
                 .content-text-container
                     //- .progress-bar-container
                     //-     #progressBar
                     //-         .bar
                     //-             .progress
                     //-             .text TOTAL COINS SOLD 
-                    .desc.container
+                    .desc.container-cover
 
                         h1
                             span IMC 
-                            | IS THE FUTURE IN CRYPTOCURRENCY TRADING
+                            | IS THE FUTURE OF ONLINE EDUCATION SYSTEM
                         
-                            //--A privately issued cryptocurrency that lives on the iMM platform and BitShares network.
+                            //- A privately issued cryptocurrency that lives on the iMM platform and Ethereum network.
+                            //- THE FUTURE OF ONLINE EDUCATION SYSTEM
+                            //- IS THE FUTURE IN CRYPTOCURRENCY TRADING
+
                         h2 DAYS UNTIL ICO
                         
                         #countdown.fl
@@ -53,37 +57,69 @@ block content
                                         tspan.unit(dy='1.2em', x='50%', y="50%")
                             
                             h3 We are Asia's leading  enable live Event Organiser, who provides quality education online and offline, through partnering with top experts around the Globe.
-
-                            button.btn(type='button') INVEST NOW
+                        
+                    .row
+                        .col-lg-6
+                            h3 WE ACCEPT BITCOIN AND ETHEREUM
+                        .col-lg-6(style='white-space:nowrap')
+                            h3 TOTAL BITCOIN AND ETHEREUM RAISED
+                    .row#coinAccepted
+                        .col-sm-6
+                            include ../../assets/images/whyIMM/bitcoin.svg
+                            //- 17baYHaUKFLShEGgDVBPEzbSHsuanhM9RU
+                        .col-sm-6
+                            include ../../assets/images/whyIMM/ethereum.svg
+                            //- 0x4Ea910bc738325111d8F6ffabD4E54049cc4E839
+                    button.btn(type='button') INVEST NOW
 
         #profit.mid-clip.content
             .angled-container
                 h1.title PROFIT FROM IMC IN 4 DIFFERENT WAYS
                 .separator
-                .fl.fl-padded
-                    each val in data
-                        .fl-col-3
-                            .col-container
-                                .card(style='width: 20em')
-                                    .card-block
-                                        h4.card-title= val.title
-                                        p.card-text= val.content
+                //- .fl.fl-padded
+                //-     each val in data
+                //-         .fl-col-3
+                //-             .col-container
+                //-                 .card(style='width: 20em')
+                //-                     .card-block
+                //-                         h4.card-title= val.title
+                //-                         p.card-text= val.content
+                .container-cover
+                    .row
+                        each val in data
+                            .col-sm-12.col-md-6
+                                h4.card-title= val.title
+                                p.card-text= val.content
         #whyIMM.mid-clip.content
             .angled-container
                 h1.title-inverted WHAT IS IMC?
                 .separator-inverted
                 .container
-                    .fl-container
-                        .fl.fl-col-6
+                    .row
+                        .col-lg-6
                             #coin-container
                                 .immcoin
                                     .front
                                         include ../../assets/images/whyIMM/immSymbol.svg
                                     .back
-                        .fl.fl-col-6#imm-info
+                        .col-lg-6#imm-info
                                 .immcard
-                                    .imm-title TOKEN NAME
-                                    .imm-info IMC
+                                    .row
+                                        .col-md-6
+                                            .imm-title TOKEN NAME
+                                            .imm-info IMM COIN
+                                        .col-md-6  
+                                            .imm-title TOKEN NAME
+                                            .imm-info IMM COIN
+                                .immcard
+                                    .row
+                                        .col-md-6  
+                                            .imm-title TOKEN SYMBOL
+                                            .imm-info IMC
+                                        .col-md-6  
+                                            .imm-title TOKEN ADDRESS
+                                            .imm-info 0xe42ba5558b00d2e6109cc60412d5d4c9473fe998
+                               
                                 .immcard
                                     .imm-title WHAT DOES THIS TOKEN REPRESENT?
                                     .imm-info The Tokens represent a form of ownership of the IMM Coin. One Token will be equivalent of $1
@@ -96,7 +132,7 @@ block content
                                 .immcard
                                     .imm-title INITIAL COIN STRUCTURE VALUE
                                     .imm-info $1 per coin
-                h1.title-inverted WHY IMC
+                h1.title-inverted WHY IMC ?
                 .separator-inverted
                 .container
                     .fl#wic
@@ -247,6 +283,11 @@ block content
         
                  
         #footer.top-clip.content
+            .foot
+                .container-cover
+                    .row
+                        .col-lg-6
+                        .col-lg-6
 
         include ./partials/footer 
         script(type="text/javascript", src='/js/minified/TimelineMax.min.js')
