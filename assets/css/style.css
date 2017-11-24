@@ -2,6 +2,10 @@
   font-family: quicksand;
   src: url("/fonts/Quicksand-Regular.otf"); }
 
+@font-face {
+  font-family: fontawesome;
+  src: url("/fonts/FontAwesome.otf"); }
+
 html, body {
   margin: 0;
   padding: 0; }
@@ -490,6 +494,20 @@ text tspan.unit {
 #accordion .card .card-header {
   background: transparent; }
 
+#accordion .card .card-header a:after {
+  font-family: 'fontawesome';
+  content: "\f062";
+  position: absolute;
+  top: 0;
+  transform: translateY(70%);
+  right: 10px;
+  transform: rotate(0deg);
+  transition: .5s; }
+
+#accordion .card .card-header a.collapsed:after {
+  transform: rotate(180deg);
+  transition: .5s; }
+
 #accordion a {
   color: #202020;
   font-family: quicksand; }
@@ -531,85 +549,6 @@ text tspan.unit {
 #clock line, circle {
   stroke: white;
   fill: white; }
-
-.test-container {
-  position: relative;
-  margin: 15% 0;
-  color: #202020;
-  text-align: center;
-  display: flex;
-  justify-items: center;
-  align-items: center; }
-
-#timeline {
-  position: relative;
-  margin: auto;
-  width: 100%; }
-
-.timebar {
-  position: relative;
-  margin: auto;
-  width: 90%;
-  height: 5px;
-  background: #2f2f2f;
-  border-radius: 5px; }
-
-.timebar .progress {
-  position: absolute;
-  height: 100%;
-  background: #05e9ff; }
-
-.timebar ul {
-  display: flex;
-  justify-content: space-around;
-  list-style: none; }
-
-.timebar ul li {
-  display: block;
-  transform: translateY(-40%); }
-
-.timebar ul li .node {
-  background: #2d8ac4;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 5px solid white;
-  transition: .2s; }
-
-.timebar .info {
-  padding: 20px;
-  position: absolute;
-  border-radius: 20px;
-  transition: .5s;
-  font-family: quicksand;
-  width: 200px; }
-
-.timebar .info .title {
-  padding: 1% 3%;
-  font-size: 14px;
-  font-weight: bolder; }
-
-.timebar .info .desc {
-  font-size: 10px;
-  color: #202020; }
-
-.timebar ul li:nth-child(odd) .info {
-  top: -15px;
-  transform: translateY(-100%);
-  left: -30%; }
-
-.timebar ul li:nth-child(even) .info {
-  top: 40px;
-  left: 0%; }
-
-.timebar ul li:nth-child(odd) .node:hover ~ .info {
-  transform: translateY(-110%); }
-
-.timebar ul li:nth-child(even) .node:hover ~ .info {
-  transform: translateY(10%); }
-
-.timebar ul li .node:hover {
-  background: #202020; }
 
 #coin-container {
   width: 100%;
@@ -725,15 +664,32 @@ text tspan.unit {
   100% {
     transform: rotateY(360deg) rotateX(720deg); } }
 
-.arc {
-  display: table;
-  width: 100%; }
-  .arc .arc-col-6 {
-    display: table-cell;
-    width: 50%; }
-  .arc .arc-col-3 {
-    display: table-cell;
-    width: 25%; }
+#about {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+#investment {
+  width: 100% !important;
+  font-family: quicksand !important; }
+
+#investment .chart-container h6 {
+  text-align: center;
+  font-family: quicksand;
+  font-size: 20px; }
+
+#investment .graph-stats-container {
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+#investment .graph-stats-container .stats {
+  display: flex;
+  width: 50%;
+  font-family: quicksand; }
+
+#investment .graph-stats-container .stats .text-muted {
+  font-size: 10px; }
 
 #landing h1 {
   text-align: center;
@@ -849,6 +805,8 @@ tspan.unit {
     margin-top: 30%;
     margin-bottom: 20%; }
   .fl-container .fl-col-6 {
+    width: 100%; }
+  .arc .arc-col-6 {
     width: 100%; } }
 
 @media only screen and (max-device-width: 600px), screen and (max-width: 600px) {
@@ -857,6 +815,10 @@ tspan.unit {
   #landing h1 {
     font-size: 25px; }
   #wic .fl-item {
+    width: 100%; }
+  #investment .graph-stats-container {
+    flex-direction: column; }
+  #investment .graph-stats-container .stats {
     width: 100%; } }
 
 @media only screen and (max-width: 400px) {
@@ -866,57 +828,3 @@ tspan.unit {
     width: 80%; }
   #landing h1 {
     font-size: 12px; } }
-
-@media only screen and (max-device-width: 1000px), screen and (max-width: 1000px) {
-  .timebar {
-    width: 5px;
-    height: 1000px; }
-  .test-container #timeline {
-    padding: 10% 0; }
-  .timebar ul {
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    height: 100%; }
-  .timebar ul li {
-    position: relative;
-    right: 0%;
-    width: 30px;
-    transform: translateX(-50%); }
-  .timebar ul li .info {
-    width: 200px;
-    height: auto; }
-  .timebar ul li:nth-child(odd) .info {
-    left: -220px;
-    transform: translateY(0%);
-    top: 0 !important; }
-  .timebar ul li:nth-child(even) .info {
-    left: 50px;
-    transform: translateY(0%);
-    top: 0 !important; }
-  .timebar ul li:nth-child(odd) .node:hover ~ .info {
-    transform: translateX(-10%); }
-  .timebar ul li:nth-child(even) .node:hover ~ .info {
-    transform: translateX(10%); } }
-
-@media only screen and (max-device-width: 600px), screen and (max-width: 600px) {
-  .timebar ul li .info {
-    width: 250px;
-    transform: translateY(-40%) !important; }
-  .test-container {
-    align-items: flex-start;
-    justify-content: flex-start; }
-  .timebar {
-    margin: 0; }
-  .timebar ul li:nth-child(odd) .info {
-    left: 50px;
-    transform: translateY(0%);
-    top: 0 !important; }
-  .timebar ul li:nth-child(even) .info {
-    left: 50px;
-    transform: translateY(0%);
-    top: 0 !important; }
-  .timebar ul li:nth-child(odd) .node:hover ~ .info {
-    transform: translateX(10%); }
-  .timebar ul li:nth-child(even) .node:hover ~ .info {
-    transform: translateX(10%); } }

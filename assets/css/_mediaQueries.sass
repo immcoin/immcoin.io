@@ -104,6 +104,9 @@
     
     .fl-container .fl-col-6
         width: 100%
+
+    .arc .arc-col-6
+        width: 100%
     
 
 @media only screen and (max-device-width : 600px), screen and (max-width : 600px)
@@ -115,6 +118,11 @@
     
     #wic .fl-item
         width: 100%
+    
+    #investment .graph-stats-container
+        flex-direction: column
+    #investment .graph-stats-container .stats
+        width: 100%
 
 @media only screen and (max-width: 400px)
     .angled-container-cover > .fl-container > .fl-col-6
@@ -125,81 +133,3 @@
 
     #landing h1 
         font-size: 12px
-
-
-// TIME LINE
-
-
-
-@media only screen and (max-device-width : 1000px), screen and (max-width : 1000px)
-    .timebar
-        width: 5px
-        height: 1000px
-
-    .test-container #timeline
-        padding: 10% 0
-
-    .timebar ul 
-        flex-direction: column
-        padding: 0
-        margin: 0
-        height: 100%
-    
-    .timebar ul li
-        position: relative
-        right: 0%
-        width: 30px
-        transform: translateX(-50%)
-
-    .timebar ul li .info
-        width: 200px
-        height: auto
-        // background: rgba(123,123,123,0.5)
-
-
-    .timebar ul li:nth-child(odd) .info
-        left: -220px
-        transform: translateY(0%)
-        top: 0 !important
-
-    .timebar ul li:nth-child(even) .info
-        left: 50px  
-        transform: translateY(0%)
-        top: 0 !important
-
-    .timebar ul li:nth-child(odd) .node:hover ~ .info
-        transform: translateX(-10%)
-
-    .timebar ul li:nth-child(even) .node:hover  ~ .info
-        transform: translateX(10%)
-
-
-@media only screen and (max-device-width : 600px), screen and (max-width : 600px)
-
-    .timebar ul li .info
-        width: 250px
-        transform: translateY(-40%) !important
-        // background: red
-
-    .test-container
-        align-items: flex-start
-        justify-content: flex-start
-
-    .timebar
-        margin: 0
-
-    .timebar ul li:nth-child(odd) .info
-        left: 50px
-        transform: translateY(0%)
-        top: 0 !important
-
-    .timebar ul li:nth-child(even) .info
-        left: 50px  
-        transform: translateY(0%)
-        top: 0 !important
-
-    .timebar ul li:nth-child(odd) .node:hover ~ .info
-        transform: translateX(10%)
-
-    .timebar ul li:nth-child(even) .node:hover  ~ .info
-        transform: translateX(10%)

@@ -97,36 +97,44 @@ $(document).ready(function() {
     //     }
     // });
         
-    // 
-    var ctx = document.getElementById('mychart').getContext('2d');
-    data = {
-        datasets: [{
-            data: [2, 3, 5, 10, 10, 70],
-            backgroundColor: [
-                'rgb(52,182,193)',
-                'rgb(54,214,194)',
-                'rgb(94,205,208)',
-                'rgb(53,204,216)',
-                'rgb(56,238,233)',
-                'rgb(56,238,233)',
-            ]
-        }],
-    
-        
+
+    let _investmentData = {
         labels: [
-            'FOR THE STAFF',
-            'FOR INTERNAL DEVELOPMENT',
-            'FOR CONTINGENCIES',
-            'FOR THE CORE TEAM',
+            'WILL BE INVESTED TO FOREX AND CRYPTO TRADES',  
             'FOR THE MARKETING AND SPONSOR PROGRAM',
-            'WILL BE INVESTED TO FOREX AND CRYPTO TRADES'
+            'FOR THE CORE TEAM',
+            'FOR CONTINGENCIES',
+            'FOR INTERNAL DEVELOPMENT',
+            'FOR THE STAFF'
+        ],
+        datasets: [
+          {
+            title: "INVESTMENTS",
+            values: [70, 10, 10, 5, 3, 2]
+          }
         ]
-    };
-    var myDoughnutChart = new Chart(ctx, {
-        type: 'doughnut',
-        data: data,
-        options: {}
+    }
+        
+    
+    let chart = new Chart({
+    parent: "#investment", 
+    title: "ALLOCATION OF FUNDS",
+    data: _investmentData,
+    type: 'percentage',
+    height: 250,
+    colors: [
+            'rgb(51,161,209)',
+            'rgb(71,96,128)',
+            'rgb(71,150,188)',
+            'rgb(56,134,201)',
+            'rgb(48,114,203)',
+            'rgb(20,80,203)',
+            ],
+    format_tooltip_x: d => (d + '').toUpperCase(),
+    format_tooltip_y: d => d + ' pts'
     });
+
+
 });
 
 

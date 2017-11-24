@@ -51,6 +51,7 @@ block content
                                     text(x="50%", y="50%") 
                                         tspan.time(dy='1.2em', x='50%', y="30%")
                                         tspan.unit(dy='1.2em', x='50%', y="50%")
+                            
                             h3 We are Asia's leading  enable live Event Organiser, who provides quality education online and offline, through partnering with top experts around the Globe.
 
                             button.btn(type='button') INVEST NOW
@@ -124,7 +125,8 @@ block content
             .angled-container-cover
                 h1.title TIMELINE
                 .separator
-                include ./partials/timeline
+                .container-cover
+                    include ./partials/tl
             
         #team.mid-clip.content
             .angled-container
@@ -161,12 +163,19 @@ block content
                                 .team-description= val.description
                                 .team-links
         #about.mid-clip.content
-            .angled-container
-                h1.title CHARTS
+            .angled-container-cover
+                h1.title INITIAL COIN OFFERING
                 .separator
-                .container
-                    
-                    canvas#mychart
+                .row
+                    .col-md-12.col-sm-12.col-lg-6
+                        | We aim to transcend a 30% of total investment  towards blockchain in education system and 70% of total investment into trading. The share of trading will be invested in Forex, cryptocurrency, stock, indices and likes by our expert traders to take advantage of the market.
+                    .col-md-12.col-sm-12.col-lg-6
+                        
+                .row
+                    .col-md-12.col-sm-12.col-lg-6
+                        #investment
+                    .col-md-12.col-sm-12.col-lg-6
+                        #selling
 
         #contact.mid-clip.content
             .angled-container-cover
@@ -207,8 +216,8 @@ block content
                 #accordion.tablist
                     .card
                         #headingOne.card-header(role='tab')
-                            h5.mb-0 
-                                a(data-toggle='collapse', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne') WHAT IS IMM COIN?
+                            a(data-toggle='collapse', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne') 
+                                h5.mb-0 WHAT IS IMM COIN?
                         #collapseOne.collapse.show(role='tabpanel', aria-labelledly='headingOne', data-parent='#accordion')
                             .card-body A privately issued cryptocurrency that lives on the iMM platform and BitShares network.
                     .card
@@ -245,6 +254,7 @@ block content
         script(type="text/javascript", src='/js/particles.min.js')
         script(type="text/javascript", src='/js/jquery.countdown.min.js')
         script(type="text/javascript", src='/js/jquery.bgswitcher.js')
+        script(type="text/javascript", src='/js/frappe-charts.min.js')
         script(type="text/javascript", src='/js/index.js')
             
             
