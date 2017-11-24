@@ -96,7 +96,6 @@ $(document).ready(function() {
     //         console.log(err);
     //     }
     // });
-        
 
     let _investmentData = {
         labels: [
@@ -134,9 +133,20 @@ $(document).ready(function() {
     format_tooltip_y: d => d + ' pts'
     });
 
-
+    setInterval( function() {
+        getEthVal();
+    }, 1000 * 60 );
 });
 
+function getEthVal() {
+    $.ajax({
+        url: 'https://api.coinmarketcap.com/v1/ticker/ethereum/',
+        success: function(_ethval) {
+            $('#ethVal').html("1 ETH = " + _ethval[0].price_usd * 1 + " IMC <blink> L I V E </blink>");
+        }
+    });
+}
+getEthVal();
 
 function updateSales(data) {
     var progress = $('#progressBar .progress');

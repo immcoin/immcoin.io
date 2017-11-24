@@ -352,6 +352,33 @@ html, body {
   .separator-inverted {
     background: white; }
 
+blink {
+  -webkit-animation: 2s linear infinite condemned_blink_effect;
+  animation: 2s linear infinite condemned_blink_effect;
+  background: #ff6961;
+  color: white;
+  font-size: 9px;
+  border-radius: 2px;
+  padding: 5px;
+  left: 10px;
+  position: relative; }
+
+@-webkit-keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden; }
+  50% {
+    visibility: hidden; }
+  100% {
+    visibility: visible; } }
+
+@keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden; }
+  50% {
+    visibility: hidden; }
+  100% {
+    visibility: visible; } }
+
 #team .fl {
   justify-content: center;
   align-items: flex-start; }
@@ -698,6 +725,53 @@ text tspan.unit {
   padding: 0;
   margin: 0;
   display: inline-block; }
+
+.arc-card {
+  position: relative;
+  background: white;
+  width: 95%;
+  height: 400px;
+  transition: .5s;
+  margin: auto; }
+
+.arc-card .card-header {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: gray;
+  transition: .5s; }
+
+.arc-card .card-header .card-rad-title {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  bottom: -50px;
+  left: 50%;
+  background: white;
+  transform: translateX(-50%);
+  border: 2px solid #c8c8c8;
+  font-family: quicksand;
+  font-size: 1.5em; }
+
+.arc-card:hover {
+  width: 100%; }
+
+.arc-card:hover .card-header {
+  background: #0bb5ff; }
+
+.arc-card .card-body {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.arc-card .table {
+  display: table; }
+
+.arc-card .table-cell {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle; }
 
 #landing h1 {
   text-align: center;

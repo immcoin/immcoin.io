@@ -7,7 +7,6 @@ block content
         #homes
         include ./partials/header
         #landing.bottom-clip.content
-        
                 .content-text-container
                     //- .progress-bar-container
                     //-     #progressBar
@@ -109,14 +108,11 @@ block content
                                             .imm-title TOKEN NAME
                                             .imm-info IMM COIN
                                         .col-md-6  
-                                            .imm-title TOKEN NAME
-                                            .imm-info IMM COIN
-                                .immcard
-                                    .row
-                                        .col-md-6  
                                             .imm-title TOKEN SYMBOL
                                             .imm-info IMC
-                                        .col-md-6  
+                                .immcard
+                                    .row
+                                        .col-md-12
                                             .imm-title TOKEN ADDRESS
                                             .imm-info 0xe42ba5558b00d2e6109cc60412d5d4c9473fe998
                                
@@ -131,7 +127,7 @@ block content
                                     .imm-info 300,000,000 IMC
                                 .immcard
                                     .imm-title INITIAL COIN STRUCTURE VALUE
-                                    .imm-info $1 per coin
+                                    #ethVal.imm-info $1 per coin
                 h1.title-inverted WHY IMC ?
                 .separator-inverted
                 .container
@@ -202,16 +198,45 @@ block content
             .angled-container-cover
                 h1.title INITIAL COIN OFFERING
                 .separator
-                .row
-                    .col-md-12.col-sm-12.col-lg-6
-                        | We aim to transcend a 30% of total investment  towards blockchain in education system and 70% of total investment into trading. The share of trading will be invested in Forex, cryptocurrency, stock, indices and likes by our expert traders to take advantage of the market.
-                    .col-md-12.col-sm-12.col-lg-6
-                        
-                .row
-                    .col-md-12.col-sm-12.col-lg-6
-                        #investment
-                    .col-md-12.col-sm-12.col-lg-6
-                        #selling
+                .container
+                    .row
+                        .col-md-12.col-sm-12.col-lg-12
+                            | We aim to transcend a 30% of total investment  towards blockchain in education system and 70% of total investment into trading. The share of trading will be invested in Forex, cryptocurrency, stock, indices and likes by our expert traders to take advantage of the market.
+                        //- .col-md-12.col-sm-12.col-lg-6
+                        //-     .row#bonusSection
+                        //-         .col-md-3
+                        //-             .arc-card
+                        //-                 .card-header
+                        //-                     .card-rad-title.table
+                        //-                         .table-cell 25%
+                        //-                 .card-body
+                        //-                     .card-text 
+                        //-                     .card-text
+                        //-         .col-md-3
+                        //-             .arc-card
+                        //-                 .card-header
+                        //-                     .card-rad-title.table
+                        //-                         .table-cell 20%
+                        //-                 .card-body
+                        //-         .col-md-3
+                        //-             .arc-card
+                        //-                 .card-header
+                        //-                     .card-rad-title.table
+                        //-                         .table-cell 15%
+                        //-                 .card-body
+                        //-         .col-md-3
+                        //-             .arc-card
+                        //-                 .card-header
+                        //-                     .card-rad-title.table
+                        //-                         .table-cell 10%
+                        //-                 .card-body
+                                
+                            
+                    .row
+                        .col-md-12.col-sm-12.col-lg-12
+                            #investment
+                        //- .col-md-12.col-sm-12.col-lg-6
+                            //- #selling
 
         #contact.mid-clip.content
             .angled-container-cover
@@ -288,6 +313,8 @@ block content
                     .row
                         .col-lg-6
                         .col-lg-6
+            .container
+              
 
         include ./partials/footer 
         script(type="text/javascript", src='/js/minified/TimelineMax.min.js')
