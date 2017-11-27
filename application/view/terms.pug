@@ -2,10 +2,8 @@ extends ./partials/layout
 block content
     #tnc    
         include ./partials/header
-        .content#here
-            //- include ./../../assets/un3.md
-        .content
-
+        .container
+            #here
         include ./partials/footer 
         script(type="text/javascript", src='/js/marked.js')
         script(type="text/javascript", src='/js/minified/TimelineMax.min.js')
@@ -14,6 +12,7 @@ block content
         script(type="text/javascript", src='/js/jquery.countdown.min.js')
         script(type="text/javascript", src='/js/jquery.bgswitcher.js')
         script(type="text/javascript", src='/js/frappe-charts.min.js')
-        script(type="text/javascript", src='/js/index.js')
+        //- script(type="text/javascript", src='/js/index.js')
         script.
-            $('#here').html(marked('# Marked in browser\n\nRendered by **marked**.'));
+            var x = !{JSON.stringify(terms)};
+            $('#here').html(marked(x));

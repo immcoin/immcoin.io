@@ -9,10 +9,6 @@ $(document).ready(function () {
     $('#overlay').fadeOut("slow");
     // $("html, body").animate({ scrollTop: 0 }, 2000, "expoinout");
     // $('#home > canvas').height = 100;
-    var $window = $(window);
-    var curr = 'landing';
-    var nav = $('#navigator');
-    var logoImg = ['/images/immcoinlogo-white.png', '/images/immcoinlogo.png'];
 
     var sec = new timeOffset($('#sec'), 60, 'SECONDS');
     var min = new timeOffset($('#min'), 60, 'MINUTES');
@@ -26,33 +22,6 @@ $(document).ready(function () {
         hour.progress(event.strftime('%H'));
         day.progress(event.strftime('%D'));
     });
-
-
-    $window.on('scroll', function () {
-        if ($window.scrollTop() >= 80 && nav.hasClass('navigator')) {
-            $('#logo-src').attr("src", logoImg[1]);
-            nav.removeClass('navigator');
-            nav.addClass('navigator-invert');
-        } else if ($window.scrollTop() <= 80 && nav.hasClass('navigator-invert')) {
-            $('#logo-src').attr("src", logoImg[0]).fadeTo(1000); // change val to 0
-            nav.addClass('navigator');
-            nav.removeClass('navigator-invert');
-        }
-        secIden($('#profit'), 'profit', 0);
-        secIden($('#whyIMM'), 'whyIMM', 1);
-        secIden($('#timeline'), 'timeline', 1);
-        secIden($('#team'), 'team', 2);
-        secIden($('#about'), 'about', 2);
-        secIden($('#faq'), 'faq', 0);
-        secIden($('#contact'), 'contact', 0);
-    });
-
-    function secIden(el, sec, index) {
-        if ($window.scrollTop() >= el.offset().top && $window.scrollTop() <= (el.offset().top + el.height()) && curr != sec) {
-            // el.bgswitcher("select", index); 
-            curr = sec;
-        }
-    }
 
     var tl = new TimelineMax();
     tl.from($('#trade #from'), 1, {
@@ -153,10 +122,7 @@ $(document).ready(function () {
             ease: Linear.easeNone
         });
 
-    $('#burger , #navigator a').click(function () {
-        if ($(window).width() < 900)
-            $('#navigator ul').slideToggle("fast");
-    });
+    
 
     // url : "http://192.168.2.200/imm-trader/total/totalcoin.php",
     // $.ajax({
@@ -235,15 +201,6 @@ function toCurrency(val) {
     return val.toFixed(2).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + ' IMC';
 }
 
-$("#navigator a").click(function () {
-    $('#navigator a').removeClass('active');
-    $(this).addClass('active');
-    var target = $(this).attr('data-id');
-    $("html, body").animate({
-        scrollTop: $(target).offset().top
-    }, 2000, "expoinout");
-    return false;
-});
 
 var timeOffset = function (el, count, unit) {
     var radius = 80,
@@ -302,5 +259,5 @@ $(document).ready(function () {
 });
 
 function textMulter() {
-    
+
 }
