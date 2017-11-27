@@ -1,0 +1,44 @@
+.angled-container
+    h1.title-inverted IMM TEAM
+    .separator-inverted
+    .container-cover
+        .fl#members-container
+            each val in members
+                .team-card-container.fl-itm
+                    .team-img-container
+                        .img-container
+                            .team-links.table
+                                if val.links.facebook
+                                    a(href=val.links.facebook, target='_blank')
+                                        .social-block.facebook-block
+                                            i.fa.fa-facebook
+                                if val.links.linkedin
+                                    a(href=val.links.linkedin, target='_blank')
+                                        .social-block.linkedin-block
+                                            i.fa.fa-linkedin
+                            img(src='' + val.image +'')
+                        
+                    .team-name= val.name
+                    .team-position= val.position
+                    if (val.name === "A.R. CASAS")
+                        #output.team-description(style='font-family: "Consolas"; font-size: 10px; color: #3cff1e;')
+                        script.
+                            desc= "#{val.description}"
+                    else 
+                        .team-description= val.description
+                    
+    h1.title-inverted ADVISERS
+    .separator-inverted
+    .container
+        .fl
+            each val in advisers
+                .team-card-container.fl-itm
+                    .team-img-container
+                        .img-container
+                            img(src='' + val.image +'')
+                    .team-name= val.name
+                    .team-position= val.position
+                    .team-description= val.description
+                    .team-links
+
+    

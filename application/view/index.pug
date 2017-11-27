@@ -75,125 +75,25 @@ block content
             .angled-container
                 h1.title PROFIT FROM IMC IN 4 DIFFERENT WAYS
                 .separator
-                //- .fl.fl-padded
-                //-     each val in data
-                //-         .fl-col-3
-                //-             .col-container
-                //-                 .card(style='width: 20em')
-                //-                     .card-block
-                //-                         h4.card-title= val.title
-                //-                         p.card-text= val.content
                 .container-cover
                     .row
                         each val in data
-                            .col-sm-12.col-md-6
+                            .col.col-xs-12.col-sm-12.col-md-6.col-lg-3
                                 h4.card-title= val.title
                                 p.card-text= val.content
         #whyIMM.mid-clip.content
-            .angled-container
-                h1.title-inverted WHAT IS IMC?
-                .separator-inverted
-                .container
-                    .row
-                        .col-lg-6
-                            #coin-container
-                                .immcoin
-                                    .front
-                                        include ../../assets/images/whyIMM/immSymbol.svg
-                                    .back
-                        .col-lg-6#imm-info
-                                .immcard
-                                    .row
-                                        .col-md-6
-                                            .imm-title TOKEN NAME
-                                            .imm-info IMM COIN
-                                        .col-md-6  
-                                            .imm-title TOKEN SYMBOL
-                                            .imm-info IMC
-                                .immcard
-                                    .row
-                                        .col-md-12
-                                            .imm-title TOKEN ADDRESS
-                                            .imm-info 0xe42ba5558b00d2e6109cc60412d5d4c9473fe998
-                               
-                                .immcard
-                                    .imm-title WHAT DOES THIS TOKEN REPRESENT?
-                                    .imm-info The Tokens represent a form of ownership of the IMM Coin. One Token will be equivalent of $1
-                                .immcard
-                                    .imm-title PAYOUT STRUCTURE
-                                    .imm-info Investors with IMC holders will receive minimum 8% of the net profit earned on the IMM cryptocurrency transfers within the IMM Platform and exchange.
-                                .immcard
-                                    .imm-title TOTAL SUPPLY
-                                    .imm-info 300,000,000 IMC
-                                .immcard
-                                    .imm-title INITIAL COIN STRUCTURE VALUE
-                                    #ethVal.imm-info $1 per coin
-                h1.title-inverted WHY IMC ?
-                .separator-inverted
-                .container
-                    .fl#wic
-                        .fl-item
-                            .svg-container
-                                include ../../assets/images/whyIMM/trade.svg
-                            .title BUY & SELL STOCKS WITHOUT A BROKER
-                            .desc Save on commissions and bank fees when buying and selling digital assets.
-                        .fl-item
-                            .svg-container
-                                include ../../assets/images/whyIMM/fullControl2.svg
-                            .title FULL CONTROL OF YOUR ASSETS
-                            .desc You can manage your assets on your own.
-                        .fl-item
-                            .svg-container
-                                include ../../assets/images/whyIMM/security.svg
-                            .title SEIZURE RESISTANCE
-                            .desc Only you can access your assets and therefore no third party is involved.
-                        .fl-item
-                            .svg-container
-                                include ../../assets/images/whyIMM/clock.svg
-                            .title REALTIME TRANSACTIONS
-                            .desc Your "buy" and "sell" orders get executed in realtime on the blockchain. Its a decentralised network that is always 24/7 accessible.
-                
+            include ./partials/whyImm
+
         #timeline.mid-clip.content
             .angled-container-cover
                 h1.title TIMELINE
                 .separator
                 .container-cover
                     include ./partials/tl
-            
+
         #team.mid-clip.content
-            .angled-container
-                h1.title-inverted IMM TEAM
-                .separator-inverted
-                .container-cover
-                    .fl#members-container
-                        each val in members
-                            .team-card-container.fl-itm
-                                .team-img-container
-                                    .img-container
-                                        img(src='' + val.image +'')
-                                .team-name= val.name
-                                .team-position= val.position
-                                .team-description= val.description
-                                .team-links
-                                    if val.links.facebook
-                                        a(href=val.links.facebook, target='_blank')
-                                            i.fa.fa-facebook
-                                    if val.links.linkedin
-                                        a(href=val.links.linkedin, target='_blank')
-                                            i.fa.fa-linkedin
-                h1.title-inverted ADVISERS
-                .separator-inverted
-                .container
-                    .fl
-                        each val in advisers
-                            .team-card-container.fl-itm
-                                .team-img-container
-                                    .img-container
-                                        img(src='' + val.image +'')
-                                .team-name= val.name
-                                .team-position= val.position
-                                .team-description= val.description
-                                .team-links
+            include ./partials/team
+
         #about.mid-clip.content
             .angled-container-cover
                 h1.title INITIAL COIN OFFERING
@@ -201,119 +101,20 @@ block content
                 .container
                     .row
                         .col-md-12.col-sm-12.col-lg-12
-                            | We aim to transcend a 30% of total investment  towards blockchain in education system and 70% of total investment into trading. The share of trading will be invested in Forex, cryptocurrency, stock, indices and likes by our expert traders to take advantage of the market.
-                        //- .col-md-12.col-sm-12.col-lg-6
-                        //-     .row#bonusSection
-                        //-         .col-md-3
-                        //-             .arc-card
-                        //-                 .card-header
-                        //-                     .card-rad-title.table
-                        //-                         .table-cell 25%
-                        //-                 .card-body
-                        //-                     .card-text 
-                        //-                     .card-text
-                        //-         .col-md-3
-                        //-             .arc-card
-                        //-                 .card-header
-                        //-                     .card-rad-title.table
-                        //-                         .table-cell 20%
-                        //-                 .card-body
-                        //-         .col-md-3
-                        //-             .arc-card
-                        //-                 .card-header
-                        //-                     .card-rad-title.table
-                        //-                         .table-cell 15%
-                        //-                 .card-body
-                        //-         .col-md-3
-                        //-             .arc-card
-                        //-                 .card-header
-                        //-                     .card-rad-title.table
-                        //-                         .table-cell 10%
-                        //-                 .card-body
-                                
-                            
+                            | We aim to transcend a 30% of total investment  towards blockchain in education system and 70% of total investment into trading. The share of trading will be invested in Forex, cryptocurrency, stock, indices and likes by our expert traders to take advantage of the market.      
                     .row
                         .col-md-12.col-sm-12.col-lg-12
-                            #investment
-                        //- .col-md-12.col-sm-12.col-lg-6
-                            //- #selling
+                            #investment 
 
         #contact.mid-clip.content
             .angled-container-cover
-                .fl-container
-                    .fl-col-6
-                        h1.title-inverted REACH US
-                        .separator-inverted
-                    .fl-col-6
-                        .fl-container
-                            .fl.fl-col-6
-                                .social-img-container
-                                    img(src='/images/social/facebook.png')
-                            .fl.fl-col-6
-                                .social-img-container
-                                    img(src='/images/social/twitter.png')
-                            .fl.fl-col-6
-                                .social-img-container
-                                    img(src='/images/social/reddit.png')
-                            .fl.fl-col-6
-                                .social-img-container
-                                    img(src='/images/social/telegram.png')
-                            .fl.fl-col-6
-                                .social-img-container
-                                    img(src='/images/social/slack.png')
-                            .fl.fl-col-6
-                                .social-img-container
-                                    img(src='/images/social/bitcointalk.png')
-                            .fl.fl-col-6
-                                .social-img-container
-                                    img(src='/images/social/wordpress.png')
-                            .fl.fl-col-6
-                                .social-img-container
-                                    img(src='/images/social/github.png')
+                
         #faq.mid-clip.content
-            .angled-container-cover
-                h1.title FREQUENTLY ASKED QUESTIONS
-                .separator
-                #accordion.tablist
-                    .card
-                        #headingOne.card-header(role='tab')
-                            a(data-toggle='collapse', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne') 
-                                h5.mb-0 WHAT IS IMM COIN?
-                        #collapseOne.collapse.show(role='tabpanel', aria-labelledly='headingOne', data-parent='#accordion')
-                            .card-body A privately issued cryptocurrency that lives on the iMM platform and BitShares network.
-                    .card
-                        #headingTwo.card-header(role='tab')
-                            h5.mb-0 
-                                a(data-toggle='collapse', href='#collapseTwo', aria-expanded='true', aria-controls='collapseTwo') WHAT IS IMM COIN USED FOR?
-                        #collapseTwo.collapse(role='tabpanel', aria-labelledby='headingTwo', data-parent='#accordion')
-                            .card-body To raise money for online and offline education development and to bypass the legacy banking system.
-                    .card
-                        #headingThree.card-header(role='tab')
-                            h5.mb-0 
-                                a(data-toggle='collapse', href='#collapseThree', aria-expanded='true', aria-controls='collapseTwo') HOW DOES IMM COIN WORK?
-                        #collapseThree.collapse(role='tabpanel', aria-labelledby='headingThree', data-parent='#accordion')
-                            .card-body People will buy iMM Coins directly from us at a fixed price. They will give us Bitcoin, Ethereum or Fiat Currency and we will give them IMM Coins, we will use that money to develop education system and Organize LIVE event and buy back the IMM Coin from profits.
-                    .card
-                        #headingFour.card-header(role='tab')
-                            h5.mb-0 
-                                a(data-toggle='collapse', href='#collapseFour', aria-expanded='true', aria-controls='collapseTwo') HOW WILL CONTRIBUTORS GET THEIR MONEY BACK?
-                        #collapseFour.collapse(role='tabpanel', aria-labelledby='headingFour', data-parent='#accordion')
-                            .card-body Once per quarter on a pre-announced date, we will take 50% of the net profits generated by our education system and use it to buy back as many IMM Coin as we can. Holders will offer their iMM Coins for sale on the market and we will buy them back starting with the cheapest first. Once the buyback budget has been exhausted, all iMM Coins purchased within that budget will be permanently burned. This reduces the total remaining supply and increases the scarcity of the coins that remain.
-                    .card
-                        #headingFive.card-header(role='tab')
-                            h5.mb-0 
-                                a(data-toggle='collapse', href='#collapseFive', aria-expanded='true', aria-controls='collapseTwo') HOW MUCH WILL CONTRIBUTORS MAKE?
-                        #collapseFive.collapse(role='tabpanel', aria-labelledby='headingFive', data-parent='#accordion')
-                            .card-body iMM Coin holders have to compete for the money on buy back day. Hence they can either set a low price and sell their IMM Coins more quickly, or set a higher price and wait longer for the market price to reach that level. This means a longer wait but a larger return. We cannot say what the return will be.
-        
+            include ./partials/faq
                  
-        #footer.top-clip.content
-            .foot
-                .container-cover
-                    .row
-                        .col-lg-6
-                        .col-lg-6
-            .container
+        #footer.top-clip.content.red
+            .angled-container-cover
+                include ./partials/foot
               
 
         include ./partials/footer 

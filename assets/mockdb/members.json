@@ -49,17 +49,15 @@
         "position" : "HEAD I.T. SPECIALIST",
         "description" : " Joneil is a goal-driven individual who'll strive independently to succeed. A Head IT Specialist of IMM who's multi-tasking responsibilities such as Graphic Designing, Social Media Marketing, Computer and Customer Support.", 
         "links" : {
-            "facebook" : "",
-            "gmail" : "",
-            "twitter" : "",
-            "linked in" : ""
+            "facebook" : "https://www.facebook.com/gonj.gniya",
+            "linkedin" : "https://www.linkedin.com/in/joneil-aying-783a8b153/"
         },
         "image" : "/images/members/joneil.jpg"
     },
     {
         "name" : "A.R. CASAS",
         "position" : " WEB ARTISAN ",
-        "description" : " RAY is a professional Gamer with more than 8 years of PC and Console Gaming experience. Over the last year Ray has been focusing in binge playing MOBA games and marathoning classic movies. He occationally performs the Haka before playing ranked matches. (( He's Secretly a NINJA ))",
+        "description" : "RAY is a professional Gamer with more than 8 years of PC and Console Gaming experience. Over the last year Ray has been focusing in binge playing MOBA games and marathoning classic movies. He occationally performs the Haka before playing ranked matches. (( He's Secretly a NINJA ))",
         "links" : {
             "facebook" : "",
             "gmail" : "",
