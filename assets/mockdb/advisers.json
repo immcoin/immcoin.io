@@ -1,7 +1,7 @@
 [
     
     {
-        "name" : "Jean-Charles MAURICE",
+        "name" : "JEAN CHARLES MAURICE",
         "position" : "INVESTMENT ADVISER",
         "description" : "JC is initially a defense engineer and worked in war industry for years before creating his own trading company 10 years ago. His wide experience makes him always at the vangard, a sharp and precious investment adviser!", 
         "links" : {
@@ -11,5 +11,12 @@
             "linked in" : ""
         },
         "image" : "/images/members/jean.jpg"
+    }, 
+    {
+        "name" : "PRAVINKUMAR CHAUNDHARY",
+        "fullname" : "PRAVINKUMAR KAMRAJBHAI CHAUNDHARY",
+        "position" : "INVESTMENT ADIVSER",
+        "description" : "pravinkumar is a successful business man who has a vast experience in the insurance industry and is also a life time Chairman member of LIC. ",
+        "image" : "/images/members/pravinkumar.jpg"        
     }
 ]

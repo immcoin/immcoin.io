@@ -1,0 +1,19 @@
+extends ./partials/layout 
+block content
+    #tnc    
+        include ./partials/header
+        .content#here
+            //- include ./../../assets/un3.md
+        .content
+
+        include ./partials/footer 
+        script(type="text/javascript", src='/js/marked.js')
+        script(type="text/javascript", src='/js/minified/TimelineMax.min.js')
+        script(type="text/javascript", src='/js/minified/TweenMax.min.js')
+        script(type="text/javascript", src='/js/particles.min.js')
+        script(type="text/javascript", src='/js/jquery.countdown.min.js')
+        script(type="text/javascript", src='/js/jquery.bgswitcher.js')
+        script(type="text/javascript", src='/js/frappe-charts.min.js')
+        script(type="text/javascript", src='/js/index.js')
+        script.
+            $('#here').html(marked('# Marked in browser\n\nRendered by **marked**.'));

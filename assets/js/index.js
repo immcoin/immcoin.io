@@ -300,3 +300,7 @@ $(document).ready(function () {
     }
 
 });
+
+function textMulter() {
+    
+}
