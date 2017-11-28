@@ -15,25 +15,25 @@ var proxy = require('redbird')({
 var myport = 8080;
 // c o n f i g u r a t i o n 
 
-// var key = fs.readFileSync(path.join(__dirname, '/keys/private.key'));
-// var cert = fs.readFileSync(path.join(__dirname, '/keys/primary.crt'));
-// var ca = fs.readFileSync(path.join(__dirname, '/keys/intermediate.crt'));
+var key = fs.readFileSync(path.join(__dirname, '/keys/private.key'));
+var cert = fs.readFileSync(path.join(__dirname, '/keys/primary.crt'));
+var ca = fs.readFileSync(path.join(__dirname, '/keys/intermediate.crt'));
 
-// var options = {
-//     key: key,
-//     cert: cert,
-//     ca: ca
-// };
+var options = {
+    key: key,
+    cert: cert,
+    ca: ca
+};
 
-// https.createServer(options, app).listen(443, function () {
-//     console.log('https on port 443');
-// });
+https.createServer(options, app).listen(443, function () {
+    console.log('https on port 443');
+});
 
 app.set('views', './application/view');
 app.set('view engine', 'pug')
 
 // m i d d l e w a r e s
-// app.use(forceSsl);
+app.use(forceSsl);
 
 app.use(favicon(path.join(__dirname, '/assets/images/', 'favicon.ico')));
 app.use(morgan('dev'));
@@ -44,7 +44,6 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 var site = "http://localhost:" + myport;
-console.log(site);
 proxy.register("immcoin.io", site);
 proxy.register("www.immcoin.io", site);
 proxy.register("http://.immcoin.io", site);
