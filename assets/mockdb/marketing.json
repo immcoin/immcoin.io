@@ -1,0 +1,17 @@
+[ 
+    {
+        "name" : "MANOJ DIXIT",
+        "position" : " MARKETING ",
+        "image" : "/images/members/manoj.jpg"
+    },
+    {
+        "name" : "RAMESH KALAKONDA",
+        "position" : " MARKETING ",
+        "image" : "/images/members/ramesh.jpg"
+    },
+    {
+        "name" : "KISHU",
+        "position" : " MARKETING ",
+        "image" : "/images/members/kishu.jpg"
+    }
+]

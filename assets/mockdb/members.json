@@ -32,6 +32,28 @@
         },
         "image" : "/images/members/aizza.jpg"
     },
+    
+    {
+        "name" : "PHAKPHICHA JARONEANGGOONWONG",
+        "position" : "EXECUTIVE MEMBER",
+        "description" : "Ms Joy is a successful Entrepreneur woman who has sevral business start up within Thailand. She is an executive team member in imm coin and she typically work on progress towards goals, necessary adjustments in strategy to increase revenue or minimize costs. Additionally she have resposibilities to meet with team and discuss ethical standrads corporate direction and finances.",
+        "links" : {
+            "linkedin" : ""
+        },
+        "image" : "/images/members/phakphicha.jpg"
+    },
+    {
+        "name" : "NATTAWAN KHYNNEN",
+        "position" : " PERSONAL RELATIONS MANAGER ",
+        "description" : "She is working in industry more then 10 years and she is good in planning publicity strategies and campaigns. writing and producing presentations and press releases. dealing with enquiries from the public, the press, and related organisations. organising promotional events such as press conferences, open days, exhibitions, tours and visits.",
+        "links" : {
+            "facebook" : "",
+            "gmail" : "",
+            "twitter" : "",
+            "linked in" : ""
+        },
+        "image" : "/images/members/nattawan.jpg"
+    },
     {
         "name" : "LOUISE SALAS",
         "position" : "LEAD DEVELOPER",

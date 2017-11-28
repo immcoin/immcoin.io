@@ -164,7 +164,7 @@ body
     position: relative
     background: $background
 
-#profit
+#ico
     flex-direction: column
     position: relative
 
@@ -180,9 +180,13 @@ body
 #footer
     display: block
     position: relative
+    height: auto !important
+    min-height: 0
     background: $primary
     padding: 0
 
+.content h1 
+    margin-top: 5%
 
 #countdown 
     +flex-center-content
@@ -190,10 +194,10 @@ body
 .row .col-md-3
     text-align: center
 
-.content-container
+.container-cover
     position: relative
-    width: 100%
-
+    margin: auto
+    width: 90%
 
 // flex
 
@@ -218,18 +222,18 @@ body
 
 // P R O F I T 
 
-#profit .container-cover .row
-    padding-top: 5%
 
-#profit .container-cover .row .col
-    padding-top: 5%
+#ico .row .colm
+    padding-top: 2% 8%
     flex-basis: auto
 
-#profit h4.card-title 
+#ico h4.card-title 
     font-size: 1.1em
 
-#profit p.card-text
+#ico p.card-text
     font-size: em
+
+
 
 // E N D  P R O F I T
 
@@ -282,7 +286,6 @@ body
 
 #footer .social-img-container 
     position: relative
-    display: flex
     align-items: center
     justify-items: center
     align-content: center
@@ -303,9 +306,10 @@ body
 #signForUpdates 
     padding: 2% 0%
     background: #232323
+    
 .foot 
-    position: absolute
-    bottom: 0
+    position: relative
+    bottom: 0 !important
     width: 100%
     color: white 
     text-align: center
@@ -708,7 +712,15 @@ text tspan.unit
     stroke: white
     fill: white
 
-// IMM COIN
+// T E R M S  &  C O N D I T I O N S
+
+#tnc
+    background: $primary
+    color: white 
+    font-family: 'Consolas'
+
+
+// I M M  C O I N
 
 #coin-container
     width: 100%

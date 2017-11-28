@@ -7,8 +7,8 @@ var radius = 3,
 $(document).ready(function () {
 
     $('#overlay').fadeOut("slow");
-    // $("html, body").animate({ scrollTop: 0 }, 2000, "expoinout");
-    // $('#home > canvas').height = 100;
+    $("html, body").animate({ scrollTop: 0 }, 2000, "expoinout");
+    $('#home > canvas').height = 100;
 
     var sec = new timeOffset($('#sec'), 60, 'SECONDS');
     var min = new timeOffset($('#min'), 60, 'MINUTES');
@@ -258,6 +258,51 @@ $(document).ready(function () {
 
 });
 
-function textMulter() {
+function gltchr ( values, target ) {
+    
+    let theLetters = "キンギョタバコわたしラドクリフとうきょうたばこきんぎょ"
+    let lines = values;
+    let frames = 5;
+    let speed = 60;
+    let isAnim = false;
+    let progress = "";
+    let t = $('#hoho');
+    (function() {
+        setInterval(function() {
+            if(!isAnim)
+                progress = "";
+                glitch(lines[Math.floor( Math.random() * lines.length )]);
+                // console.log(lines[Math.floor( Math.random() * lines.length )]);
+        }, 1000);
+    })();
 
+    var glitch = function( phrase ) {
+        isAnim = true;
+        let counter = 0;
+        let block = "";
+        
+        var framing = setInterval(function(){
+            counter++;
+            for( let i = 0 ; i < phrase.length ; i++) {
+                block += phrase.charAt(i) == ' ' ? ' ' : theLetters.charAt( Math.floor( Math.random() * theLetters.length ) );
+            }
+            t.html(block);
+            block = "";
+            if(counter >= frames) {
+                console.log('counter ' + counter);
+                clearInterval(framing);
+                // counter = 0;
+            }
+        }, 1000);
+
+        
+    }
+
+    // var nextFrame = function ( position ) {
+
+    // }
+
+   
 }
+
+gltchr( ["hello world", "hello friend"], 'he')

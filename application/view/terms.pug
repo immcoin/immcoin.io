@@ -1,18 +1,15 @@
 extends ./partials/layout 
 block content
-    #tnc    
-        include ./partials/header
+    #tnc
         .container
             #here
-        include ./partials/footer 
-        script(type="text/javascript", src='/js/marked.js')
-        script(type="text/javascript", src='/js/minified/TimelineMax.min.js')
-        script(type="text/javascript", src='/js/minified/TweenMax.min.js')
-        script(type="text/javascript", src='/js/particles.min.js')
-        script(type="text/javascript", src='/js/jquery.countdown.min.js')
-        script(type="text/javascript", src='/js/jquery.bgswitcher.js')
-        script(type="text/javascript", src='/js/frappe-charts.min.js')
-        //- script(type="text/javascript", src='/js/index.js')
-        script.
-            var x = !{JSON.stringify(terms)};
-            $('#here').html(marked(x));
+            
+    #footer.content
+            .angled-container-cover
+                include ./partials/foot
+
+    include ./partials/footer 
+    script(type="text/javascript", src='/js/marked.js')
+    script.
+        var x = !{JSON.stringify(terms)};
+        $('#here').html(marked(x));

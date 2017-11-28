@@ -1,10 +1,10 @@
-$(document).ready(function () {
     
-    var nav = $('#navigator');
-    var curr = 'landing';
-    var $window = $(window);
-    var logoImg = ['/images/immcoinlogo-white.png', '/images/immcoinlogo.png'];
-    
+var nav = $('#navigator');
+var curr = 'landing';
+var $window = $(window);
+var logoImg = ['/images/immcoinlogo-white.png', '/images/immcoinlogo.png'];
+
+$(document).ready(function () {    
     $window.on('scroll', function () {
         if ($window.scrollTop() >= 80 && nav.hasClass('navigator')) {
             $('#logo-src').attr("src", logoImg[1]);
@@ -16,12 +16,11 @@ $(document).ready(function () {
             nav.removeClass('navigator-invert');
         }
         secIden($('#profit'), 'profit', 0);
-        secIden($('#whyIMM'), 'whyIMM', 1);
+        secIden($('#ico'), 'ico', 1);
         secIden($('#timeline'), 'timeline', 1);
         secIden($('#team'), 'team', 2);
-        secIden($('#about'), 'about', 2);
         secIden($('#faq'), 'faq', 0);
-        secIden($('#contact'), 'contact', 0);
+        secIden($('#footer'), 'footer', 0);
     });
 
     $('#burger , #navigator a').click(function () {

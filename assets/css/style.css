@@ -188,7 +188,7 @@ html, body {
   position: relative;
   background: #3a3a3a; }
 
-#profit {
+#ico {
   flex-direction: column;
   position: relative; }
 
@@ -204,8 +204,13 @@ html, body {
 #footer {
   display: block;
   position: relative;
+  height: auto !important;
+  min-height: 0;
   background: #3a3a3a;
   padding: 0; }
+
+.content h1, .content-angled h1 {
+  margin-top: 5%; }
 
 #countdown {
   display: flex;
@@ -217,9 +222,10 @@ html, body {
 .row .col-md-3 {
   text-align: center; }
 
-.content-container {
+.container-cover {
   position: relative;
-  width: 100%; }
+  margin: auto;
+  width: 90%; }
 
 .fl-container {
   width: 100%;
@@ -238,17 +244,14 @@ html, body {
 .blue {
   background: blue; }
 
-#profit .container-cover .row {
-  padding-top: 5%; }
-
-#profit .container-cover .row .col {
-  padding-top: 5%;
+#ico .row .colm {
+  padding-top: 2% 8%;
   flex-basis: auto; }
 
-#profit h4.card-title {
+#ico h4.card-title {
   font-size: 1.1em; }
 
-#profit p.card-text {
+#ico p.card-text {
   font-size: em; }
 
 #imm-info {
@@ -296,7 +299,6 @@ html, body {
 
 #footer .social-img-container {
   position: relative;
-  display: flex;
   align-items: center;
   justify-items: center;
   align-content: center;
@@ -320,8 +322,8 @@ html, body {
   background: #232323; }
 
 .foot {
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  bottom: 0 !important;
   width: 100%;
   color: white;
   text-align: center; }
@@ -690,6 +692,11 @@ text tspan.unit {
   stroke: white;
   fill: white; }
 
+#tnc {
+  background: #3a3a3a;
+  color: white;
+  font-family: 'Consolas'; }
+
 #coin-container {
   width: 100%;
   display: flex;
@@ -1009,7 +1016,12 @@ tspan.unit {
   .fl-container .fl-col-6 {
     width: 100%; }
   .arc .arc-col-6 {
-    width: 100%; } }
+    width: 100%; }
+  #profit .row {
+    padding: 8% 0%; }
+  #profit .row .colm {
+    padding: 5% 3% !important;
+    flex-basis: auto; } }
 
 @media only screen and (max-device-width: 600px), screen and (max-width: 600px) {
   .fl .fl-itm {
@@ -1029,11 +1041,7 @@ tspan.unit {
   #imm-info .immcard .imm-info {
     color: #828282;
     text-align: justify;
-    font-size: .6em; }
-  #profit .container-cover .row {
-    padding-top: 5%; }
-  #profit .container-cover .row .col {
-    padding-top: 5%; } }
+    font-size: .6em; } }
 
 @media only screen and (max-width: 400px) {
   .angled-container-cover > .fl-container > .fl-col-6 {

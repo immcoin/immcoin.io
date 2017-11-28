@@ -29,31 +29,31 @@ The **iMM Initial Coin Offering (ICO)** is subject to the following Terms and Co
     
 **1. Participant**
 
->**1.1** It is assumed by the Interday Markets Management Limited that any Participant is of an expert and sophisticated nature and fully understands the workings of crypto currency, the blockchain and how an ICO works.
+**1.1** It is assumed by the Interday Markets Management Limited that any Participant is of an expert and sophisticated nature and fully understands the workings of crypto currency, the blockchain and how an ICO works.
 
->**1.2 In order for a Participant to participate, they agree that:**
+**1.2 In order for a Participant to participate, they agree that:**
 **i.)** They are over the age of 18 years (if domiciled in the HongKong) or are over the age of consent for a Participant to legally enter into a contract (if outside of the jurisdiction of the HongKong).
 
->**ii.)** That they have sought the relevant legal, tax and regulatory advice from a suitably qualified professional as to the legality of an ICO in their jurisdiction.
+**ii.)** That they have sought the relevant legal, tax and regulatory advice from a suitably qualified professional as to the legality of an ICO in their jurisdiction.
 
->**iii.)** That they understand that the ICO is not being offered to any Participant that resides in a jurisdiction that is regulated by laws of the countries where transactions with cryptocurrencies are restricted for example the United States of America. The Participant is solely responsible for understanding and complying with any and all laws relevant in the jurisdiction in which they reside. The iMM Coin cannot be held liable for any legal risks and disputes arising from jurisdiction of the Participant.
+**iii.)** That they understand that the ICO is not being offered to any Participant that resides in a jurisdiction that is regulated by laws of the countries where transactions with cryptocurrencies are restricted for example the United States of America. The Participant is solely responsible for understanding and complying with any and all laws relevant in the jurisdiction in which they reside. The iMM Coin cannot be held liable for any legal risks and disputes arising from jurisdiction of the Participant.
 
->**iv.)** That they are responsible to determine which, if any, taxes apply to any profits made and to report and remit the correct tax to the appropriate tax authority. The Interday Markets Management Limited is not obligated to determine which, if any, taxes apply and are not responsible to collect, report or remit any such taxes arising from profits earned by Participants.
+**iv.)** That they are responsible to determine which, if any, taxes apply to any profits made and to report and remit the correct tax to the appropriate tax authority. The Interday Markets Management Limited is not obligated to determine which, if any, taxes apply and are not responsible to collect, report or remit any such taxes arising from profits earned by Participants.
 
->**v.)** That they will not participate in the ICO for any purposes related to organised crime, fraud, tax evasion, money laundering and financing terrorism. Participant’s understand that i-MM Coin will at all times co-operate with any police, criminal or relevant authority investigation relating to a Participant’s breach of these Terms.
+**v.)** That they will not participate in the ICO for any purposes related to organised crime, fraud, tax evasion, money laundering and financing terrorism. Participant’s understand that i-MM Coin will at all times co-operate with any police, criminal or relevant authority investigation relating to a Participant’s breach of these Terms.
 
->**vi.)** That they are deemed to have the requisite experience to understand cryptocoins, cryptocurrency and blockchain technology.
+**vi.)** That they are deemed to have the requisite experience to understand cryptocoins, cryptocurrency and blockchain technology.
 
->**vii.)** They understand and agree that nothing in these Terms, nothing in the White Paper and nothing on the Website is intended to provide the Participant with investment, tax, accounting or legal advice or is to be interpreted as a recommendation, endorsement or enticement to participate with regards to i-MM Coin. Any decision by a Participant to participate is at their sole discretion and Interday Markets Management Limited will not be liable for any loss suffered.
+**vii.)** They understand and agree that nothing in these Terms, nothing in the White Paper and nothing on the Website is intended to provide the Participant with investment, tax, accounting or legal advice or is to be interpreted as a recommendation, endorsement or enticement to participate with regards to i-MM Coin. Any decision by a Participant to participate is at their sole discretion and Interday Markets Management Limited will not be liable for any loss suffered.
 
->**viii.)** That any purchase of i-MM Coin is non-refundable and is final.
+**viii.)** That any purchase of i-MM Coin is non-refundable and is final.
 
->**ix.)** That when the ICO launches, a public supply of 2,10,000,000 i-MM Coin will be listed for sale on the decentralised exchange.
+**ix.)** That when the ICO launches, a public supply of 2,10,000,000 i-MM Coin will be listed for sale on the decentralised exchange.
 
->**x.)** By accepting these terms and conditions I certify and commit to any future participant identification which may be possible and legally required under money laundering regulations. It is currently impossible to verify with any certainty the individual purchasers of i-MM Coin by nature of their purchase on-line via bitcoins. The directors of i-MM Coin working with their specialist solicitors will endeavour to find a solution to this in due course. Interday Markets Management Limited are committed to ensuring best practice and working in accordance with any future regulatory body overseeing the relatively new space of cryptocurrency.
+**x.)** By accepting these terms and conditions I certify and commit to any future participant identification which may be possible and legally required under money laundering regulations. It is currently impossible to verify with any certainty the individual purchasers of i-MM Coin by nature of their purchase on-line via bitcoins. The directors of i-MM Coin working with their specialist solicitors will endeavour to find a solution to this in due course. Interday Markets Management Limited are committed to ensuring best practice and working in accordance with any future regulatory body overseeing the relatively new space of cryptocurrency.
 It is acknowledged that in accepting Bitcoin to participate in the i-MM Coin ICO purchasers have undergone anti money laundering processes via an exchange.
 
->**xi.)** They will adhere to these Terms and agree to be bound by them.
+**xi.)** They will adhere to these Terms and agree to be bound by them.
 
 **2. Timetable for ICO**
     
