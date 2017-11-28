@@ -1,0 +1,32 @@
+extends ./partials/layout
+block content
+    style.
+        img{
+            position: absolute; 
+            top: 40%; 
+            left: 0%; 
+            transform: translate(-50%,-50%); 
+            left: 50%;
+            width: 50%;
+            transition: .5s;
+            animation: float 3s infinite ease;
+        }
+
+        @keyframes float {
+            0% {
+                top: 40%;
+            }
+            33% {
+                top: 40%;
+            }
+            66% {
+                top: 60%;
+            }
+            100% {
+                top: 40%;
+            }
+        }
+
+
+    #404-container(style="position: relative; text-align:center; height: 100vh")
+        img(src='/images/404.jpg')

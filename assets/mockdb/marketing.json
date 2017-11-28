@@ -10,8 +10,23 @@
         "image" : "/images/members/ramesh.jpg"
     },
     {
-        "name" : "KISHU",
+        "name" : "KISHU SNEHI",
         "position" : " MARKETING ",
         "image" : "/images/members/kishu.jpg"
+    },
+    {
+        "name" : "HITESH CHAUDHARY",
+        "position" : " MARKETING ",
+        "image" : "/images/members/hitesh.jpg"
+    },
+    {
+        "name" : "SUWARTINI",
+        "position" : "MARKETING (Indonesia)",
+        "image" : "/images/members/suwartini.jpg"
+    },
+    {
+        "name" : "WITRIANI",
+        "position" : " MARKETING (Indonesia) ",
+        "image" : "/images/members/witriani.jpg"
     }
 ]

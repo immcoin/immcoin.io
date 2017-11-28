@@ -1,4 +1,3 @@
-    
 var nav = $('#navigator');
 var curr = 'landing';
 var $window = $(window);
@@ -45,7 +44,7 @@ $(document).ready(function () {
 });
 
 function secIden(el, sec, index) {
-    if ($window.scrollTop() >= el.offset().top && $window.scrollTop() <= (el.offset().top + el.height()) && curr != sec) {
+    if ($window.scrollTop() >= el.offset() && $window.scrollTop() <= (el.offset().top + el.height()) && curr != sec) {
         // el.bgswitcher("select", index); 
         curr = sec;
     }
