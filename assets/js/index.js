@@ -7,8 +7,8 @@ var radius = 3,
 $(document).ready(function () {
 
     $('#overlay').fadeOut("slow");
-    $("html, body").animate({ scrollTop: 0 }, 2000, "expoinout");
-    $('#home > canvas').height = 100;
+    // $("html, body").animate({ scrollTop: 0 }, 2000, "expoinout");
+    // $('#home > canvas').height = 100;
 
     var sec = new timeOffset($('#sec'), 60, 'SECONDS');
     var min = new timeOffset($('#min'), 60, 'MINUTES');

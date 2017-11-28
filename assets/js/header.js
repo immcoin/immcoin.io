@@ -28,6 +28,10 @@ $(document).ready(function () {
             $('#navigator ul').slideToggle("fast");
     });
 
+    $window.resize(function() {
+        if($window.width() > 900)
+            $('#navigator ul').show();
+    })
     $("#navigator a").click(function () {
         $('#navigator a').removeClass('active');
         $(this).addClass('active');
