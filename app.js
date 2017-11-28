@@ -32,6 +32,7 @@ app.set('view engine', 'pug')
 
 // m i d d l e w a r e s
 app.use(forceSsl);
+
 app.use(favicon(path.join(__dirname, '/assets/images/', 'favicon.ico')));
 app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, '/assets')));
@@ -41,10 +42,10 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
-proxy.register("immcoin.io", "https://localhost:1337");
-proxy.register("www.immcoin.io", "https://localhost:1337");
-proxy.register("http://.immcoin.io", "https://localhost:1337");
-proxy.register("https://.immcoin.io", "https://localhost:1337");
+// proxy.register("immcoin.io", "https://localhost:1337");
+// proxy.register("www.immcoin.io", "https://localhost:1337");
+// proxy.register("http://.immcoin.io", "https://localhost:1337");
+// proxy.register("https://.immcoin.io", "https://localhost:1337");
 
 // r o u t i n g
 
