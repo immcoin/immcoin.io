@@ -43,11 +43,12 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 app.use(bodyParser.json());
-
-// proxy.register("immcoin.io", "https://localhost:1337");
-// proxy.register("www.immcoin.io", "https://localhost:1337");
-// proxy.register("http://.immcoin.io", "https://localhost:1337");
-// proxy.register("https://.immcoin.io", "https://localhost:1337");
+var site = "http://localhost:" + myport;
+console.log(site);
+proxy.register("immcoin.io", site);
+proxy.register("www.immcoin.io", site);
+proxy.register("http://.immcoin.io", site);
+proxy.register("https://.immcoin.io", site);
 
 // r o u t i n g
 
