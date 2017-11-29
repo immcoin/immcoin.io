@@ -1,20 +1,21 @@
+
 {
     "particles": {
       "number": {
-        "value": 20,
+        "value": 30,
         "density": {
           "enable": true,
           "value_area": 1000
         }
       },
       "color": {
-        "value": "#05e9ff"
+        "value": "#3EACA8"
       },
       "shape": {
         "type": "circle",
         "stroke": {
           "width": 0,
-          "color": "#05e9ff"
+          "color": "#3EACA8"
         },
         "polygon": {
           "nb_sides": 5
@@ -54,7 +55,7 @@
       },
       "move": {
         "enable": true,
-        "speed": 3,
+        "speed": 6,
         "direction": "none",
         "random": false,
         "straight": false,

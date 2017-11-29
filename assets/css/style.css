@@ -72,10 +72,10 @@ html, body {
   font-weight: bold;
   letter-spacing: 2px; }
   #navigator ul li:hover {
-    color: #42d1f4; }
+    color: #8acfec; }
 
 #navigator ul a.active li {
-  color: #42d1f4 !important; }
+  color: #8acfec !important; }
 
 #navigator ul li.whitepaper {
   background: #c8c8c8; }
@@ -186,27 +186,27 @@ html, body {
 #landing {
   margin-top: 0;
   position: relative;
-  background: #3a3a3a; }
+  background: #355c7d; }
 
 #ico {
   flex-direction: column;
   position: relative; }
 
 #whyIMM {
-  background: #3a3a3a; }
+  background: #355c7d; }
 
 #contact {
-  background: #3a3a3a; }
+  background: #355c7d; }
 
 #team {
-  background: #3a3a3a; }
+  background: #355c7d; }
 
 #footer {
   display: block;
   position: relative;
   height: auto !important;
   min-height: 0;
-  background: #3a3a3a;
+  background: #355c7d;
   padding: 0; }
 
 .content h1, .content-angled h1 {
@@ -278,7 +278,7 @@ html, body {
   font-size: 1.2em; }
 
 #imm-info .immcard .imm-info {
-  color: #828282;
+  color: #cccccc;
   text-align: justify;
   word-wrap: break-word;
   font-size: 1em; }
@@ -362,7 +362,7 @@ html, body {
   background: none;
   font-family: quicksand;
   letter-spacing: 1px;
-  border: #3a3a3a 1px solid;
+  border: #355c7d 1px solid;
   outline: none; }
   .arc-textbox:focus {
     outline: none; }
@@ -371,7 +371,7 @@ html, body {
   margin: 10px;
   height: 40px;
   width: 60%;
-  background: #0bb5ff;
+  background: #8acfec;
   border-radius: 40px;
   border: none;
   color: white;
@@ -403,7 +403,7 @@ html, body {
   overflow: hidden; }
 
 .bar .progress {
-  background: #0bb5ff;
+  background: #8acfec;
   height: 100%;
   width: 70%;
   border-radius: 15px; }
@@ -541,8 +541,8 @@ blink {
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  border: 3px solid #3a3a3a;
-  color: #3a3a3a; }
+  border: 3px solid #355c7d;
+  color: #355c7d; }
   #members-container .team-links .social-block:hover {
     background: #202020;
     color: white; }
@@ -580,7 +580,7 @@ svg {
   -o-transform-origin: 50% 50%; }
 
 #countdown svg .cover {
-  stroke: #0bb5ff;
+  stroke: #8acfec;
   stroke-width: 5px; }
 
 #countdown svg .outline {
@@ -658,7 +658,7 @@ text tspan.unit {
   fill: transparent; }
 
 #trade .coin path {
-  stroke: #0bb5ff; }
+  stroke: #8acfec; }
 
 #trade .arrow path {
   stroke: white; }
@@ -667,22 +667,22 @@ text tspan.unit {
   stroke: white; }
 
 #fullControl #outline2 path {
-  stroke: #0bb5ff; }
+  stroke: #8acfec; }
 
 #arc {
   stroke: white; }
 
 #fullControl .svcirc {
-  fill: #0bb5ff; }
+  fill: #8acfec; }
 
 #security path {
   stroke: white; }
 
 #security #coinoutlineOutside path {
-  stroke: #0bb5ff; }
+  stroke: #8acfec; }
 
 #clock path {
-  stroke: #0bb5ff; }
+  stroke: #8acfec; }
 
 #circle, #minute, #hour {
   stroke: white;
@@ -693,7 +693,7 @@ text tspan.unit {
   fill: white; }
 
 #tnc {
-  background: #3a3a3a;
+  background: #355c7d;
   color: white;
   font-family: 'Consolas'; }
 
@@ -895,7 +895,7 @@ text tspan.unit {
   width: 100%; }
 
 .arc-card:hover .card-header {
-  background: #0bb5ff; }
+  background: #8acfec; }
 
 .arc-card .card-body {
   position: relative;
@@ -932,7 +932,7 @@ text tspan.unit {
   color: white; }
 
 #landing h1 span {
-  color: #0bb5ff; }
+  color: #8acfec; }
 
 #landing h2 {
   font-size: 30px;
