@@ -863,6 +863,10 @@ text tspan.unit {
   margin: 0;
   display: inline-block; }
 
+#coinAccepted #dollar svg {
+  width: 45px;
+  height: 45px; }
+
 .arc-card {
   position: relative;
   background: white;
@@ -945,7 +949,7 @@ text tspan.unit {
   font-size: 15px;
   font-family: quicksand;
   text-align: center;
-  color: #c8c8c8;
+  color: #cccccc;
   padding: 5% 0% 0% 0%; }
 
 tspan.unit {
@@ -1067,7 +1071,6 @@ tspan.unit {
     letter-spacing: 1px;
     font-size: .9em; }
   #imm-info .immcard .imm-info {
-    color: #828282;
     text-align: justify;
     font-size: .6em; } }
 

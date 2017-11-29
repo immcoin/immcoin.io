@@ -58,18 +58,22 @@ block content
                             h3 We are Asia's leading  enable live Event Organiser, who provides quality education online and offline, through partnering with top experts around the Globe.
                         
                     .row
-                        .col-lg-6
-                            h3 WE ACCEPT BITCOIN AND ETHEREUM
-                        .col-lg-6(style='white-space:nowrap')
+                        .col-lg-6(style='white-space: nowrap')
+                            h3 WE ACCEPT BANKWIRE, BITCOIN AND ETHEREUM
+                        .col-lg-6(style='white-space: nowrap')
                             h3 TOTAL BITCOIN AND ETHEREUM RAISED
                     #coinAccepted.row.justify-content-center
-                        .col-lg-6.col-sm-12(align="center")
+                        #dollar.col-lg-4.col-md-4.col-sm-4.col-xs-4(align="center")
+                            include ../../assets/images/whyIMM/change.svg
+                            //- 0x4Ea910bc738325111d8F6ffabD4E54049cc4E839
+                        .col-lg-4.col-md-4.col-sm-4.col-xs-4(align="center")
                             include ../../assets/images/whyIMM/bitcoin.svg
                             //- 17baYHaUKFLShEGgDVBPEzbSHsuanhM9RU
-                        .col-lg-6.col-sm-12(align="center")
+                        .col-lg-4.col-md-4.col-sm-4.col-xs-4(align="center")
                             include ../../assets/images/whyIMM/ethereum.svg
                             //- 0x4Ea910bc738325111d8F6ffabD4E54049cc4E839
-                    button.btn(type='button') INVEST NOW
+                    a(href="http://immtradersclub.com/index.php/referral/IMM9116377", target='_blank')
+                        button.btn(type='button') JOIN NOW
 
         #ico.mid-clip.content
             .angled-container
