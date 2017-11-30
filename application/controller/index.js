@@ -10,11 +10,25 @@ var wic = require('../../assets/mockdb/whyimm.json');
 var adv = require('../../assets/mockdb/advisers.json');
 var mrkt = require('../../assets/mockdb/marketing.json');
 
-var tnc = fs.readFileSync( path.join( __dirname, "../../assets/un3.md" ) );
+    
+marked.setOptions({
+    renderer: new marked.Renderer(),
+    gfm: true,
+    tables: true,
+    breaks: false,
+    pedantic: false,
+    sanitize: false,
+    smartLists: true,
+    smartypants: false
+});
+
+var tnc = marked(marked(fs.readFileSync(path.join( __dirname, '../../assets/tandc.md' ), 'utf-8')));
+
+
 
 router.get('/', function(req, res) {
-    console.log(wic);
-    res.render('index', {title : 'IMM Coin | interday Markets Management Inc.', data : values, members : mem, whyimm: wic, advisers: adv, terms : tnc, marketing : mrkt});
+    console.log(tnc);
+    res.render('index', {title : 'IMM Coin | interday Markets Management Inc.', data : values, members : mem, whyimm: wic, advisers: adv, terms : tnc, marketing : mrkt, terms: tnc});
 });
 
 module.exports = app => { app.use('/', router); }

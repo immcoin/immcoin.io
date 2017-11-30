@@ -935,6 +935,12 @@ text tspan.unit {
 #invest svg {
   width: 1000px; }
 
+#termsCondition .modal-dialog {
+  background: #202020; }
+
+#termsCondition #termsContent {
+  padding: 2% 5%; }
+
 #landing h1 {
   text-align: center;
   font-size: 35px;

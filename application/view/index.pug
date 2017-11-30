@@ -1,5 +1,6 @@
 extends ./partials/layout 
 block content
+
     #overlay
         .loader
             include ../../assets/images/whyIMM/loading.svg
@@ -7,73 +8,73 @@ block content
         #homes
         include ./partials/header
         #landing.bottom-clip.content
-                .content-text-container
-                    //- .progress-bar-container
-                    //-     #progressBar
-                    //-         .bar
-                    //-             .progress
-                    //-             .text TOTAL COINS SOLD 
-                    .desc.container-cover
+            .content-text-container
+                //- .progress-bar-container
+                //-     #progressBar
+                //-         .bar
+                //-             .progress
+                //-             .text TOTAL COINS SOLD 
+                .desc.container-cover
 
-                        h1
-                            span IMC 
-                            | IS THE FUTURE OF ONLINE EDUCATION SYSTEM
-                        
-                            //- A privately issued cryptocurrency that lives on the iMM platform and Ethereum network.
-                            //- THE FUTURE OF ONLINE EDUCATION SYSTEM
-                            //- IS THE FUTURE IN CRYPTOCURRENCY TRADING
+                    h1
+                        span IMC 
+                        | IS THE FUTURE OF ONLINE EDUCATION SYSTEM
 
-                        h2 DAYS UNTIL ICO
-                        //- h2#hoho 
-                        #countdown.fl
-                            .fl-itm
-                                svg#day
-                                    circle.outline(cx="50%", cy="50%", r="80")
-                                    circle.cover(cx="50%", cy="50%", r="80")
-                                    text(x="50%", y="50%") 
-                                        tspan.time(dy='1.2em', x='50%', y="30%")
-                                        tspan.unit(dy='1.2em', x='50%', y="50%")
-                            .fl-itm
-                                svg#hour
-                                    circle.outline(cx="50%", cy="50%", r="80")
-                                    circle.cover(cx="50%", cy="50%", r="80")
-                                    text(x="50%", y="50%") 
-                                        tspan.time(dy='1.2em', x='50%', y="30%")
-                                        tspan.unit(dy='1.2em', x='50%', y="50%")
-                            .fl-itm
-                                svg#min
-                                    circle.outline(cx="50%", cy="50%", r="80")
-                                    circle.cover(cx="50%", cy="50%", r="80")
-                                    text(x="50%", y="50%") 
-                                        tspan.time(dy='1.2em', x='50%', y="30%")
-                                        tspan.unit(dy='1.2em', x='50%', y="50%")
-                            .fl-itm
-                                svg#sec
-                                    circle.outline(cx="50%", cy="50%", r="80")
-                                    circle.cover(cx="50%", cy="50%", r="80")
-                                    text(x="50%", y="50%") 
-                                        tspan.time(dy='1.2em', x='50%', y="30%")
-                                        tspan.unit(dy='1.2em', x='50%', y="50%")
-                            
-                            h3 We are Asia's leading  enable live Event Organiser, who provides quality education online and offline, through partnering with top experts around the Globe.
-                        
-                    .row
-                        .col-lg-6(style='white-space: nowrap')
-                            h3 WE ACCEPT BANKWIRE, BITCOIN AND ETHEREUM
-                        .col-lg-6(style='white-space: nowrap')
-                            h3 TOTAL BITCOIN AND ETHEREUM RAISED
-                    #coinAccepted.row.justify-content-center
-                        #dollar.col-lg-4.col-md-4.col-sm-4.col-xs-4(align="center")
-                            include ../../assets/images/whyIMM/change.svg
-                            //- 0x4Ea910bc738325111d8F6ffabD4E54049cc4E839
-                        .col-lg-4.col-md-4.col-sm-4.col-xs-4(align="center")
-                            include ../../assets/images/whyIMM/bitcoin.svg
-                            //- 17baYHaUKFLShEGgDVBPEzbSHsuanhM9RU
-                        .col-lg-4.col-md-4.col-sm-4.col-xs-4(align="center")
-                            include ../../assets/images/whyIMM/ethereum.svg
-                            //- 0x4Ea910bc738325111d8F6ffabD4E54049cc4E839
-                    a(href="http://immtradersclub.com/index.php/referral/IMM9116377", target='_blank')
-                        button.btn(type='button') JOIN NOW
+                        //- A privately issued cryptocurrency that lives on the iMM platform and Ethereum network.
+                        //- THE FUTURE OF ONLINE EDUCATION SYSTEM
+                        //- IS THE FUTURE IN CRYPTOCURRENCY TRADING
+
+                    h2 DAYS UNTIL ICO
+                    //- h2#hoho 
+                    #countdown.fl
+                        .fl-itm
+                            svg#day
+                                circle.outline(cx="50%", cy="50%", r="80")
+                                circle.cover(cx="50%", cy="50%", r="80")
+                                text(x="50%", y="50%") 
+                                    tspan.time(dy='1.2em', x='50%', y="30%")
+                                    tspan.unit(dy='1.2em', x='50%', y="50%")
+                        .fl-itm
+                            svg#hour
+                                circle.outline(cx="50%", cy="50%", r="80")
+                                circle.cover(cx="50%", cy="50%", r="80")
+                                text(x="50%", y="50%") 
+                                    tspan.time(dy='1.2em', x='50%', y="30%")
+                                    tspan.unit(dy='1.2em', x='50%', y="50%")
+                        .fl-itm
+                            svg#min
+                                circle.outline(cx="50%", cy="50%", r="80")
+                                circle.cover(cx="50%", cy="50%", r="80")
+                                text(x="50%", y="50%") 
+                                    tspan.time(dy='1.2em', x='50%', y="30%")
+                                    tspan.unit(dy='1.2em', x='50%', y="50%")
+                        .fl-itm
+                            svg#sec
+                                circle.outline(cx="50%", cy="50%", r="80")
+                                circle.cover(cx="50%", cy="50%", r="80")
+                                text(x="50%", y="50%") 
+                                    tspan.time(dy='1.2em', x='50%', y="30%")
+                                    tspan.unit(dy='1.2em', x='50%', y="50%")
+
+                        h3 We are Asia's leading  enable live Event Organiser, who provides quality education online and offline, through partnering with top experts around the Globe.
+
+                .row
+                    .col-lg-6(style='white-space: nowrap')
+                        h3 WE ACCEPT BANKWIRE, BITCOIN AND ETHEREUM
+                    .col-lg-6(style='white-space: nowrap')
+                        h3 TOTAL BITCOIN AND ETHEREUM RAISED
+                #coinAccepted.row.justify-content-center
+                    #dollar.col-lg-4.col-md-4.col-sm-4.col-xs-4(align="center")
+                        include ../../assets/images/whyIMM/change.svg
+                        //- 0x4Ea910bc738325111d8F6ffabD4E54049cc4E839
+                    .col-lg-4.col-md-4.col-sm-4.col-xs-4(align="center")
+                        include ../../assets/images/whyIMM/bitcoin.svg
+                        //- 17baYHaUKFLShEGgDVBPEzbSHsuanhM9RU
+                    .col-lg-4.col-md-4.col-sm-4.col-xs-4(align="center")
+                        include ../../assets/images/whyIMM/ethereum.svg
+                        //- 0x4Ea910bc738325111d8F6ffabD4E54049cc4E839
+                a(href="http://immtradersclub.com/index.php/referral/IMM9116377", target='_blank')
+                    button.btn(type='button') JOIN NOW
 
         #ico.mid-clip.content
             .angled-container
@@ -93,7 +94,7 @@ block content
                         .colm.col-xs-12.col-sm-12.col-md-12.col-lg-3
                             h4.card-title= val.title
                             p.card-text= val.content
-                
+
         #whyIMM.mid-clip.content
             include ./partials/whyImm
 
@@ -110,11 +111,11 @@ block content
         #faq.mid-clip.content
             .angled-container-cover
                 include ./partials/faq
-                 
+
         #footer.top-clip.content.red
             .angled-container-cover
                 include ./partials/foot
-              
+            
 
         include ./partials/footer 
         script(type="text/javascript", src='/js/minified/TimelineMax.min.js')
@@ -124,5 +125,11 @@ block content
         script(type="text/javascript", src='/js/jquery.bgswitcher.js')
         script(type="text/javascript", src='/js/frappe-charts.min.js')
         script(type="text/javascript", src='/js/index.js')
-            
-            
+        script(type="text/javascript", src='/js/marked.js')
+        script.
+            var x = !{JSON.stringify(terms)};
+            console.log(x);
+            $('#termsCondition .modal-body').html(marked(x));
+
+
+

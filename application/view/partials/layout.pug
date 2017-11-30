@@ -14,5 +14,12 @@ html
             link(rel='stylesheet', href='/css/tls.css')
             link(rel='stylesheet', href='/css/style.css')
     body
+        #termsCondition.modal.fade.bd-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='termsCondition', aria-hidden='true')
+            .modal-dialog.modal-lg
+                .modal-content
+                    .modal-header
+                        | TERMS AND CONDITION
+                    #termsContent.modal-body
         block content
+
     
