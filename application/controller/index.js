@@ -22,7 +22,7 @@ marked.setOptions({
     smartypants: false
 });
 
-var tnc = marked(marked(fs.readFileSync(path.join( __dirname, '../../assets/tandc.md' ), 'utf-8')));
+var tnc = marked(marked(fs.readFileSync(path.join( __dirname, '../../assets/terms.md' ), 'utf-8')));
 
 
 
