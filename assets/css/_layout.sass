@@ -86,6 +86,10 @@ body
     &-cover
         @extend .angled-container
         width: 100% 
+    &-padded
+        @extend .angled-container
+        padding: 10% 0% 10% 0%
+
 
 // L O A D E R
 
@@ -106,7 +110,7 @@ body
     position: relative !important
     min-height: 100vh
     z-index: 2 !important
-    padding: 10%
+    padding: 10% 0%
     height: auto
     &-angled
         @extend .content
@@ -197,7 +201,7 @@ body
 .container-cover
     position: relative
     margin: auto
-    width: 90%
+    width: 100%
 
 // flex
 
@@ -467,9 +471,9 @@ blink
      
  
 // team
+#footer .angled-container 
+    padding: 0 !important
 
-#team .angled-container 
-    padding: 10% 0% 10% 0%
 #team .fl
     justify-content: center
     align-items: flex-start
@@ -976,3 +980,19 @@ text tspan.unit
 
 #termsCondition #termsContent
     padding: 2% 5%
+
+// H O W  I M M  W O R K S
+
+#howImmWorks > .row
+    padding: 2% 0
+
+#howImmWorks .title
+    color: white
+    font-size: 20px
+    font-weight: bolder
+
+#howImmWorks .body
+    color: white
+
+#immFlowStep2 .title,.body
+    text-align: right

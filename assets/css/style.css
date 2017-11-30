@@ -96,10 +96,12 @@ html, body {
 #logo img {
   width: 150px; }
 
-.angled-container, .angled-container-cover {
+.angled-container, .angled-container-cover, .angled-container-padded {
   display: block; }
   .angled-container-cover {
     width: 100%; }
+  .angled-container-padded {
+    padding: 10% 0% 10% 0%; }
 
 #overlay {
   width: 100vw;
@@ -123,7 +125,7 @@ html, body {
   position: relative !important;
   min-height: 100vh;
   z-index: 2 !important;
-  padding: 10%;
+  padding: 10% 0%;
   height: auto; }
   .content-angled {
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
@@ -225,7 +227,7 @@ html, body {
 .container-cover {
   position: relative;
   margin: auto;
-  width: 90%; }
+  width: 100%; }
 
 .fl-container {
   width: 100%;
@@ -476,8 +478,8 @@ blink {
   100% {
     visibility: visible; } }
 
-#team .angled-container, #team .angled-container-cover {
-  padding: 10% 0% 10% 0%; }
+#footer .angled-container, #footer .angled-container-cover, #footer .angled-container-padded {
+  padding: 0 !important; }
 
 #team .fl {
   justify-content: center;
@@ -944,6 +946,20 @@ text tspan.unit {
 #termsCondition #termsContent {
   padding: 2% 5%; }
 
+#howImmWorks > .row {
+  padding: 2% 0; }
+
+#howImmWorks .title {
+  color: white;
+  font-size: 20px;
+  font-weight: bolder; }
+
+#howImmWorks .body {
+  color: white; }
+
+#immFlowStep2 .title, .body {
+  text-align: right; }
+
 #landing h1 {
   text-align: center;
   font-size: 35px;
@@ -970,12 +986,12 @@ text tspan.unit {
 tspan.unit {
   font-size: .5em; }
 
-.angled-container h1.title, .angled-container-cover h1.title {
+.angled-container h1.title, .angled-container-cover h1.title, .angled-container-padded h1.title {
   text-align: center;
   font-family: quicksand;
   font-weight: bold; }
 
-.angled-container h1.title-inverted, .angled-container-cover h1.title-inverted {
+.angled-container h1.title-inverted, .angled-container-cover h1.title-inverted, .angled-container-padded h1.title-inverted {
   text-align: center;
   font-family: quicksand;
   font-weight: bold;

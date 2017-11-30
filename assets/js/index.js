@@ -184,9 +184,12 @@ $(document).ready(function () {
     },
     {
         opacity: 1,
-        y: -300,
+        y: -200,
         ease: Power4.easeOut
-    },0.2);
+    },0.2)
+    .to('#arrows .ar', 0.1, {
+        opacity: 0
+    });
 
     // url : "http://192.168.2.200/imm-trader/total/totalcoin.php",
     // $.ajax({
