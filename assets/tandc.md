@@ -68,7 +68,7 @@ It is acknowledged that in accepting Bitcoin to participate in the i-MM Coin ICO
 
 **2.2** i-MM Coin reserve the right to extend the ICO for any reason, including, but not limited to, any unforeseen technical difficulties which hamper the original ICO timetable. If all i-MM Coin are sold prior to 31st March 2018 then the ICO will close at the point that the last i-MM Coin is sold.
 
-### **3. Burning of Kexcoin**
+### **3. Burning of IMMCOIN**
 
 **3.1** A unique aspect of i-MM Coin is that each quarter, 50% of the net profits earned by the Interday Markets Management Limited from investing of the ICO funds will be used to buy back i-MM Coin directly from the market. Whilst there is no obligation on any Participant to sell their i-MM Coin, the purpose of the buy back is that upon Interday Markets Management Limited completing the buyback, all i-MM Coin subject to being bought back will be immediately Burned. This will result in a continuous reduction of the remaining supply of i-MM Coin and should result in a natural increase in the value.
 
