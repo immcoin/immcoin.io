@@ -929,6 +929,12 @@ text tspan.unit {
   text-align: center;
   vertical-align: middle; }
 
+#invest svg path, line {
+  stroke: white; }
+
+#invest svg {
+  width: 1000px; }
+
 #landing h1 {
   text-align: center;
   font-size: 35px;

@@ -3,7 +3,8 @@
     .container-cover
         h1.title-inverted IMM TEAM
         .separator-inverted
-        .container-
+
+        .container-cover
             .fl#members-container
                 each val in members
                     .team-card-container.fl-itm
@@ -28,33 +29,31 @@
                                 desc= "#{val.description}"
                         else 
                             .team-description= val.description
-    .container-cover
-        h1.title-inverted MARKETING
-        .separator-inverted
-        .container
-            .fl
-                each val in marketing
-                    .team-card-container.fl-itm
-                        .team-img-container
-                            .img-container
-                                img(src='' + val.image +'')
-                        .team-name= val.name
-                        .team-position= val.position
-                        .team-description= val.description
-                        .team-links   
-    .container-cover
-        h1.title-inverted ADVISERS
-        .separator-inverted
-        .container
-            .fl
-                each val in advisers
-                    .team-card-container.fl-itm
-                        .team-img-container
-                            .img-container
-                                img(src='' + val.image +'')
-                        .team-name= val.name
-                        .team-position= val.position
-                        .team-description= val.description
-                        .team-links
+            h1.title-inverted MARKETING
+            .separator-inverted
+            .container
+                .fl
+                    each val in marketing
+                        .team-card-container.fl-itm
+                            .team-img-container
+                                .img-container
+                                    img(src='' + val.image +'')
+                            .team-name= val.name
+                            .team-position= val.position
+                            .team-description= val.description
+                            .team-links   
+            h1.title-inverted ADVISERS
+            .separator-inverted
+            .container
+                .fl
+                    each val in advisers
+                        .team-card-container.fl-itm
+                            .team-img-container
+                                .img-container
+                                    img(src='' + val.image +'')
+                            .team-name= val.name
+                            .team-position= val.position
+                            .team-description= val.description
+                            .team-links
 
-    
+        
