@@ -122,7 +122,71 @@ $(document).ready(function () {
             ease: Linear.easeNone
         });
 
+    let investTween = new TimelineMax();
+    investTween.staggerFromTo('#invest #bitcoin2, #invest #eth, #invest #eth2', 2, {
+        opacity: 1,
+        y: -400,
+        repeat: -1,
+        ease: Linear.easeNone
+    },
+    {
+        opacity: 0,
+        repeat: -1,
+        y: 500,
+        ease: Linear.easeNone
+    }, 0.5);
+
+    let blockchainTween = new TimelineMax({onComplete:function() {
+        this.restart();
+    }}  );
+    blockchainTween.staggerFrom('#newblck #box1, #newblck #box2, #newblck #box3, #newblck #box4', 2, 
+    {
+        opacity: 0,
+        y: -300,
+        ease: Power4.easeOut
+    },0.5).to('#newblck #box1, #newblck #box2, #newblck #box3, #newblck #box4', 0.5, 
+    {
+        opacity: 0
+    });
     
+    let tradingImmTween = new TimelineMax({onComplete: function() { this.restart() }});
+    tradingImmTween.staggerFromTo('#immcoins #immcoin1, #immcoins #immcoin2', 2, 
+    {
+        opacity: 0,
+        x: -300,
+        ease: Power4.easeOut
+    },
+    {
+        opacity: 1,
+        x: 500,
+        ease: Power4.easeOut
+    },0.5).to('#immcoins #immcoin1, #immcoins #immcoin2', 0.5, {opacity:0});
+
+    let tradingAltTween = new TimelineMax({onComplete: function() { this.restart() }});
+    tradingAltTween.staggerFromTo('#altcoin .alt', 1, 
+    {
+        opacity: 0,
+        x: 100,
+        ease: Power4.easeOut
+    },
+    {
+        opacity: 1,
+        x: -500,
+        ease: Power4.easeOut
+    },0.2).to('#altcoin .alt', 0.5, {opacity:0});
+
+    let profitTween = new TimelineMax({onComplete: function() { this.restart() }});
+    profitTween.staggerFromTo('#arrows .ar', 2, 
+    {
+        opacity: 0,
+        y: 0,
+        ease: Power4.easeOut
+    },
+    {
+        opacity: 1,
+        y: -300,
+        ease: Power4.easeOut
+    },0.2);
 
     // url : "http://192.168.2.200/imm-trader/total/totalcoin.php",
     // $.ajax({

@@ -45,12 +45,13 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 app.use(bodyParser.json());
+
 var site = "http://localhost:" + myport;
 proxy.register("immcoin.io", site);
 proxy.register("www.immcoin.io", site);
 proxy.register("http://.immcoin.io", site);
 proxy.register("https://.immcoin.io", site);
-
+proxy.register("http://wallet.immcoin.io", "http://localhost:3200");
 // r o u t i n g
 
 var controllers = glob.sync(__dirname + '/application/controller/*js');
