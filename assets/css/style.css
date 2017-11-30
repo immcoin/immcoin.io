@@ -476,6 +476,9 @@ blink {
   100% {
     visibility: visible; } }
 
+#team .angled-container, #team .angled-container-cover {
+  padding: 10% 0% 10% 0%; }
+
 #team .fl {
   justify-content: center;
   align-items: flex-start; }
