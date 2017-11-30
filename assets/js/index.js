@@ -175,6 +175,18 @@ $(document).ready(function () {
         ease: Power4.easeOut
     },0.2).to('#altcoin .alt', 0.5, {opacity:0});
 
+    let profitTween = new TimelineMax({onComplete: function() { this.restart() }});
+    profitTween.staggerFromTo('#arrows .ar', 2, 
+    {
+        opacity: 0,
+        y: 0,
+        ease: Power4.easeOut
+    },
+    {
+        opacity: 1,
+        y: -300,
+        ease: Power4.easeOut
+    },0.2);
 
     // url : "http://192.168.2.200/imm-trader/total/totalcoin.php",
     // $.ajax({
