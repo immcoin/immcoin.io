@@ -23,7 +23,8 @@
                         .team-name= val.name
                         .team-position= val.position
                         if (val.name === "A.R. CASAS")
-                            #output.team-description(style='font-family: "Consolas"; font-size: 10px; color: #3cff1e;')
+                            //(style='font-family: "Consolas"; font-size: 10px; color: #3cff1e;')
+                            #output.team-description
                             script.
                                 desc= "#{val.description}"
                         else 

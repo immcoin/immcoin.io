@@ -97,11 +97,14 @@ html, body {
   width: 150px; }
 
 .angled-container, .angled-container-cover, .angled-container-padded {
-  display: block; }
+  display: block;
+  padding-left: 10%;
+  padding-right: 10%; }
   .angled-container-cover {
     width: 100%; }
   .angled-container-padded {
-    padding: 10% 0% 10% 0%; }
+    padding-top: 5%;
+    padding-bottom: 5%; }
 
 #overlay {
   width: 100vw;
@@ -957,8 +960,21 @@ text tspan.unit {
 #howImmWorks .body {
   color: white; }
 
-#immFlowStep2 .title, .body {
-  text-align: right; }
+#immFlowStep2 .title, #immFlowStep2 .body {
+  text-align: right !important; }
+
+#immFlowStep1 .body {
+  font-size: 15px;
+  text-align: justify; }
+
+#immFlowStep1 .title {
+  text-align: center; }
+
+#immFlowStep3 {
+  color: white; }
+
+#immFlowStep3 > .tile, #immFlowStep3 .body {
+  text-align: left !important; }
 
 #landing h1 {
   text-align: center;

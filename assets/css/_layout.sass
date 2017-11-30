@@ -83,12 +83,16 @@ body
 
 .angled-container
     display: block
+    padding-left: 10%
+    padding-right: 10%
     &-cover
         @extend .angled-container
-        width: 100% 
+        width: 100%
     &-padded
         @extend .angled-container
-        padding: 10% 0% 10% 0%
+        padding-top: 5%
+        padding-bottom: 5%
+
 
 
 // L O A D E R
@@ -202,6 +206,7 @@ body
     position: relative
     margin: auto
     width: 100%
+
 
 // flex
 
@@ -994,5 +999,19 @@ text tspan.unit
 #howImmWorks .body
     color: white
 
-#immFlowStep2 .title,.body
-    text-align: right
+#immFlowStep2 .title, #immFlowStep2 .body   
+    text-align: right !important
+
+#immFlowStep1 .body
+    
+    font-size: 15px
+    text-align: justify
+
+#immFlowStep1 .title
+    text-align: center
+
+#immFlowStep3 
+    color: white 
+
+#immFlowStep3 > .tile, #immFlowStep3 .body
+    text-align: left !important
